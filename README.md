@@ -1,14 +1,14 @@
-# SAP Fiori → Reltio Design System 3.1 Color Migration
+# Fiori → Reltio Design System 3.1 Color Migration
 
-This workspace captures the work to keep Reltio's visual identity on top of SAP Fiori
-after the acquisition. The deliverable is a **hot-swap map** that re-aliases SAP Fiori
+This workspace captures the work to keep Reltio's visual identity on top of Fiori
+after the acquisition. The deliverable is a **hot-swap map** that re-aliases Fiori
 "Horizon" CSS/Less variables to Reltio Design System (RDS) 3.1 colors so existing Fiori
 components inherit Reltio's brand without rewriting components.
 
 ## Source files
 
 - **RDS 3.1 (LTS)**: [`Reltio Design System 3.1 LTS`](https://www.figma.com/design/tu2YE7Y6bmgkmcdIqCJpLk/Reltio-Design-System-3.1--LTS-?node-id=11396-44160) — 318 primitive shades + 128 semantic tokens (Light/Dark).
-- **SAP Fiori**: [`SAP Fiori for Web UI Kit (Community)`](https://www.figma.com/design/XywZ3yPdXzBL4MnKbzP7uI/SAP-Fiori-for-Web-UI-Kit--Community-?node-id=23018-4781) — 899 color tokens across 35 categories (Morning/Evening Horizon, two high-contrast modes).
+- **Fiori**: [`Fiori for Web UI Kit (Community)`](https://www.figma.com/design/XywZ3yPdXzBL4MnKbzP7uI/SAP-Fiori-for-Web-UI-Kit--Community-?node-id=23018-4781) — 899 color tokens across 35 categories (Morning/Evening Horizon, two high-contrast modes).
 
 ## What's in this folder
 
