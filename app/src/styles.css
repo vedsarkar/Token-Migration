@@ -1,0 +1,211 @@
+/* ---------- Theme tokens ---------- */
+
+:root {
+  /* Light theme (default) */
+  --bg-app: #fafafb;
+  --bg-elevated: #ffffff;
+  --bg-editor: #fafafb;
+  --bg-input: #ffffff;
+
+  --text-primary: #131418;
+  --text-secondary: #5a5d66;
+  --text-tertiary: #8a8d96;
+  --text-quaternary: #b5b8c0;
+
+  --stroke-primary: #d7d9de;
+  --stroke-secondary: #e6e7eb;
+  --stroke-tertiary: #eef0f3;
+
+  --fill-primary: #e6e7eb;
+  --fill-secondary: #eef0f3;
+  --fill-tertiary: #f4f5f7;
+  --fill-quaternary: #f9fafb;
+
+  --accent-primary: #0000cc;
+  --accent-text-on: #ffffff;
+
+  --tone-success-bg: #e8f5ec;
+  --tone-success-text: #1b6b34;
+  --tone-success-border: #b9dec5;
+
+  --tone-warning-bg: #fff5d8;
+  --tone-warning-text: #8a5a00;
+  --tone-warning-border: #ffd970;
+
+  --tone-info-bg: #e6efff;
+  --tone-info-text: #0035a0;
+  --tone-info-border: #aac3f0;
+
+  --tone-danger-bg: #fde7e7;
+  --tone-danger-text: #8e0b0b;
+  --tone-danger-border: #f4b8b8;
+
+  --tone-neutral-bg: #f1f2f5;
+  --tone-neutral-text: #5a5d66;
+  --tone-neutral-border: #d7d9de;
+
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, 'Helvetica Neue', Arial, sans-serif;
+
+  /* 8×8 transparency checkerboard used as a backing pattern for opacity
+   * sliders and color swatches. Two diagonal halves of a 8px square keep
+   * the pattern legible at any zoom. */
+  --checker-bg:
+    linear-gradient(45deg, #d0d2d8 25%, transparent 25%, transparent 75%, #d0d2d8 75%, #d0d2d8) 0 0/8px 8px,
+    linear-gradient(45deg, #d0d2d8 25%, transparent 25%, transparent 75%, #d0d2d8 75%, #d0d2d8) 4px 4px/8px 8px;
+}
+
+:root[data-theme='dark'] {
+  --bg-app: #16181c;
+  --bg-elevated: #1c1f24;
+  --bg-editor: #14161a;
+  --bg-input: #1c1f24;
+
+  --text-primary: #f1f2f5;
+  --text-secondary: #b6b9c1;
+  --text-tertiary: #7f828a;
+  --text-quaternary: #565962;
+
+  --stroke-primary: #353841;
+  --stroke-secondary: #2a2d35;
+  --stroke-tertiary: #21232a;
+
+  --fill-primary: #2a2d35;
+  --fill-secondary: #21232a;
+  --fill-tertiary: #1d1f25;
+  --fill-quaternary: #181a20;
+
+  --accent-primary: #6161ff;
+  --accent-text-on: #ffffff;
+
+  --tone-success-bg: #163422;
+  --tone-success-text: #79c98e;
+  --tone-success-border: #285a3e;
+
+  --tone-warning-bg: #3a2d05;
+  --tone-warning-text: #f7c34a;
+  --tone-warning-border: #6e500a;
+
+  --tone-info-bg: #0e234a;
+  --tone-info-text: #8fb6ff;
+  --tone-info-border: #2c4783;
+
+  --tone-danger-bg: #3a1414;
+  --tone-danger-text: #f47171;
+  --tone-danger-border: #6f2424;
+
+  --tone-neutral-bg: #21232a;
+  --tone-neutral-text: #b6b9c1;
+  --tone-neutral-border: #353841;
+
+  --checker-bg:
+    linear-gradient(45deg, #3a3d45 25%, transparent 25%, transparent 75%, #3a3d45 75%, #3a3d45) 0 0/8px 8px,
+    linear-gradient(45deg, #3a3d45 25%, transparent 25%, transparent 75%, #3a3d45 75%, #3a3d45) 4px 4px/8px 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--fill-tertiary);
+  padding: 1px 5px;
+  border-radius: 4px;
+  border: 1px solid var(--stroke-tertiary);
+}
+
+pre {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 18px;
+  background: var(--bg-editor);
+  border: 1px solid var(--stroke-tertiary);
+  border-radius: 6px;
+  padding: 12px;
+  margin: 0;
+  overflow: auto;
+  max-height: 460px;
+  color: var(--text-primary);
+  white-space: pre;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+}
+
+input[type='text'],
+input[type='search'] {
+  font-family: inherit;
+  font-size: 13px;
+  background: var(--bg-input);
+  color: var(--text-primary);
+  border: 1px solid var(--stroke-primary);
+  border-radius: 6px;
+  padding: 6px 10px;
+  outline: none;
+  width: 100%;
+}
+
+input[type='text']:focus,
+input[type='search']:focus {
+  border-color: var(--accent-primary);
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.app-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 28px 64px;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg-app);
+  border-bottom: 1px solid var(--stroke-tertiary);
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

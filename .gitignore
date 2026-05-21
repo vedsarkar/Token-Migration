@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+.vite/
+**/.vite/
+
+# Local config & cache
+*.local
+.cache/
+*.tsbuildinfo
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/
+
+# Generated artifacts (rebuild from app/ when needed)
+sample-spreadsheet.xlsx
+*.xlsx
+
+# Cursor IDE Browser temp downloads (in case any leak into the repo)
+.com.todesktop.*
+
+# Abandoned scaffold — replaced by `app/`
+playground/

@@ -1,0 +1,67 @@
+{
+  "source": "Reltio Design System 3.1 LTS - Color Mode Token collection",
+  "figmaFile": "tu2YE7Y6bmgkmcdIqCJpLk",
+  "modes": ["Light", "Dark"],
+  "tokens": {
+    "Brand/Reltio Cobalt":      { "light": "#0000CC", "dark": "#FFFFFF", "primitive": "Brand/Blue/600" },
+    "Brand/Reltio Midnight":    { "light": "#000033", "dark": "#FFFFFF", "primitive": "Brand/Blue/900" },
+    "Brand/Reltio Blue":        { "light": "#000066", "dark": "#FFFFFF", "primitive": "Brand/Blue/800" },
+    "Brand/Reltio Gold":        { "light": "#FFCC00", "dark": "#FFCC00", "primitive": "Brand/Gold/500" },
+    "Brand/Reltio Aqua":        { "light": "#00FFFF", "dark": "#00FFFF", "primitive": "Brand/Aqua/500" },
+
+    "Background/Surface 1":         { "light": "#FFFFFF", "dark": "#0E0E25" },
+    "Background/Surface 2":         { "light": "#F5F5FA", "dark": "#262640" },
+    "Background/Surface 3":         { "light": "#E3E3F2", "dark": "#434370" },
+    "Background/Surface 4":         { "light": "#FFFFFF", "dark": "#303050" },
+    "Background/Base Section":      { "light": "#F5F5FA", "dark": "#000000" },
+    "Background/Forced White":      { "light": "#FFFFFF", "dark": "#FFFFFF" },
+    "Background/Black BG":          { "light": "#0E0E25", "dark": "#FFFFFF" },
+
+    "Outline-Border/Surface Border 1": { "light": "#F5F5FA", "dark": "#262640" },
+    "Outline-Border/Surface Border 2": { "light": "#E3E3F2", "dark": "#56568F" },
+    "Outline-Border/Surface Border 3": { "light": "#BABADE", "dark": "#434370" },
+    "Outline-Border/Surface Border 4": { "light": "#F5F5FA", "dark": "#7070A9" },
+    "Outline-Border/Dark Container":   { "light": "#434370", "dark": "#BABADE" },
+    "Outline-Border/Darker Container": { "light": "#262640", "dark": "#E3E3F2" },
+    "Outline-Border/Black Container":  { "light": "#0E0E25", "dark": "#FFFFFF" },
+
+    "Fonts & Icons/Default":      { "light": "#0E0E25", "dark": "#E3E3F2" },
+    "Fonts & Icons/Descriptions": { "light": "#56568F", "dark": "#BABADE" },
+    "Fonts & Icons/Placeholder":  { "light": "#7070A9", "dark": "#8D8DC8" },
+    "Fonts & Icons/disabled":     { "light": "#BABADE", "dark": "#56568F" },
+    "Fonts & Icons/White":        { "light": "#FFFFFF", "dark": "#0E0E25" },
+    "Fonts & Icons/Links & Text": { "light": "#3333FF", "dark": "#B2B2FF" },
+
+    "Primary/Base":          { "light": "#0000CC", "dark": "#6161FF" },
+    "Primary/Hover":         { "light": "#000066", "dark": "#0A0AFF" },
+    "Primary/CTA Black Font":{ "light": "#0000CC", "dark": "#FFFFFF" },
+    "Secondary/Default":     { "light": "#000033", "dark": "#000033" },
+    "Secondary/Hover":       { "light": "#000066", "dark": "#000066" },
+    "Secondary/Border":      { "light": "#000033", "dark": "#000033" },
+    "Secondary/Soft fill":   { "light": "#B2B2FF", "dark": "#B2B2FF" },
+
+    "Success/Default":   { "light": "#449977", "dark": "#449977" },
+    "Success/Hover":     { "light": "#1F4737", "dark": "#10231B" },
+    "Success/Border":    { "light": "#2F6A52", "dark": "#2F6A52" },
+    "Success/Soft fill": { "light": "#DCEFE7", "dark": "#1F4737" },
+    "Success/Font":      { "light": "#2F6A52", "dark": "#449977" },
+
+    "Error/Default":   { "light": "#EE3333", "dark": "#EE3333" },
+    "Error/Hover":     { "light": "#8E0B0B", "dark": "#8E0B0B" },
+    "Error/Border":    { "light": "#5E0808", "dark": "#5E0808" },
+    "Error/Soft fill": { "light": "#FDE7E7", "dark": "#FDE7E7" },
+    "Error/Font":      { "light": "#BD0F0F", "dark": "#EE3333" },
+
+    "Warning/Default":   { "light": "#FFCC00", "dark": "#FFCC00" },
+    "Warning/Hover":     { "light": "#9E4F00", "dark": "#FFAA00" },
+    "Warning/Border":    { "light": "#CC7700", "dark": "#CC7700" },
+    "Warning/Soft fill": { "light": "#FFF5CC", "dark": "#FFF5CC" },
+    "Warning/Font":      { "light": "#CC7700", "dark": "#FFCC00" },
+
+    "Purple/Default":   { "light": "#6611CC", "dark": "#6611CC" },
+    "Purple/Hover":     { "light": "#2F0561", "dark": "#2F0561" },
+    "Pink/Base":        { "light": "#FF44AA", "dark": "#FF44AA" },
+    "Pink/Hover":       { "light": "#8E0B52", "dark": "#8E0B52" },
+    "Orange/Default":   { "light": "#EE6611", "dark": "#EE6611" }
+  }
+}

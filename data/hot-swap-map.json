@@ -1,0 +1,179 @@
+{
+  "$schema": "RDS-3.1-to-Fiori-Hot-Swap-Map",
+  "version": "1.0.0",
+  "generatedAt": "2026-05-19",
+  "convention": "For each Fiori token, the value the SAP runtime currently resolves to is replaced by the RDS hex/variable. Apply the swap by overriding the Fiori SCSS/CSS variable (e.g. --sapBrandColor) with the RDS value, or by re-aliasing Fiori library variables to the RDS primitive in Figma.",
+  "confidence": {
+    "high":   "Visually and semantically equivalent; safe one-to-one swap.",
+    "medium": "Same semantic role, different hue/saturation - acceptable with brand review.",
+    "low":    "Cross-hue swap or no perfect RDS equivalent - QA in context before rollout."
+  },
+  "swaps": [
+    {
+      "category": "Main",
+      "items": [
+        { "fiori": "Main/sapBrandColor",      "fioriLight": "#0070F2", "fioriDark": "#0070F2", "rds": "Brand/Blue/600 (Reltio Cobalt)", "rdsLight": "#0000CC", "rdsDark": "#0000CC", "confidence": "high",   "note": "Headline brand swap. Fiori Belize Blue → Reltio Cobalt." },
+        { "fiori": "Main/sapHighlightColor",  "fioriLight": "#0064D9", "fioriDark": "#4DB1FF", "rds": "Brand/Blue/600 / Blue/300",       "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high",   "note": "Selected/active accent." },
+        { "fiori": "Main/sapBaseColor",       "fioriLight": "#FFFFFF", "fioriDark": "#1D232A", "rds": "White / Grayscale/900D",           "rdsLight": "#FFFFFF", "rdsDark": "#0E0E25", "confidence": "high",   "note": "Foundation canvas." }
+      ]
+    },
+    {
+      "category": "Interaction",
+      "items": [
+        { "fiori": "Interaction/sapSelectedColor",                     "fioriLight": "#0064D9", "fioriDark": "#4DB1FF", "rds": "Primary/Base",                       "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high",   "note": "Selected state." },
+        { "fiori": "Interaction/sapActiveColor",                       "fioriLight": "#DEE2E5", "fioriDark": "#020303", "rds": "Grayscale/100 / Grayscale/900D",     "rdsLight": "#E3E3F2", "rdsDark": "#0E0E25", "confidence": "high",   "note": "Pressed background." },
+        { "fiori": "Interaction/sapHoverColor",                        "fioriLight": "#EAECEE", "fioriDark": "#222B35", "rds": "Grayscale/50 / Grayscale/800",       "rdsLight": "#F5F5FA", "rdsDark": "#262640", "confidence": "high",   "note": "Hover tint." },
+        { "fiori": "Interaction/sapContent_Selected_Background",       "fioriLight": "#FFFFFF", "fioriDark": "#1D232A", "rds": "Background/Surface 1",               "rdsLight": "#FFFFFF", "rdsDark": "#0E0E25", "confidence": "high" },
+        { "fiori": "Interaction/sapContent_Selected_TextColor",        "fioriLight": "#0064D9", "fioriDark": "#4DB1FF", "rds": "Primary/Base",                       "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high" },
+        { "fiori": "Interaction/sapContent_Selected_Hover_Background", "fioriLight": "#E3F0FF", "fioriDark": "#002B4D", "rds": "Brand/Blue/50 / Brand/Blue/900",     "rdsLight": "#E5E5FF", "rdsDark": "#000033", "confidence": "high" },
+        { "fiori": "Interaction/sapContent_Selected_ForegroundColor",  "fioriLight": "#0064D9", "fioriDark": "#4DB1FF", "rds": "Primary/Base",                       "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high" },
+        { "fiori": "Interaction/sapContent_HelpColor",                 "fioriLight": "#188918", "fioriDark": "#5DC122", "rds": "Green-Emerald/600 (Success/Default)","rdsLight": "#449977", "rdsDark": "#449977", "confidence": "medium", "note": "Fiori help-green is a brighter forest green; RDS Emerald is more teal-leaning." },
+        { "fiori": "Interaction/sapContent_DragAndDropActiveColor",    "fioriLight": "#0064D9", "fioriDark": "#4DB1FF", "rds": "Primary/Base",                       "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high" },
+        { "fiori": "Interaction/sapContent_SearchHighlightColor",      "fioriLight": "#DAFDF5", "fioriDark": "#046C7A", "rds": "Brand/Aqua/50 / Brand/Aqua/700",     "rdsLight": "#E5FFFF", "rdsDark": "#009999", "confidence": "medium" }
+      ]
+    },
+    {
+      "category": "Text",
+      "items": [
+        { "fiori": "Text/sapTextColor",                  "fioriLight": "#131E29", "fioriDark": "#F5F6F7", "rds": "Fonts & Icons/Default",     "rdsLight": "#0E0E25", "rdsDark": "#E3E3F2", "confidence": "high" },
+        { "fiori": "Text/sapTitleColor",                 "fioriLight": "#131E29", "fioriDark": "#F5F6F7", "rds": "Fonts & Icons/Default",     "rdsLight": "#0E0E25", "rdsDark": "#E3E3F2", "confidence": "high" },
+        { "fiori": "Text/sapContent_ForegroundTextColor","fioriLight": "#131E29", "fioriDark": "#F5F6F7", "rds": "Fonts & Icons/Default",     "rdsLight": "#0E0E25", "rdsDark": "#E3E3F2", "confidence": "high" },
+        { "fiori": "Text/sapContent_LabelColor",         "fioriLight": "#556B82", "fioriDark": "#8396A8", "rds": "Fonts & Icons/Descriptions","rdsLight": "#56568F", "rdsDark": "#BABADE", "confidence": "high",   "note": "Tinted gray for secondary labels." },
+        { "fiori": "Text/sapContent_MarkerTextColor",    "fioriLight": "#046C7A", "fioriDark": "#64EDD2", "rds": "Brand/Aqua/700 / Aqua/300", "rdsLight": "#009999", "rdsDark": "#66FFFF", "confidence": "medium", "note": "Decorative marker text." },
+        { "fiori": "Text/sapContent_ContrastTextColor",  "fioriLight": "#FFFFFF", "fioriDark": "#1D232A", "rds": "White / Grayscale/900D",   "rdsLight": "#FFFFFF", "rdsDark": "#0E0E25", "confidence": "high" },
+        { "fiori": "Text/sapContent_DisabledTextColor",  "fioriLight": "#131E29 60%", "fioriDark": "#F5F6F7 60%", "rds": "Fonts & Icons/disabled","rdsLight": "#BABADE", "rdsDark": "#56568F", "confidence": "high" }
+      ]
+    },
+    {
+      "category": "Container",
+      "items": [
+        { "fiori": "Container/sapGroup_ContentBackground", "fioriLight": "#FFFFFF", "fioriDark": "#1D232A", "rds": "Background/Surface 1",             "rdsLight": "#FFFFFF", "rdsDark": "#0E0E25", "confidence": "high" },
+        { "fiori": "Container/sapGroup_ContentBorderColor","fioriLight": "#D9D9D9", "fioriDark": "#323C48", "rds": "Outline-Border/Surface Border 2", "rdsLight": "#E3E3F2", "rdsDark": "#56568F", "confidence": "high" },
+        { "fiori": "Container/sapGroup_TitleBorderColor",  "fioriLight": "#A8B3BD", "fioriDark": "#758EA5", "rds": "Outline-Border/Surface Border 3", "rdsLight": "#BABADE", "rdsDark": "#434370", "confidence": "high" },
+        { "fiori": "Container/sapGroup_TitleTextColor",    "fioriLight": "#1D2D3E", "fioriDark": "#F5F6F7", "rds": "Fonts & Icons/Default",           "rdsLight": "#0E0E25", "rdsDark": "#E3E3F2", "confidence": "high" },
+        { "fiori": "Container/sapBlockLayer_Background",   "fioriLight": "#000000", "fioriDark": "#000000", "rds": "Black",                            "rdsLight": "#000000", "rdsDark": "#000000", "confidence": "high",   "note": "Modal scrim base." }
+      ]
+    },
+    {
+      "category": "Semantic / Status",
+      "items": [
+        { "fiori": "Semantic/sapNegativeColor",                "fioriLight": "#AA0808", "fioriDark": "#FA6161", "rds": "Brand/Red/600 (Error/Font)",           "rdsLight": "#BD0F0F", "rdsDark": "#EE3333", "confidence": "high",   "note": "Error/destructive intent." },
+        { "fiori": "Semantic/sapErrorColor",                   "fioriLight": "#AA0808", "fioriDark": "#FA6161", "rds": "Brand/Red/600 (Error/Font)",           "rdsLight": "#BD0F0F", "rdsDark": "#EE3333", "confidence": "high" },
+        { "fiori": "Semantic/Border/sapErrorBorderColor",      "fioriLight": "#E90B0B", "fioriDark": "#FA6161", "rds": "Brand/Red/500 (Error/Default)",        "rdsLight": "#EE3333", "rdsDark": "#EE3333", "confidence": "high" },
+        { "fiori": "Semantic/Background/sapErrorBackground",   "fioriLight": "#FFEAF4", "fioriDark": "#350000", "rds": "Brand/Red/100 (Error/Soft fill)",      "rdsLight": "#FDE7E7", "rdsDark": "#2F0404", "confidence": "medium", "note": "Fiori error bg is pink-tinted, RDS is salmon. Visually distinct - QA in alerts." },
+        { "fiori": "Semantic/sapWarningColor",                 "fioriLight": "#E76500", "fioriDark": "#FFDF72", "rds": "Other/Orange/500",                     "rdsLight": "#EE6611", "rdsDark": "#FFE066", "confidence": "medium", "note": "Fiori warning is orange-amber. RDS Warning (Gold #FFCC00) is yellower; use Orange/500 to preserve hue, or keep RDS Gold to align with Reltio brand language." },
+        { "fiori": "Semantic/sapCriticalColor",                "fioriLight": "#E76500", "fioriDark": "#FFDF72", "rds": "Other/Orange/500",                     "rdsLight": "#EE6611", "rdsDark": "#FFE066", "confidence": "medium" },
+        { "fiori": "Semantic/Border/sapWarningBorderColor",    "fioriLight": "#DD6100", "fioriDark": "#F7BF00", "rds": "Other/Orange/600 / Brand/Gold/700",    "rdsLight": "#BE520E", "rdsDark": "#CC7700", "confidence": "medium" },
+        { "fiori": "Semantic/Background/sapWarningBackground", "fioriLight": "#FFF8D6", "fioriDark": "#382700", "rds": "Brand/Gold/100 (Warning/Soft fill)",   "rdsLight": "#FFF5CC", "rdsDark": "#3D1F00", "confidence": "high" },
+        { "fiori": "Semantic/sapPositiveColor",                "fioriLight": "#256F3A", "fioriDark": "#97DD40", "rds": "Green-Emerald/700 (Success/Border)",   "rdsLight": "#2F6A52", "rdsDark": "#4EB189", "confidence": "high" },
+        { "fiori": "Semantic/sapSuccessColor",                 "fioriLight": "#256F3A", "fioriDark": "#97DD40", "rds": "Green-Emerald/700 (Success/Border)",   "rdsLight": "#2F6A52", "rdsDark": "#4EB189", "confidence": "high" },
+        { "fiori": "Semantic/Border/sapSuccessBorderColor",    "fioriLight": "#30914C", "fioriDark": "#6DAD1F", "rds": "Green-Emerald/600 (Success/Default)",  "rdsLight": "#449977", "rdsDark": "#4EB189", "confidence": "medium", "note": "Fiori success is forest green, RDS is teal-leaning emerald." },
+        { "fiori": "Semantic/Background/sapSuccessBackground", "fioriLight": "#F5FAE5", "fioriDark": "#11331A", "rds": "Green-Emerald/100 (Success/Soft fill)","rdsLight": "#DCEFE7", "rdsDark": "#10231B", "confidence": "medium", "note": "Fiori is lime-yellow tinted; RDS is mint. Acceptable but recognizably different." },
+        { "fiori": "Semantic/sapInformativeColor",             "fioriLight": "#0070F2", "fioriDark": "#4DB1FF", "rds": "Brand/Blue/600 (Reltio Cobalt)",       "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high" },
+        { "fiori": "Semantic/sapInformationColor",             "fioriLight": "#0070F2", "fioriDark": "#4DB1FF", "rds": "Brand/Blue/600 (Reltio Cobalt)",       "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high" },
+        { "fiori": "Semantic/Border/sapInformationBorderColor","fioriLight": "#0070F2", "fioriDark": "#4DB1FF", "rds": "Brand/Blue/600 (Reltio Cobalt)",       "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high" },
+        { "fiori": "Semantic/Background/sapInformationBackground","fioriLight": "#E1F4FF", "fioriDark": "#00144A", "rds": "Brand/Blue/50 / Brand/Blue/900",   "rdsLight": "#E5E5FF", "rdsDark": "#000033", "confidence": "high" },
+        { "fiori": "Semantic/sapNeutralColor",                 "fioriLight": "#788FA6", "fioriDark": "#A9B4BE", "rds": "Grayscale/400",                        "rdsLight": "#7070A9", "rdsDark": "#8D8DC8", "confidence": "high" },
+        { "fiori": "Semantic/Background/sapNeutralBackground", "fioriLight": "#EFF1F2", "fioriDark": "#242E38", "rds": "Grayscale/50 / Grayscale/800",         "rdsLight": "#F5F5FA", "rdsDark": "#262640", "confidence": "high" }
+      ]
+    },
+    {
+      "category": "Link",
+      "items": [
+        { "fiori": "Link/sapLinkColor",         "fioriLight": "#0064D9", "fioriDark": "#008FFF", "rds": "Fonts & Icons/Links & Text",  "rdsLight": "#3333FF", "rdsDark": "#B2B2FF", "confidence": "high",   "note": "RDS uses Blue/400 for links (lighter than CTA Cobalt). Use Brand/Blue/600 (#0000CC) if you want links to match the CTA hue exactly." },
+        { "fiori": "Link/sapLink_Hover_Color",  "fioriLight": "#0064D9", "fioriDark": "#008FFF", "rds": "Fonts & Icons/Links & Text",  "rdsLight": "#3333FF", "rdsDark": "#B2B2FF", "confidence": "high" },
+        { "fiori": "Link/sapLink_Active_Color", "fioriLight": "#0064D9", "fioriDark": "#008FFF", "rds": "Fonts & Icons/Links & Text",  "rdsLight": "#3333FF", "rdsDark": "#B2B2FF", "confidence": "high" },
+        { "fiori": "Link/sapLink_Visited_Color","fioriLight": "#0064D9", "fioriDark": "#008FFF", "rds": "Fonts & Icons/Links & Text",  "rdsLight": "#3333FF", "rdsDark": "#B2B2FF", "confidence": "high" },
+        { "fiori": "Link/sapLink_InvertedColor","fioriLight": "#A5CFFF", "fioriDark": "#BDE2FF", "rds": "Brand/Blue/200",              "rdsLight": "#B2B2FF", "rdsDark": "#B2B2FF", "confidence": "high" },
+        { "fiori": "Link/sapLink_SubtleColor",  "fioriLight": "#131E29", "fioriDark": "#EAECEE", "rds": "Fonts & Icons/Default",       "rdsLight": "#0E0E25", "rdsDark": "#E3E3F2", "confidence": "high" }
+      ]
+    },
+    {
+      "category": "Button - Emphasized (Primary CTA)",
+      "items": [
+        { "fiori": "Button/Emphasized/sapButton_Emphasized_Background",      "fioriLight": "#0070F2", "fioriDark": "#0070F2", "rds": "Primary/Base",        "rdsLight": "#0000CC", "rdsDark": "#0000CC", "confidence": "high" },
+        { "fiori": "Button/Emphasized/sapButton_Emphasized_BorderColor",     "fioriLight": "#0070F2", "fioriDark": "#0070F2", "rds": "Primary/Base",        "rdsLight": "#0000CC", "rdsDark": "#0000CC", "confidence": "high" },
+        { "fiori": "Button/Emphasized/sapButton_Emphasized_TextColor",       "fioriLight": "#FFFFFF", "fioriDark": "#FFFFFF", "rds": "White",                "rdsLight": "#FFFFFF", "rdsDark": "#FFFFFF", "confidence": "high" },
+        { "fiori": "Button/Emphasized/sapButton_Emphasized_Hover_Background","fioriLight": "#0064D9", "fioriDark": "#0064D9", "rds": "Primary/Hover",       "rdsLight": "#000066", "rdsDark": "#000066", "confidence": "high" },
+        { "fiori": "Button/Emphasized/sapButton_Emphasized_Active_TextColor","fioriLight": "#0064D9", "fioriDark": "#4DB1FF", "rds": "Primary/Base",        "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high" }
+      ]
+    },
+    {
+      "category": "Button - Negative (Destructive)",
+      "items": [
+        { "fiori": "Button/Negative/sapButton_Negative_Background",     "fioriLight": "#F53232", "fioriDark": "#FA6161", "rds": "Error/Default (Red/500)", "rdsLight": "#EE3333", "rdsDark": "#EE3333", "confidence": "high" },
+        { "fiori": "Button/Negative/sapButton_Negative_Hover_Background","fioriLight": "#E90B0B", "fioriDark": "#FB7A7A", "rds": "Red/600 / Red/300",      "rdsLight": "#BD0F0F", "rdsDark": "#F47171", "confidence": "high" },
+        { "fiori": "Button/Negative/sapButton_Negative_TextColor",     "fioriLight": "#FFFFFF", "fioriDark": "#1D232A", "rds": "White / Grayscale/900D",  "rdsLight": "#FFFFFF", "rdsDark": "#0E0E25", "confidence": "high" }
+      ]
+    },
+    {
+      "category": "Button - Critical (Warning)",
+      "items": [
+        { "fiori": "Button/Critical/sapButton_Critical_Background",     "fioriLight": "#E76500", "fioriDark": "#F7BF00", "rds": "Other/Orange/500 / Gold/600", "rdsLight": "#EE6611", "rdsDark": "#FFAA00", "confidence": "medium", "note": "If aligning to Reltio Gold brand, use Brand/Gold/700 (#CC7700) instead." },
+        { "fiori": "Button/Critical/sapButton_Critical_Hover_Background","fioriLight": "#DD6100", "fioriDark": "#FFCF2B", "rds": "Orange/600 / Gold/500",       "rdsLight": "#BE520E", "rdsDark": "#FFCC00", "confidence": "medium" },
+        { "fiori": "Button/Critical/sapButton_Critical_TextColor",     "fioriLight": "#FFFFFF", "fioriDark": "#1D232A", "rds": "White / Grayscale/900D",       "rdsLight": "#FFFFFF", "rdsDark": "#0E0E25", "confidence": "high" }
+      ]
+    },
+    {
+      "category": "Button - Attention",
+      "items": [
+        { "fiori": "Button/Attention/sapButton_Attention_Background", "fioriLight": "#FFF3B7", "fioriDark": "#382700", "rds": "Brand/Gold/200 / Gold/900",  "rdsLight": "#FFEB99", "rdsDark": "#3D1F00", "confidence": "high" },
+        { "fiori": "Button/Attention/sapButton_Attention_TextColor", "fioriLight": "#B44F00", "fioriDark": "#FFDF72", "rds": "Orange/700 / Gold/300",      "rdsLight": "#8F3D0A", "rdsDark": "#FFE066", "confidence": "medium" }
+      ]
+    },
+    {
+      "category": "Focus",
+      "items": [
+        { "fiori": "Focus/sapContent_FocusColor",        "fioriLight": "#0032A5", "fioriDark": "#9AD3FF", "rds": "Brand/Blue/800 / Blue/200", "rdsLight": "#000066", "rdsDark": "#B2B2FF", "confidence": "high",   "note": "Keyboard focus ring." },
+        { "fiori": "Focus/sapContent_ContrastFocusColor","fioriLight": "#FFFFFF", "fioriDark": "#000000", "rds": "White / Black",            "rdsLight": "#FFFFFF", "rdsDark": "#000000", "confidence": "high" }
+      ]
+    },
+    {
+      "category": "Shadow",
+      "items": [
+        { "fiori": "Shadow/sapContent_ShadowColor",         "fioriLight": "#223548", "fioriDark": "#000000", "rds": "Grayscale/700 / Black", "rdsLight": "#303050", "rdsDark": "#000000", "confidence": "high",   "note": "Used at low alpha for surface elevation." },
+        { "fiori": "Shadow/sapContent_ContrastShadowColor", "fioriLight": "#FFFFFF", "fioriDark": "#FFFFFF", "rds": "White",                "rdsLight": "#FFFFFF", "rdsDark": "#FFFFFF", "confidence": "high" }
+      ]
+    },
+    {
+      "category": "Foreground",
+      "items": [
+        { "fiori": "Foreground/sapContent_ForegroundBorderColor", "fioriLight": "#758CA4", "fioriDark": "#A9B4BE", "rds": "Fonts & Icons/Placeholder", "rdsLight": "#8D8DC8", "rdsDark": "#BABADE", "confidence": "medium" },
+        { "fiori": "Foreground/sapContent_ForegroundColor",       "fioriLight": "#EFEFEF", "fioriDark": "#101418", "rds": "Grayscale/50 / Grayscale/900D", "rdsLight": "#F5F5FA", "rdsDark": "#0E0E25", "confidence": "high" }
+      ]
+    },
+    {
+      "category": "Shell (Top bar)",
+      "items": [
+        { "fiori": "Shell/sapShellColor",               "fioriLight": "#FFFFFF", "fioriDark": "#1D232A", "rds": "Background/Surface 1",        "rdsLight": "#FFFFFF", "rdsDark": "#0E0E25", "confidence": "high" },
+        { "fiori": "Shell/sapShell_BorderColor",        "fioriLight": "#D9D9D9", "fioriDark": "#2E3742", "rds": "Outline-Border/Surface Border 2", "rdsLight": "#E3E3F2", "rdsDark": "#56568F", "confidence": "high" },
+        { "fiori": "Shell/sapShell_TextColor",          "fioriLight": "#131E29", "fioriDark": "#F5F6F7", "rds": "Fonts & Icons/Default",       "rdsLight": "#0E0E25", "rdsDark": "#E3E3F2", "confidence": "high" },
+        { "fiori": "Shell/sapShell_SubBrand_TextColor", "fioriLight": "#003E87", "fioriDark": "#4DB1FF", "rds": "Brand/Blue/800 / Blue/300",   "rdsLight": "#000066", "rdsDark": "#6161FF", "confidence": "high",   "note": "Sub-brand text - perfectly maps to Reltio Blue 800." },
+        { "fiori": "Shell/sapShell_InteractiveBackground","fioriLight": "#EFF1F2", "fioriDark": "#12171C", "rds": "Grayscale/50 / Grayscale/900D","rdsLight": "#F5F5FA", "rdsDark": "#0E0E25", "confidence": "high" },
+        { "fiori": "Shell/sapShell_Active_TextColor",   "fioriLight": "#0070F2", "fioriDark": "#4DB1FF", "rds": "Primary/Base",                "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high" },
+        { "fiori": "Shell/sapShell_Selected_TextColor", "fioriLight": "#0070F2", "fioriDark": "#4DB1FF", "rds": "Primary/Base",                "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high" },
+        { "fiori": "Shell/sapShell_Background",         "fioriLight": "#EFF1F2", "fioriDark": "#12171C", "rds": "Grayscale/50 / Grayscale/900D","rdsLight": "#F5F5FA", "rdsDark": "#0E0E25", "confidence": "high" },
+        { "fiori": "Shell/sapShell_NegativeColor",      "fioriLight": "#AA0808", "fioriDark": "#FA6161", "rds": "Brand/Red/600",               "rdsLight": "#BD0F0F", "rdsDark": "#EE3333", "confidence": "high" },
+        { "fiori": "Shell/sapShell_CriticalColor",      "fioriLight": "#B44F00", "fioriDark": "#FFDF72", "rds": "Other/Orange/700 / Gold/300","rdsLight": "#8F3D0A", "rdsDark": "#FFE066", "confidence": "medium" },
+        { "fiori": "Shell/sapShell_PositiveColor",      "fioriLight": "#256F3A", "fioriDark": "#97DD40", "rds": "Green-Emerald/700",           "rdsLight": "#2F6A52", "rdsDark": "#4EB189", "confidence": "high" },
+        { "fiori": "Shell/sapShell_InformativeColor",   "fioriLight": "#0064D9", "fioriDark": "#4DB1FF", "rds": "Primary/Base",                "rdsLight": "#0000CC", "rdsDark": "#6161FF", "confidence": "high" },
+        { "fiori": "Shell/sapShell_NeutralColor",       "fioriLight": "#131E29", "fioriDark": "#F5F6F7", "rds": "Fonts & Icons/Default",       "rdsLight": "#0E0E25", "rdsDark": "#E3E3F2", "confidence": "high" }
+      ]
+    },
+    {
+      "category": "Accent (Decorative / Charts)",
+      "items": [
+        { "fiori": "Accent/sapAccentColor1",  "fioriLight": "#D27700", "fioriDark": "#FFDF72", "rds": "Brand/Gold/700 / Gold/300",     "rdsLight": "#CC7700", "rdsDark": "#FFE066", "confidence": "high" },
+        { "fiori": "Accent/sapAccentColor2",  "fioriLight": "#AA0808", "fioriDark": "#FF8CB2", "rds": "Brand/Red/600 / Pink/300",      "rdsLight": "#BD0F0F", "rdsDark": "#FF66B9", "confidence": "medium" },
+        { "fiori": "Accent/sapAccentColor3",  "fioriLight": "#BA066C", "fioriDark": "#FECBDA", "rds": "Other/Pink/600 / Pink/100",     "rdsLight": "#BD0F6E", "rdsDark": "#FFCCE8", "confidence": "high" },
+        { "fiori": "Accent/sapAccentColor4",  "fioriLight": "#A100C2", "fioriDark": "#FFAFED", "rds": "Other/Purple/600 / Pink/200",   "rdsLight": "#6611CC", "rdsDark": "#FF99D1", "confidence": "medium" },
+        { "fiori": "Accent/sapAccentColor5",  "fioriLight": "#5D36FF", "fioriDark": "#D3B6FF", "rds": "Other/Purple/500 / Purple/200", "rdsLight": "#7614EB", "rdsDark": "#C8A1F7", "confidence": "medium" },
+        { "fiori": "Accent/sapAccentColor6",  "fioriLight": "#0057D2", "fioriDark": "#A6E0FF", "rds": "Brand/Blue/700 / Blue/200",     "rdsLight": "#000099", "rdsDark": "#B2B2FF", "confidence": "high" },
+        { "fiori": "Accent/sapAccentColor7",  "fioriLight": "#046C7A", "fioriDark": "#64EDD2", "rds": "Brand/Aqua/700 / Aqua/300",     "rdsLight": "#009999", "rdsDark": "#66FFFF", "confidence": "high" },
+        { "fiori": "Accent/sapAccentColor8",  "fioriLight": "#256F3A", "fioriDark": "#BDE986", "rds": "Green-Emerald/700 / Lime/200",  "rdsLight": "#2F6A52", "rdsDark": "#E0FF99", "confidence": "high" },
+        { "fiori": "Accent/sapAccentColor9",  "fioriLight": "#6C32A9", "fioriDark": "#B995E0", "rds": "Other/Purple/700 / Purple/300", "rdsLight": "#460891", "rdsDark": "#AD72F3", "confidence": "high" },
+        { "fiori": "Accent/sapAccentColor10", "fioriLight": "#5B738B", "fioriDark": "#D5DADD", "rds": "Grayscale/500 / Grayscale/200", "rdsLight": "#56568F", "rdsDark": "#BABADE", "confidence": "high" }
+      ]
+    }
+  ]
+}
