@@ -5,6 +5,11 @@ after the acquisition. The deliverable is a **hot-swap map** that re-aliases Fio
 "Horizon" CSS/Less variables to Reltio Design System (RDS) 3.1 colors so existing Fiori
 components inherit Reltio's brand without rewriting components.
 
+> **Just want it running locally?** Follow [`SETUP.md`](./SETUP.md) — it's a
+> single self-contained runbook that you (or Cursor / any AI agent) can execute
+> top-to-bottom to clone, install, and start the dev server on
+> <http://localhost:3030/>.
+
 ## Source files
 
 - **RDS 3.1 (LTS)**: [`Reltio Design System 3.1 LTS`](https://www.figma.com/design/tu2YE7Y6bmgkmcdIqCJpLk/Reltio-Design-System-3.1--LTS-?node-id=11396-44160) — 318 primitive shades + 128 semantic tokens (Light/Dark).
