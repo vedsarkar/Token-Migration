@@ -1,0 +1,42 @@
+{
+  "batches": [
+    {
+      "batch": 1,
+      "entries": 150,
+      "bytes": 9474,
+      "file": "app/scripts/figma-batches-2026-05-22/batch-01.js"
+    },
+    {
+      "batch": 2,
+      "entries": 150,
+      "bytes": 8979,
+      "file": "app/scripts/figma-batches-2026-05-22/batch-02.js"
+    },
+    {
+      "batch": 3,
+      "entries": 150,
+      "bytes": 10193,
+      "file": "app/scripts/figma-batches-2026-05-22/batch-03.js"
+    },
+    {
+      "batch": 4,
+      "entries": 150,
+      "bytes": 10212,
+      "file": "app/scripts/figma-batches-2026-05-22/batch-04.js"
+    },
+    {
+      "batch": 5,
+      "entries": 150,
+      "bytes": 10503,
+      "file": "app/scripts/figma-batches-2026-05-22/batch-05.js"
+    },
+    {
+      "batch": 6,
+      "entries": 149,
+      "bytes": 9650,
+      "file": "app/scripts/figma-batches-2026-05-22/batch-06.js"
+    }
+  ],
+  "totalEntries": 899,
+  "batchSize": 150
+}

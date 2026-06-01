@@ -38,6 +38,8 @@ import {
   computeConfidence,
   deltaE76,
   getChoice,
+  hexAlpha,
+  isTranslucentHex,
   modeLabel,
   modeScheme,
   rdsColorsByRamp,
@@ -90,6 +92,11 @@ function Chip({ hex, size = 16 }: { hex: string; size?: number }) {
 }
 
 function HexLabel({ hex }: { hex: string }) {
+  // Translucent colors (#RRGGBBAA) get an "· N%" alpha suffix in a muted tone
+  // so the value reads as "color + opacity" instead of just an opaque 8-char
+  // hex that designers might mistake for an extra-saturated color.
+  const translucent = isTranslucentHex(hex);
+  const alphaPct = translucent ? `${Math.round(hexAlpha(hex) * 100)}%` : '';
   return (
     <Text
       size="small"
@@ -98,6 +105,9 @@ function HexLabel({ hex }: { hex: string }) {
       style={{ fontFamily: 'var(--font-mono)' }}
     >
       {hex}
+      {translucent ? (
+        <span style={{ opacity: 0.7, marginLeft: 4 }}>· {alphaPct}</span>
+      ) : null}
     </Text>
   );
 }
@@ -1120,18 +1130,33 @@ export default function App() {
   }, [exportText]);
 
   const download = useCallback(() => {
-    const ext = exportFormat === 'json' ? 'json' : 'css';
+    // Figma-script and JSON each get their own extension so users can tell the
+    // download apart from a CSS theme sheet at a glance.
+    const ext =
+      exportFormat === 'json'
+        ? 'json'
+        : exportFormat === 'figma-script'
+          ? 'js'
+          : 'css';
     const stem =
-      exportFormat === 'overrides' ? 'reltio-fiori-overrides' : 'reltio-fiori-tokens';
+      exportFormat === 'overrides'
+        ? 'reltio-fiori-overrides'
+        : exportFormat === 'figma-script'
+          ? 'reltio-fiori-figma-apply'
+          : 'reltio-fiori-tokens';
     const modeSuffix: Record<Mode, string> = {
       morning: 'morning',
       evening: 'evening',
       hcWhite: 'hc-white',
       hcBlack: 'hc-black',
     };
-    const blob = new Blob([exportText], {
-      type: ext === 'json' ? 'application/json' : 'text/css',
-    });
+    const mime =
+      ext === 'json'
+        ? 'application/json'
+        : ext === 'js'
+          ? 'application/javascript'
+          : 'text/css';
+    const blob = new Blob([exportText], { type: mime });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
@@ -1410,6 +1435,15 @@ export default function App() {
                     >
                       JSON
                     </Pill>
+                    <Pill
+                      size="sm"
+                      tone="info"
+                      active={exportFormat === 'figma-script'}
+                      onClick={() => setExportFormat('figma-script')}
+                      title="Ready-to-paste JS for use_figma — preserves alpha/opacity end-to-end"
+                    >
+                      Figma script
+                    </Pill>
                   </Row>
                 }
               >
@@ -1436,7 +1470,12 @@ export default function App() {
                         {copyState === 'copied' ? 'Copied!' : copyState === 'error' ? 'Copy failed' : 'Copy'}
                       </Button>
                       <Button onClick={download} variant="secondary" title="Download as a single text file">
-                        Download {exportFormat === 'json' ? 'JSON' : 'CSS'}
+                        Download{' '}
+                        {exportFormat === 'json'
+                          ? 'JSON'
+                          : exportFormat === 'figma-script'
+                            ? 'JS'
+                            : 'CSS'}
                       </Button>
                       <Button
                         onClick={downloadXlsx}

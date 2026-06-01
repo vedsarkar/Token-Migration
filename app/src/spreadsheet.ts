@@ -18,8 +18,10 @@ import {
   allMappings,
   blendHex,
   computeConfidence,
+  formatHex,
   getChoice,
   hexLuminance,
+  parseHex,
   readableTextOn,
   resolveRds,
   resolvedHex,
@@ -30,11 +32,22 @@ import type { Choices, Conf, Mapping, RdsChoices } from './data';
  * Style helpers
  * ────────────────────────────────────────────────────────────────────────── */
 
-/** Convert `#RRGGBB` to exceljs `argb` form `FFRRGGBB`. */
+/**
+ * Convert `#RRGGBB` or `#RRGGBBAA` to exceljs `argb` form `AARRGGBB`.
+ * Alpha is preserved — Excel renders the resulting cell fill at the
+ * corresponding opacity, which keeps shadow/scrim swatches readable on the
+ * sheet instead of appearing as solid blocks.
+ */
 function argb(hex: string): string {
-  const v = (hex || '').replace('#', '').toUpperCase();
-  if (v.length < 6) return 'FF000000';
-  return 'FF' + v.slice(0, 6);
+  const { r, g, b, a } = parseHex(hex);
+  const h = (n: number) =>
+    Math.max(0, Math.min(255, Math.round(n))).toString(16).padStart(2, '0').toUpperCase();
+  return `${h(a * 255)}${h(r)}${h(g)}${h(b)}`;
+}
+
+/** Hex string for display in a cell — `#RRGGBB` opaque, `#RRGGBBAA` translucent. */
+function hexLabel(hex: string): string {
+  return formatHex(parseHex(hex));
 }
 
 const C = {
@@ -318,11 +331,11 @@ function fillModeSheet(
         blend !== rds.hex.toUpperCase();
 
       setCell(ws, r, 1, m.fiori, STYLE.token);
-      setCell(ws, r, 2, fioriHex.toUpperCase(), swatchStyle(fioriHex));
+      setCell(ws, r, 2, hexLabel(fioriHex), swatchStyle(fioriHex));
       setCell(ws, r, 3, rds.label, STYLE.text);
-      setCell(ws, r, 4, rds.hex.toUpperCase(), swatchStyle(rds.hex));
+      setCell(ws, r, 4, hexLabel(rds.hex), swatchStyle(rds.hex));
       if (enhancedShouldShow) {
-        const label = blendApplied ? `✓ ${blend}` : blend;
+        const label = blendApplied ? `✓ ${hexLabel(blend)}` : hexLabel(blend);
         setCell(ws, r, 5, label, swatchStyle(blend));
       } else {
         setCell(ws, r, 5, '—', STYLE.mutedCenter);
@@ -409,8 +422,8 @@ function fillSummarySheet(
         const fioriHex = resolvedHex(m, mode.id, 'fiori');
         const rdsHex = resolveRds(m, mode.id, rdsChoices).hex;
         const resolvedHexValue = choice === 'fiori' ? fioriHex : rdsHex;
-        setCell(ws, r, col++, fioriHex.toUpperCase(), swatchStyle(fioriHex));
-        setCell(ws, r, col++, resolvedHexValue.toUpperCase(), swatchStyle(resolvedHexValue));
+        setCell(ws, r, col++, hexLabel(fioriHex), swatchStyle(fioriHex));
+        setCell(ws, r, col++, hexLabel(resolvedHexValue), swatchStyle(resolvedHexValue));
       }
       setCell(ws, r, col, m.note ?? '', STYLE.noteItalic);
       ws.getRow(r).height = 20;
@@ -487,7 +500,7 @@ function fillCustomOverridesSheet(
     setCell(ws, r, 2, row.token, STYLE.token);
     setCell(ws, r, 3, row.kind, STYLE.text);
     setCell(ws, r, 4, row.label, STYLE.text);
-    setCell(ws, r, 5, row.hex.toUpperCase(), swatchStyle(row.hex));
+    setCell(ws, r, 5, hexLabel(row.hex), swatchStyle(row.hex));
     ws.getRow(r).height = 20;
     r++;
   }
