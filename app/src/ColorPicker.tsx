@@ -28,6 +28,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
 import { Row, Stack, Text } from './ui';
+import { formatHex, parseHex } from './data';
 
 type HSVA = { h: number; s: number; v: number; a: number };
 type Format = 'hex' | 'rgb' | 'hsl';
@@ -43,40 +44,14 @@ const EYEDROP_BTN = 36;
 const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n));
 const clamp01 = (n: number) => clamp(n, 0, 1);
 
-function parseHex(hex: string): { r: number; g: number; b: number; a: number } {
-  const v = (hex || '').replace('#', '').toUpperCase();
-  if (v.length === 3) {
-    return {
-      r: parseInt(v[0] + v[0], 16),
-      g: parseInt(v[1] + v[1], 16),
-      b: parseInt(v[2] + v[2], 16),
-      a: 1,
-    };
-  }
-  if (v.length === 6) {
-    return {
-      r: parseInt(v.slice(0, 2), 16),
-      g: parseInt(v.slice(2, 4), 16),
-      b: parseInt(v.slice(4, 6), 16),
-      a: 1,
-    };
-  }
-  if (v.length === 8) {
-    return {
-      r: parseInt(v.slice(0, 2), 16),
-      g: parseInt(v.slice(2, 4), 16),
-      b: parseInt(v.slice(4, 6), 16),
-      a: parseInt(v.slice(6, 8), 16) / 255,
-    };
-  }
-  return { r: 0, g: 0, b: 0, a: 1 };
-}
-
+/**
+ * Local wrapper around the canonical `formatHex` so existing callsites that
+ * pass loose `(r, g, b, a)` channel numbers don't have to change. Always
+ * emits 6-char hex when opaque, 8-char when alpha < 1 — see the RGBA
+ * convention block in `data.ts`.
+ */
 function rgbaToHex(r: number, g: number, b: number, a: number): string {
-  const h = (n: number) =>
-    clamp(Math.round(n), 0, 255).toString(16).padStart(2, '0').toUpperCase();
-  if (a >= 0.999) return `#${h(r)}${h(g)}${h(b)}`;
-  return `#${h(r)}${h(g)}${h(b)}${h(a * 255)}`;
+  return formatHex({ r, g, b, a });
 }
 
 function rgbToHsv(r: number, g: number, b: number): { h: number; s: number; v: number } {

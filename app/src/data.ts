@@ -344,17 +344,21 @@ export function findClosestRdsColor(targetHex: string): {
  * Blend two hex colors in linear-light RGB (gamma correct) and return the
  * result as a hex. `t` is the weight of `hex2` (0 = pure hex1, 1 = pure hex2,
  * 0.5 = perceptual midpoint).
+ *
+ * Alpha is blended linearly (the conventional approach for paint alpha — a
+ * 50/50 blend of opaque + 50%-transparent yields 75% alpha). When both inputs
+ * are opaque the result is opaque too and the output is `#RRGGBB`.
  */
 export function blendHex(hex1: string, hex2: string, t = 0.5): string {
-  const c1 = hexToRgb(hex1);
-  const c2 = hexToRgb(hex2);
+  const c1 = parseHex(hex1);
+  const c2 = parseHex(hex2);
   const lerpLin = (a: number, b: number) =>
     srgbToLinear(a) * (1 - t) + srgbToLinear(b) * t;
   const r = linearToSrgb(lerpLin(c1.r, c2.r));
   const g = linearToSrgb(lerpLin(c1.g, c2.g));
   const b = linearToSrgb(lerpLin(c1.b, c2.b));
-  const toHex = (n: number) => n.toString(16).padStart(2, '0').toUpperCase();
-  return '#' + toHex(r) + toHex(g) + toHex(b);
+  const a = c1.a * (1 - t) + c2.a * t;
+  return formatHex({ r, g, b, a });
 }
 
 /** Linear-light (0–1) back to sRGB (0–255). */
@@ -408,10 +412,14 @@ export function resolveRds(
     const c = lookupRdsColor(id);
     if (c) return { id, hex: c.hex, label: c.label, isExplicit: true };
     if (id.startsWith('#')) {
+      // Normalize to our canonical hex form so 3-char input becomes 6-char and
+      // 8-char hex with alpha=1 is collapsed to 6-char. This keeps downstream
+      // CSS/spreadsheet output consistent.
+      const hex = formatHex(parseHex(id));
       return {
         id,
-        hex: id.toUpperCase(),
-        label: `Custom · ${id.toUpperCase()}`,
+        hex,
+        label: `Custom · ${hex}`,
         isExplicit: true,
       };
     }
@@ -420,17 +428,99 @@ export function resolveRds(
   return { id: '', hex, label: m.rds, isExplicit: false };
 }
 
-/* ---------- Helpers ---------- */
+/* ---------- Hex helpers (RGBA-aware) ----------
+ *
+ * RGBA convention used across the app:
+ *
+ *   - Storage / wire format:  `#RRGGBB`  (when alpha == 1)
+ *                             `#RRGGBBAA` (when alpha < 1)
+ *
+ *   - Color science (ΔE, luminance) ignores alpha — colors are compared by RGB
+ *     only. `parseHex` returns alpha so consumers that *need* it (CSS export,
+ *     Figma writes, the color picker) can honor opacity.
+ *
+ *   - 3-char `#RGB` is accepted for input (legacy) and expanded internally,
+ *     but never produced.
+ *
+ *   - The Figma Plugin API expects `{ r, g, b, a }` in 0–1 range when calling
+ *     `setValueForMode` — see `figmaColorFromHex()` below. Passing only
+ *     `{ r, g, b }` causes Figma to assume `a = 1`, which is exactly the bug
+ *     that turned translucent shadows into solid blocks on the prior import.
+ */
+
+export type Rgba = { r: number; g: number; b: number; a: number };
+
+/** Parse `#RGB`, `#RRGGBB`, or `#RRGGBBAA` into `{ r, g, b, a }` (0–255 / 0–1). */
+export function parseHex(hex: string): Rgba {
+  const v = (hex || '').replace('#', '').toUpperCase();
+  if (v.length === 3) {
+    return {
+      r: parseInt(v[0] + v[0], 16),
+      g: parseInt(v[1] + v[1], 16),
+      b: parseInt(v[2] + v[2], 16),
+      a: 1,
+    };
+  }
+  if (v.length === 6) {
+    return {
+      r: parseInt(v.slice(0, 2), 16),
+      g: parseInt(v.slice(2, 4), 16),
+      b: parseInt(v.slice(4, 6), 16),
+      a: 1,
+    };
+  }
+  if (v.length === 8) {
+    return {
+      r: parseInt(v.slice(0, 2), 16),
+      g: parseInt(v.slice(2, 4), 16),
+      b: parseInt(v.slice(4, 6), 16),
+      a: parseInt(v.slice(6, 8), 16) / 255,
+    };
+  }
+  return { r: 0, g: 0, b: 0, a: 1 };
+}
+
+/** Format `{ r, g, b, a }` as `#RRGGBB` (if opaque) or `#RRGGBBAA` (if alpha < 1). */
+export function formatHex(rgba: Rgba): string {
+  const h = (n: number) =>
+    Math.max(0, Math.min(255, Math.round(n))).toString(16).padStart(2, '0').toUpperCase();
+  const base = `#${h(rgba.r)}${h(rgba.g)}${h(rgba.b)}`;
+  return rgba.a >= 0.999 ? base : `${base}${h(rgba.a * 255)}`;
+}
+
+/** Drop the alpha channel and return a plain `#RRGGBB`. Useful for color science. */
+export function stripAlpha(hex: string): string {
+  const { r, g, b } = parseHex(hex);
+  return formatHex({ r, g, b, a: 1 });
+}
+
+/** Read the alpha channel from a hex string. Returns 1 for opaque / 6-char hexes. */
+export function hexAlpha(hex: string): number {
+  return parseHex(hex).a;
+}
+
+/** True when the hex carries non-default alpha (i.e. `#RRGGBBAA` with AA < FF). */
+export function isTranslucentHex(hex: string): boolean {
+  return parseHex(hex).a < 0.999;
+}
+
+/**
+ * Convert a hex to the `{ r, g, b, a }` shape expected by the Figma Plugin API
+ * (`Variable.setValueForMode`). All channels normalized to 0–1.
+ *
+ * Always pass the result through this helper — never construct
+ * `{ r, g, b }` without `a` when writing to Figma, or alpha becomes 1.
+ */
+export function figmaColorFromHex(hex: string): { r: number; g: number; b: number; a: number } {
+  const { r, g, b, a } = parseHex(hex);
+  return { r: r / 255, g: g / 255, b: b / 255, a };
+}
 
 export function hexLuminance(hex: string): number {
-  const v = hex.replace('#', '');
-  if (v.length < 6) return 0.5;
-  const r = parseInt(v.slice(0, 2), 16) / 255;
-  const g = parseInt(v.slice(2, 4), 16) / 255;
-  const b = parseInt(v.slice(4, 6), 16) / 255;
+  const { r, g, b } = parseHex(hex);
   const lin = (c: number) =>
     c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
-  return 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
+  return 0.2126 * lin(r / 255) + 0.7152 * lin(g / 255) + 0.0722 * lin(b / 255);
 }
 
 export function readableTextOn(hex: string): string {
@@ -439,14 +529,14 @@ export function readableTextOn(hex: string): string {
 
 /* ---------- Color science: ΔE in CIELAB ---------- */
 
+/**
+ * Returns the RGB channels (0–255) from a hex. Alpha is intentionally dropped
+ * here — color-difference math (ΔE / Lab) operates on RGB only. Use `parseHex`
+ * when you need alpha.
+ */
 function hexToRgb(hex: string): { r: number; g: number; b: number } {
-  const v = hex.replace('#', '');
-  if (v.length < 6) return { r: 0, g: 0, b: 0 };
-  return {
-    r: parseInt(v.slice(0, 2), 16),
-    g: parseInt(v.slice(2, 4), 16),
-    b: parseInt(v.slice(4, 6), 16),
-  };
+  const { r, g, b } = parseHex(hex);
+  return { r, g, b };
 }
 
 /** sRGB channel → linear-light value. */
@@ -734,7 +824,129 @@ export function countByConf(conf: Conf): number {
   );
 }
 
-export type ExportFormat = 'css' | 'overrides' | 'json';
+export type ExportFormat = 'css' | 'overrides' | 'json' | 'figma-script';
+
+/**
+ * Map a UI Mode id to the corresponding Figma variable-collection mode id in
+ * the SAP Fiori for Web UI Kit (file `XywZ3yPdXzBL4MnKbzP7uI`). Kept here so
+ * the Figma-script export self-targets the right mode without the caller
+ * having to memorize raw ids.
+ */
+const FIGMA_MODE_IDS: Record<Mode, string> = {
+  morning: '153848:1',
+  evening: '172837:0',
+  hcWhite: '172837:1',
+  hcBlack: '172837:2',
+};
+
+/**
+ * Generate a ready-to-paste JavaScript body for `use_figma` that applies the
+ * current overrides to a Figma file. The script is self-contained:
+ *
+ *   1. Loads all COLOR variables in the Horizon collection.
+ *   2. Builds a leaf-name → variable index.
+ *   3. Iterates the override payload (`{ leaf: "#RRGGBBAA" }`) and calls
+ *      `setValueForMode(modeId, { r, g, b, a })` — note: the `a` channel is
+ *      **always** included, so translucent tokens (shadows, scrims, etc.)
+ *      keep their opacity instead of being silently flattened to 100%.
+ *
+ * This codifies the lesson from the shadow-opacity bug: never pass only
+ * `{ r, g, b }` to `setValueForMode` — the alpha falls off and translucent
+ * shadows render as solid blocks.
+ */
+function buildFigmaScript(
+  mode: Mode,
+  choices: Choices,
+  rdsChoices: RdsChoices,
+): string {
+  const all = allMappings();
+  const overrides: Record<string, string> = {};
+  for (const m of all) {
+    const src = getChoice(choices, m.fiori);
+    overrides[leafName(m.fiori)] = resolvedHex(m, mode, src, rdsChoices);
+  }
+
+  const collectionId = 'VariableCollectionId:153848:18325';
+  const modeId = FIGMA_MODE_IDS[mode];
+
+  return [
+    `// Apply ${all.length} overrides to mode "${modeLabel(mode)}" (${modeId}).`,
+    '// Generated by the Reltio × Fiori Color Mapper — preserves alpha (RGBA).',
+    `const modeId = ${JSON.stringify(modeId)};`,
+    `const collectionId = ${JSON.stringify(collectionId)};`,
+    `const overrides = ${JSON.stringify(overrides, null, 2)};`,
+    '',
+    "function parseHex(hex) {",
+    "  const v = (hex || '').replace('#', '').toUpperCase();",
+    '  if (v.length === 3) {',
+    '    return {',
+    "      r: parseInt(v[0] + v[0], 16) / 255,",
+    "      g: parseInt(v[1] + v[1], 16) / 255,",
+    "      b: parseInt(v[2] + v[2], 16) / 255,",
+    '      a: 1,',
+    '    };',
+    '  }',
+    '  if (v.length === 6) {',
+    '    return {',
+    '      r: parseInt(v.slice(0, 2), 16) / 255,',
+    '      g: parseInt(v.slice(2, 4), 16) / 255,',
+    '      b: parseInt(v.slice(4, 6), 16) / 255,',
+    '      a: 1,',
+    '    };',
+    '  }',
+    '  if (v.length === 8) {',
+    '    return {',
+    '      r: parseInt(v.slice(0, 2), 16) / 255,',
+    '      g: parseInt(v.slice(2, 4), 16) / 255,',
+    '      b: parseInt(v.slice(4, 6), 16) / 255,',
+    '      a: parseInt(v.slice(6, 8), 16) / 255,',
+    '    };',
+    '  }',
+    '  return { r: 0, g: 0, b: 0, a: 1 };',
+    '}',
+    '',
+    "const allVars = await figma.variables.getLocalVariablesAsync('COLOR');",
+    'const byLeaf = new Map();',
+    'for (const v of allVars) {',
+    '  if (v.variableCollectionId !== collectionId) continue;',
+    "  const leaf = v.name.includes('/') ? v.name.split('/').pop() : v.name;",
+    '  byLeaf.set(leaf, v);',
+    '}',
+    '',
+    'let updated = 0;',
+    'const skipped = [];',
+    'for (const [tokenName, hexValue] of Object.entries(overrides)) {',
+    '  const variable = byLeaf.get(tokenName);',
+    '  if (!variable) { skipped.push(tokenName); continue; }',
+    '  try {',
+    '    const rgba = parseHex(hexValue);',
+    '    // CRITICAL: always pass `a` — otherwise Figma assumes 1 and strips opacity.',
+    '    variable.setValueForMode(modeId, rgba);',
+    '    updated++;',
+    '  } catch (e) {',
+    "    skipped.push(`${tokenName}:err:${e.message}`);",
+    '  }',
+    '}',
+    '',
+    'return { updated, skipped: skipped.length, skippedSample: skipped.slice(0, 5) };',
+  ].join('\n');
+}
+
+/**
+ * Render a hex value for CSS output. Translucent colors come out as
+ * `rgba(r, g, b, a)` — that's unambiguous, widely supported, and (most
+ * importantly) easy for the Figma-write pipeline to parse without losing the
+ * alpha channel. Opaque colors stay as `#RRGGBB`.
+ *
+ * Examples:
+ *   `#0000CC`   → `#0000CC`
+ *   `#22354833` → `rgba(34, 53, 72, 0.20)`
+ */
+function cssColor(hex: string): string {
+  const { r, g, b, a } = parseHex(hex);
+  if (a >= 0.999) return formatHex({ r, g, b, a: 1 });
+  return `rgba(${r}, ${g}, ${b}, ${(Math.round(a * 100) / 100).toFixed(2)})`;
+}
 
 export function buildExport(
   format: ExportFormat,
@@ -749,7 +961,12 @@ export function buildExport(
   const header = [
     '/* Fiori → RDS 3.1 hot-swap · token names preserved from Fiori */',
     `/* Mode: ${label} · ${rdsSwapped} swapped to RDS, ${fioriKept} kept from Fiori */`,
+    '/* Colors with opacity are emitted as rgba() so downstream tooling preserves alpha. */',
   ];
+
+  if (format === 'figma-script') {
+    return buildFigmaScript(mode, choices, rdsChoices);
+  }
 
   if (format === 'css' || format === 'overrides') {
     const lines: string[] = [...header];
@@ -777,7 +994,11 @@ export function buildExport(
           note = `→ RDS ${r.label}`;
         }
       }
-      lines.push(`  --${name}: ${hex}; /* ${note} */`);
+      // Always include the raw hex (with alpha when present) alongside the
+      // rendered CSS value so consumers that prefer hex have it in the comment.
+      const value = cssColor(hex);
+      const hexSuffix = value === hex ? '' : ` · ${hex}`;
+      lines.push(`  --${name}: ${value}; /* ${note}${hexSuffix} */`);
     }
     lines.push('}');
     return lines.join('\n');
@@ -787,6 +1008,8 @@ export function buildExport(
     string,
     {
       value: string;
+      /** Alpha channel (0–1). Always present; defaults to 1 for opaque colors. */
+      alpha: number;
       source: 'fiori' | 'rds-3.1' | 'custom-blend';
       rdsReference?: string;
       rdsCustom?: boolean;
@@ -796,15 +1019,17 @@ export function buildExport(
     const src = getChoice(choices, m.fiori);
     const hex = resolvedHex(m, mode, src, rdsChoices);
     const name = leafName(m.fiori);
+    const alpha = Math.round(hexAlpha(hex) * 1000) / 1000;
     if (src === 'fiori') {
-      obj[name] = { value: hex, source: 'fiori' };
+      obj[name] = { value: hex, alpha, source: 'fiori' };
     } else {
       const r = resolveRds(m, mode, rdsChoices);
       if (r.id.startsWith('#')) {
-        obj[name] = { value: hex, source: 'custom-blend' };
+        obj[name] = { value: hex, alpha, source: 'custom-blend' };
       } else {
         obj[name] = {
           value: hex,
+          alpha,
           source: 'rds-3.1',
           rdsReference: r.label,
           ...(r.isExplicit ? { rdsCustom: true } : {}),
@@ -815,6 +1040,7 @@ export function buildExport(
   return [
     `// Mode: ${label}`,
     `// ${rdsSwapped} swapped to RDS, ${fioriKept} kept from Fiori`,
+    '// `value` is #RRGGBB or #RRGGBBAA. `alpha` is the channel as 0–1 for convenience.',
     JSON.stringify(obj, null, 2),
   ].join('\n');
 }

@@ -1,0 +1,903 @@
+/* Fiori → RDS 3.1 hot-swap · token names preserved from Fiori */
+/* Mode: Evening Horizon · 899 swapped to RDS, 0 kept from Fiori */
+:root {
+  --sapBrandColor: #0000CC; /* → RDS Brand/Blue/600 (Reltio Cobalt) */
+  --sapHighlightColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapBaseColor: #171A28; /* → Blended midpoint #171A28 */
+  --sapSelectedColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapActiveColor: #080919; /* → Blended midpoint #080919 */
+  --sapHoverColor: #24293B; /* → Blended midpoint #24293B */
+  --sapContent_Selected_Background: #171A28; /* → Blended midpoint #171A28 */
+  --sapContent_Selected_TextColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapContent_Selected_Hover_Background: #001D41; /* → Blended midpoint #001D41 */
+  --sapContent_Selected_ForegroundColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapContent_HelpColor: #52AE59; /* → Blended midpoint #52AE59 */
+  --sapContent_DragAndDropActiveColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapContent_SearchHighlightColor: #02858B; /* → Blended midpoint #02858B */
+  --sapTextColor: #ECEDF5; /* → Blended midpoint #ECEDF5 */
+  --sapTitleColor: #ECEDF5; /* → Blended midpoint #ECEDF5 */
+  --sapContent_ForegroundTextColor: #ECEDF5; /* → Blended midpoint #ECEDF5 */
+  --sapContent_LabelColor: #A2A9C5; /* → Blended midpoint #A2A9C5 */
+  --sapContent_MarkerTextColor: #65F6EA; /* → Blended midpoint #65F6EA */
+  --sapContent_ContrastTextColor: #171A28; /* → Blended midpoint #171A28 */
+  --sapContent_DisabledTextColor: #80849D; /* → Blended midpoint #80849D */
+  --sapContent_TextShadowColor: #000000; /* → RDS Auto · Pure · White ↔ Pure · Black */
+  --sapContent_TextShadowColor_2-4: #000000; /* → RDS Auto · Pure · White ↔ Pure · Black */
+  --sapContent_ContrastTextShadowColor: #FFFFFF; /* → RDS Auto · Pure · Black ↔ Pure · White */
+  --sapGroup_ContentBackground: #171A28; /* → Blended midpoint #171A28 */
+  --sapGroup_ContentBorderColor: #474A72; /* → Blended midpoint #474A72 */
+  --sapGroup_TitleBorderColor: #60708E; /* → Blended midpoint #60708E */
+  --sapGroup_TitleTextColor: #ECEDF5; /* → Blended midpoint #ECEDF5 */
+  --sapBlockLayer_Background: #000000; /* → RDS Black */
+  --sapGroup_TitleBackground: #172323; /* → Blended midpoint #172323 */
+  --sapBlockLayer_Opacity: #000000; /* → RDS Auto · Pure · Black */
+  --sapNegativeColor: #F44E4E; /* → Blended midpoint #F44E4E */
+  --sapErrorColor: #F44E4E; /* → Blended midpoint #F44E4E */
+  --sapErrorBorderColor: #F44E4E; /* → Blended midpoint #F44E4E */
+  --sapErrorBackground: #320202; /* → Blended midpoint #320202 */
+  --sapWarningColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapCriticalColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapWarningBorderColor: #E3A000; /* → Blended midpoint #E3A000 */
+  --sapWarningBackground: #3B2300; /* → Blended midpoint #3B2300 */
+  --sapPositiveColor: #79C96C; /* → Blended midpoint #79C96C */
+  --sapSuccessColor: #79C96C; /* → Blended midpoint #79C96C */
+  --sapSuccessBorderColor: #5FAF66; /* → Blended midpoint #5FAF66 */
+  --sapSuccessBackground: #112C1B; /* → Blended midpoint #112C1B */
+  --sapInformativeColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapInformationColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapInformationBorderColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapInformationBackground: #000B40; /* → Blended midpoint #000B40 */
+  --sapNeutralColor: #9CA2C3; /* → Blended midpoint #9CA2C3 */
+  --sapNeutralBackground: #252A3C; /* → Blended midpoint #252A3C */
+  --sapNeutralBorderColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapMessage_Button_Hover_Background: #24293B; /* → Blended midpoint #24293B */
+  --sapMessage_ErrorBorderColor: #900606; /* → Blended midpoint #900606 */
+  --sapMessage_WarningBorderColor: #925600; /* → Blended midpoint #925600 */
+  --sapMessage_SuccessBorderColor: #2A6B46; /* → Blended midpoint #2A6B46 */
+  --sapMessage_InformationBorderColor: #0023AD; /* → Blended midpoint #0023AD */
+  --sapNegativeTextColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapCriticalTextColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapPositiveTextColor: #93D52C; /* → Blended midpoint #93D52C */
+  --sapInformativeTextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapNeutralTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 800 ↔ Grayscale · 50 */
+  --sapNegativeElementColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapCriticalElementColor: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapPositiveElementColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapInformativeElementColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapNeutralElementColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapLinkColor: #82A2FF; /* → Blended midpoint #82A2FF */
+  --sapLink_Hover_Color: #82A2FF; /* → Blended midpoint #82A2FF */
+  --sapLink_Active_Color: #82A2FF; /* → Blended midpoint #82A2FF */
+  --sapLink_Visited_Color: #82A2FF; /* → Blended midpoint #82A2FF */
+  --sapLink_InvertedColor: #B8CCFF; /* → Blended midpoint #B8CCFF */
+  --sapLink_SubtleColor: #E7E8F0; /* → Blended midpoint #E7E8F0 */
+  --sapButton_Emphasized_Background: #0000CC; /* → RDS Primary/Base */
+  --sapButton_Emphasized_BorderColor: #0000CC; /* → RDS Primary/Base */
+  --sapButton_Emphasized_TextColor: #FFFFFF; /* → RDS White */
+  --sapButton_Emphasized_Hover_Background: #0047AC; /* → Blended midpoint #0047AC */
+  --sapButton_Emphasized_Active_TextColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapButton_Negative_Background: #F44E4E; /* → Blended midpoint #F44E4E */
+  --sapButton_Negative_Hover_Background: #F47171; /* → RDS Red/600 / Red/300 */
+  --sapButton_Critical_Background: #FBB500; /* → Blended midpoint #FBB500 */
+  --sapButton_Critical_Hover_Background: #FFCE1D; /* → Blended midpoint #FFCE1D */
+  --sapButton_Attention_Background: #3B2300; /* → Blended midpoint #3B2300 */
+  --sapButton_Attention_TextColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapContent_FocusColor: #A7C3FF; /* → Blended midpoint #A7C3FF */
+  --sapContent_ContrastFocusColor: #000000; /* → RDS White ↔ Black */
+  --sapContent_ShadowColor: #000000; /* → RDS Grayscale/700 ↔ Black */
+  --sapContent_ContrastShadowColor: #FFFFFF; /* → RDS White */
+  --sapContent_ForegroundBorderColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapContent_ForegroundColor: #0F111F; /* → Blended midpoint #0F111F */
+  --sapShellColor: #171A28; /* → Blended midpoint #171A28 */
+  --sapShell_BorderColor: #454871; /* → Blended midpoint #454871 */
+  --sapShell_TextColor: #ECEDF5; /* → Blended midpoint #ECEDF5 */
+  --sapShell_SubBrand_TextColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapShell_InteractiveBackground: #101321; /* → Blended midpoint #101321 */
+  --sapShell_Active_TextColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapShell_Selected_TextColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapShell_Background: #101321; /* → Blended midpoint #101321 */
+  --sapShell_NegativeColor: #F44E4E; /* → Blended midpoint #F44E4E */
+  --sapShell_CriticalColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapShell_PositiveColor: #79C96C; /* → Blended midpoint #79C96C */
+  --sapShell_InformativeColor: #5890FF; /* → Blended midpoint #5890FF */
+  --sapShell_NeutralColor: #ECEDF5; /* → Blended midpoint #ECEDF5 */
+  --sapShell_InteractiveTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapShell_InteractiveBorderColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapShell_Hover_Background: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Active_Background: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Selected_Background: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Selected_Hover_Background: #172323; /* → Blended midpoint #172323 */
+  --sapShell_GroupTitleTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapShell_Navigation_Background: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Navigation_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapShell_Navigation_Hover_Background: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Navigation_Active_Background: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Navigation_Active_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapShell_Navigation_SelectedColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapShell_Navigation_Selected_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapShell_Category_1_Background: #AFCFFF; /* → Blended midpoint #AFCFFF */
+  --sapShell_Category_1_BorderColor: #AFCFFF; /* → Blended midpoint #AFCFFF */
+  --sapShell_Category_1_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_2_Background: #FFBDD9; /* → Blended midpoint #FFBDD9 */
+  --sapShell_Category_2_BorderColor: #FFBDD9; /* → Blended midpoint #FFBDD9 */
+  --sapShell_Category_2_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_3_Background: #FFAF00; /* → Blended midpoint #FFAF00 */
+  --sapShell_Category_3_BorderColor: #FFAF00; /* → Blended midpoint #FFAF00 */
+  --sapShell_Category_3_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_4_Background: #BA90E9; /* → Blended midpoint #BA90E9 */
+  --sapShell_Category_4_BorderColor: #BA90E9; /* → Blended midpoint #BA90E9 */
+  --sapShell_Category_4_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_5_Background: #FAC1A6; /* → Blended midpoint #FAC1A6 */
+  --sapShell_Category_5_BorderColor: #FAC1A6; /* → Blended midpoint #FAC1A6 */
+  --sapShell_Category_5_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_6_Background: #1DD6C6; /* → Blended midpoint #1DD6C6 */
+  --sapShell_Category_6_BorderColor: #1DD6C6; /* → Blended midpoint #1DD6C6 */
+  --sapShell_Category_6_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_7_Background: #FF7AD7; /* → Blended midpoint #FF7AD7 */
+  --sapShell_Category_7_BorderColor: #FF7AD7; /* → Blended midpoint #FF7AD7 */
+  --sapShell_Category_7_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_8_Background: #93D52C; /* → Blended midpoint #93D52C */
+  --sapShell_Category_8_BorderColor: #93D52C; /* → Blended midpoint #93D52C */
+  --sapShell_Category_8_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_9_Background: #83A2FF; /* → Blended midpoint #83A2FF */
+  --sapShell_Category_9_BorderColor: #83A2FF; /* → Blended midpoint #83A2FF */
+  --sapShell_Category_9_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_10_Background: #A2A9C5; /* → Blended midpoint #A2A9C5 */
+  --sapShell_Category_10_BorderColor: #A2A9C5; /* → Blended midpoint #A2A9C5 */
+  --sapShell_Category_10_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_11_Background: #F14E4E; /* → RDS Auto · Brand / Red · 600 ↔ Brand / Red · 400 */
+  --sapShell_Category_11_BorderColor: #F14E4E; /* → RDS Auto · Brand / Red · 600 ↔ Brand / Red · 400 */
+  --sapShell_Category_11_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_12_Background: #B39DFB; /* → Blended midpoint #B39DFB */
+  --sapShell_Category_12_BorderColor: #B39DFB; /* → Blended midpoint #B39DFB */
+  --sapShell_Category_12_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_13_Background: #FA3AB3; /* → Blended midpoint #FA3AB3 */
+  --sapShell_Category_13_BorderColor: #FA3AB3; /* → Blended midpoint #FA3AB3 */
+  --sapShell_Category_13_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_14_Background: #319E81; /* → Blended midpoint #319E81 */
+  --sapShell_Category_14_BorderColor: #319E81; /* → Blended midpoint #319E81 */
+  --sapShell_Category_14_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_15_Background: #DCDFE8; /* → Blended midpoint #DCDFE8 */
+  --sapShell_Category_15_BorderColor: #DCDFE8; /* → Blended midpoint #DCDFE8 */
+  --sapShell_Category_15_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapShell_Category_16_Background: #56A314; /* → Blended midpoint #56A314 */
+  --sapShell_Category_16_BorderColor: #56A314; /* → Blended midpoint #56A314 */
+  --sapShell_Category_16_TextColor: #172323; /* → Blended midpoint #172323 */
+  --Shell_ShadowColor_1: #000000; /* → RDS Auto · Grayscale · 800 ↔ Pure · Black */
+  --Shell_ShadowColor_2: #FFFFFF; /* → RDS Auto · Grayscale · 800 ↔ Pure · White */
+  --sapLegendColor1: #FFCB49; /* → Blended midpoint #FFCB49 */
+  --sapLegendColor2: #F58E60; /* → Blended midpoint #F58E60 */
+  --sapLegendColor3: #FFA2CD; /* → Blended midpoint #FFA2CD */
+  --sapLegendColor4: #E87171; /* → Blended midpoint #E87171 */
+  --sapLegendColor5: #FF92E1; /* → Blended midpoint #FF92E1 */
+  --sapLegendColor6: #9FC2FF; /* → Blended midpoint #9FC2FF */
+  --sapLegendColor7: #4FF0E2; /* → Blended midpoint #4FF0E2 */
+  --sapLegendColor8: #C0EF77; /* → Blended midpoint #C0EF77 */
+  --sapLegendColor9: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapLegendColor10: #AC78E6; /* → Blended midpoint #AC78E6 */
+  --sapLegendColor11: #F3882D; /* → Blended midpoint #F3882D */
+  --sapLegendColor12: #FABCB2; /* → Blended midpoint #FABCB2 */
+  --sapLegendColor13: #FA8C8C; /* → Blended midpoint #FA8C8C */
+  --sapLegendColor14: #FAA172; /* → Blended midpoint #FAA172 */
+  --sapLegendColor15: #BC9FDF; /* → Blended midpoint #BC9FDF */
+  --sapLegendColor16: #AEB7F2; /* → Blended midpoint #AEB7F2 */
+  --sapLegendColor17: #D3FEFA; /* → Blended midpoint #D3FEFA */
+  --sapLegendColor18: #DBF8A6; /* → Blended midpoint #DBF8A6 */
+  --sapLegendColor19: #CFF7FF; /* → Blended midpoint #CFF7FF */
+  --sapLegendColor20: #D6BFFB; /* → Blended midpoint #D6BFFB */
+  --sapLegendBackgroundColor1: #3B2300; /* → Blended midpoint #3B2300 */
+  --sapLegendBackgroundColor2: #582106; /* → Blended midpoint #582106 */
+  --sapLegendBackgroundColor3: #580537; /* → Blended midpoint #580537 */
+  --sapLegendBackgroundColor4: #511414; /* → Blended midpoint #511414 */
+  --sapLegendBackgroundColor5: #21023F; /* → Blended midpoint #21023F */
+  --sapLegendBackgroundColor6: #000B40; /* → Blended midpoint #000B40 */
+  --sapLegendBackgroundColor7: #012E32; /* → Blended midpoint #012E32 */
+  --sapLegendBackgroundColor8: #222D0F; /* → Blended midpoint #222D0F */
+  --sapLegendBackgroundColor9: #202539; /* → Blended midpoint #202539 */
+  --sapLegendBackgroundColor10: #300F57; /* → Blended midpoint #300F57 */
+  --sapLegendBackgroundColor11: #5B2004; /* → Blended midpoint #5B2004 */
+  --sapLegendBackgroundColor12: #330804; /* → Blended midpoint #330804 */
+  --sapLegendBackgroundColor13: #370202; /* → Blended midpoint #370202 */
+  --sapLegendBackgroundColor14: #522105; /* → Blended midpoint #522105 */
+  --sapLegendBackgroundColor15: #2D2640; /* → Blended midpoint #2D2640 */
+  --sapLegendBackgroundColor16: #0A1234; /* → Blended midpoint #0A1234 */
+  --sapLegendBackgroundColor17: #003333; /* → RDS Brand/Aqua/50 ↔ Aqua/900 */
+  --sapLegendBackgroundColor18: #213205; /* → Blended midpoint #213205 */
+  --sapLegendBackgroundColor19: #051A4B; /* → Blended midpoint #051A4B */
+  --sapLegendBackgroundColor20: #110657; /* → Blended midpoint #110657 */
+  --sapLegend_WorkingBackground: #171A28; /* → Blended midpoint #171A28 */
+  --sapLegend_NonWorkingBackground: #0D0F1D; /* → Blended midpoint #0D0F1D */
+  --sapLegend_CurrentDateTime: #FFA4E0; /* → Blended midpoint #FFA4E0 */
+  --sapAccentColor1: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapAccentColor2: #FF7BB6; /* → Blended midpoint #FF7BB6 */
+  --sapAccentColor3: #FFCCE1; /* → Blended midpoint #FFCCE1 */
+  --sapAccentColor4: #FFA4E0; /* → Blended midpoint #FFA4E0 */
+  --sapAccentColor5: #CEACFB; /* → Blended midpoint #CEACFB */
+  --sapAccentColor6: #ACCBFF; /* → Blended midpoint #ACCBFF */
+  --sapAccentColor7: #65F6EA; /* → Blended midpoint #65F6EA */
+  --sapAccentColor8: #CFF490; /* → Blended midpoint #CFF490 */
+  --sapAccentColor9: #B385EA; /* → Blended midpoint #B385EA */
+  --sapAccentColor10: #C8CBDE; /* → Blended midpoint #C8CBDE */
+  --sapAccentBackgroundColor1: #B64A07; /* → Blended midpoint #B64A07 */
+  --sapAccentBackgroundColor2: #8E0B0B; /* → RDS Auto · Pink · 100 ↔ Brand / Red · 700 */
+  --sapAccentBackgroundColor3: #BD0F6E; /* → RDS Auto · Pink · 50 ↔ Pink · 600 */
+  --sapAccentBackgroundColor4: #7809C2; /* → Blended midpoint #7809C2 */
+  --sapAccentBackgroundColor5: #330BF8; /* → Blended midpoint #330BF8 */
+  --sapAccentBackgroundColor6: #455BE7; /* → Blended midpoint #455BE7 */
+  --sapAccentBackgroundColor7: #02666D; /* → Blended midpoint #02666D */
+  --sapAccentBackgroundColor8: #296B47; /* → Blended midpoint #296B47 */
+  --sapAccentBackgroundColor9: #41196E; /* → Blended midpoint #41196E */
+  --sapAccentBackgroundColor10: #445476; /* → Blended midpoint #445476 */
+  --Shadow0_Color_1: #FFFFFF; /* → RDS Auto · Grayscale · 800 ↔ Pure · White */
+  --Shadow0_Color_2: #000000; /* → RDS Auto · Grayscale · 800 ↔ Pure · Black */
+  --Shadow1_Color_1: #FFFFFF; /* → RDS Auto · Grayscale · 800 ↔ Pure · White */
+  --Shadow1_Color_2: #000000; /* → RDS Auto · Grayscale · 800 ↔ Pure · Black */
+  --Lite_Shadow_Color_1: #FFFFFF; /* → RDS Auto · Grayscale · 800 ↔ Pure · White */
+  --Lite_Shadow_Color_2: #000000; /* → RDS Auto · Grayscale · 800 ↔ Pure · Black */
+  --Shadow2_Color_1: #FFFFFF; /* → RDS Auto · Grayscale · 800 ↔ Pure · White */
+  --Shadow2_Color: #FFFFFF; /* → RDS Auto · Pure · White */
+  --Shadow2_Color_2: #000000; /* → RDS Auto · Grayscale · 800 ↔ Pure · Black */
+  --Shadow3_Color: #FFFFFF; /* → RDS Auto · Pure · White */
+  --Shadow3_Color_1: #FFFFFF; /* → RDS Auto · Grayscale · 800 ↔ Pure · White */
+  --Shadow3_Color_2: #000000; /* → RDS Auto · Grayscale · 800 ↔ Pure · Black */
+  --HeaderShadow_Color_1: #000000; /* → RDS Auto · Grayscale · 800 ↔ Pure · Black */
+  --HeaderShadow_Color_2: #2A2F41; /* → Blended midpoint #2A2F41 */
+  --Success_HeaderShadow_Color_1: #000000; /* → RDS Auto · Grayscale · 800 ↔ Pure · Black */
+  --Success_HeaderShadow_Color_2: #6CA314; /* → Blended midpoint #6CA314 */
+  --Warning_HeaderShadow_Color_1: #000000; /* → RDS Auto · Grayscale · 800 ↔ Pure · Black */
+  --Warning_HeaderShadow_Color_2: #FBC600; /* → Blended midpoint #FBC600 */
+  --Error_HeaderShadow_Color_1: #000000; /* → RDS Auto · Grayscale · 800 ↔ Pure · Black */
+  --Error_HeaderShadow_Color_2: #F65858; /* → Blended midpoint #F65858 */
+  --Information_HeaderShadow_Color_1: #000000; /* → RDS Auto · Grayscale · 800 ↔ Pure · Black */
+  --Information_HeaderShadow_Color_2: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --HeaderShadow_Color: #FFFFFF; /* → RDS Auto · Pure · White */
+  --TextShadow_Color: #FFFFFF; /* → RDS Auto · Pure · White */
+  --InteractionShadow_Color_1: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --ContrastTextShadow_Color: #FFFFFF; /* → RDS Auto · Pure · White */
+  --SelectedShadow_Color_1: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --NegativeShadow_Color_1: #F32D2D; /* → Blended midpoint #F32D2D */
+  --CriticalShadow_Color_1: #925600; /* → Blended midpoint #925600 */
+  --PositiveShadow_Color_1: #6CA314; /* → Blended midpoint #6CA314 */
+  --InformativeShadow_Color_1: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --NeutralShadow_Color_1: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --Interaction_Shadow_Color: #FFFFFF; /* → RDS Auto · Pure · White */
+  --Selected_Shadow_Color: #FFFFFF; /* → RDS Auto · Pure · White */
+  --Negative_Shadow_Color: #FFFFFF; /* → RDS Auto · Pure · White */
+  --Critical_Shadow_Color: #FFFFFF; /* → RDS Auto · Pure · White */
+  --Popover Border: #FFFFFF; /* → RDS Auto · Grayscale · 400 ↔ Pure · White */
+  --Avatar Shadow: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --Placeholder Middle Color: #818BB5; /* → Blended midpoint #818BB5 */
+  --colorPalette_FillColor_Swatch: #172323; /* → Blended midpoint #172323 */
+  --Tooltip_Stroke_Color: #FFFFFF; /* → RDS Auto · Pure · White */
+  --sapBackgroundColor: #0A0E11; /* → Blended midpoint #0A0E11 */
+  --sapPageHeader_Background: #172323; /* → Blended midpoint #172323 */
+  --sapPageHeader_BorderColor: #2A2F41; /* → Blended midpoint #2A2F41 */
+  --sapPageHeader_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapPageFooter_Background: #172323; /* → Blended midpoint #172323 */
+  --sapPageFooter_BorderColor: #2A2F41; /* → Blended midpoint #2A2F41 */
+  --sapPageFooter_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapAssistant_Color1: #4B35FF; /* → Blended midpoint #4B35FF */
+  --sapAssistant_Color2: #992FDA; /* → Blended midpoint #992FDA */
+  --sapAssistant_Background: #4B35FF; /* → Blended midpoint #4B35FF */
+  --sapAssistant_BorderColor: #4B35FF; /* → Blended midpoint #4B35FF */
+  --sapAssistant_TextColor: #FFFFFF; /* → RDS Auto · Pure · White */
+  --sapAssistant_Hover_Background: #0000CC; /* → RDS Auto · Brand / Blue · 600 */
+  --sapAssistant_Hover_BorderColor: #0000CC; /* → RDS Auto · Brand / Blue · 600 */
+  --sapAssistant_Hover_TextColor: #FFFFFF; /* → RDS Auto · Pure · White */
+  --sapAssistant_Active_Background: #000066; /* → RDS Auto · Pure · White ↔ Brand / Blue · 800 */
+  --sapAssistant_Active_BorderColor: #BBB4FF; /* → Blended midpoint #BBB4FF */
+  --sapAssistant_Active_TextColor: #BBB4FF; /* → Blended midpoint #BBB4FF */
+  --sapAssistant_Question_Background: #000066; /* → RDS Auto · Brand / Blue · 50 ↔ Brand / Blue · 800 */
+  --sapAssistant_Question_BorderColor: #000066; /* → RDS Auto · Brand / Blue · 50 ↔ Brand / Blue · 800 */
+  --sapAssistant_Question_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapAssistant_Answer_Background: #0A0E11; /* → Blended midpoint #0A0E11 */
+  --sapAssistant_Answer_BorderColor: #0A0E11; /* → Blended midpoint #0A0E11 */
+  --sapAssistant_Answer_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapShell_Assistant_ForegroundColor: #9E73F9; /* → Blended midpoint #9E73F9 */
+  --sapAvatar_1_Background: #B64A07; /* → Blended midpoint #B64A07 */
+  --sapAvatar_2_Background: #8E0B0B; /* → RDS Auto · Pink · 100 ↔ Brand / Red · 700 */
+  --sapAvatar_3_Background: #BD0F6E; /* → RDS Auto · Pink · 50 ↔ Pink · 600 */
+  --sapAvatar_4_Background: #7809C2; /* → Blended midpoint #7809C2 */
+  --sapAvatar_5_Background: #330BF8; /* → Blended midpoint #330BF8 */
+  --sapAvatar_6_Background: #455BE7; /* → Blended midpoint #455BE7 */
+  --sapAvatar_7_Background: #02666D; /* → Blended midpoint #02666D */
+  --sapAvatar_8_Background: #296B47; /* → Blended midpoint #296B47 */
+  --sapAvatar_9_Background: #41196E; /* → Blended midpoint #41196E */
+  --sapAvatar_10_Background: #445476; /* → Blended midpoint #445476 */
+  --sapAvatar_1_Hover_Background: #B64A07; /* → Blended midpoint #B64A07 */
+  --sapAvatar_2_Hover_Background: #8E0B0B; /* → RDS Auto · Pink · 100 ↔ Brand / Red · 700 */
+  --sapAvatar_3_Hover_Background: #BD0F6E; /* → RDS Auto · Pink · 50 ↔ Pink · 600 */
+  --sapAvatar_4_Hover_Background: #7809C2; /* → Blended midpoint #7809C2 */
+  --sapAvatar_5_Hover_Background: #330BF8; /* → Blended midpoint #330BF8 */
+  --sapAvatar_6_Hover_Background: #455BE7; /* → Blended midpoint #455BE7 */
+  --sapAvatar_7_Hover_Background: #02666D; /* → Blended midpoint #02666D */
+  --sapAvatar_8_Hover_Background: #296B47; /* → Blended midpoint #296B47 */
+  --sapAvatar_9_Hover_Background: #41196E; /* → Blended midpoint #41196E */
+  --sapAvatar_10_Hover_Background: #445476; /* → Blended midpoint #445476 */
+  --sapAvatar_1_BorderColor: #B64A07; /* → Blended midpoint #B64A07 */
+  --sapAvatar_2_BorderColor: #8E0B0B; /* → RDS Auto · Pink · 100 ↔ Brand / Red · 700 */
+  --sapAvatar_3_BorderColor: #BD0F6E; /* → RDS Auto · Pink · 50 ↔ Pink · 600 */
+  --sapAvatar_4_BorderColor: #7809C2; /* → Blended midpoint #7809C2 */
+  --sapAvatar_5_BorderColor: #330BF8; /* → Blended midpoint #330BF8 */
+  --sapAvatar_6_BorderColor: #455BE7; /* → Blended midpoint #455BE7 */
+  --sapAvatar_7_BorderColor: #02666D; /* → Blended midpoint #02666D */
+  --sapAvatar_8_BorderColor: #296B47; /* → Blended midpoint #296B47 */
+  --sapAvatar_9_BorderColor: #41196E; /* → Blended midpoint #41196E */
+  --sapAvatar_10_BorderColor: #445476; /* → Blended midpoint #445476 */
+  --sapAvatar_Hover_BorderColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapAvatar_1_TextColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapAvatar_2_TextColor: #FF93C2; /* → Blended midpoint #FF93C2 */
+  --sapAvatar_3_TextColor: #FFCCE1; /* → Blended midpoint #FFCCE1 */
+  --sapAvatar_4_TextColor: #FFA4E0; /* → Blended midpoint #FFA4E0 */
+  --sapAvatar_5_TextColor: #C3B4FF; /* → Blended midpoint #C3B4FF */
+  --sapAvatar_6_TextColor: #C9E3FF; /* → Blended midpoint #C9E3FF */
+  --sapAvatar_7_TextColor: #65F6EA; /* → Blended midpoint #65F6EA */
+  --sapAvatar_8_TextColor: #CFF490; /* → Blended midpoint #CFF490 */
+  --sapAvatar_9_TextColor: #C19BEC; /* → Blended midpoint #C19BEC */
+  --sapAvatar_10_TextColor: #DCDFE8; /* → Blended midpoint #DCDFE8 */
+  --sapAvatar_Lite_Background: #FFFFFF; /* → RDS Auto · Pure · White */
+  --sapAvatar_Lite_BorderColor: #FFFFFF; /* → RDS Auto · Pure · White */
+  --sapContent_BadgeBackground: #FF93C2; /* → Blended midpoint #FF93C2 */
+  --sapContent_BadgeTextColor: #172323; /* → Blended midpoint #172323 */
+  --sapContent_BadgeBorderColor: #172323; /* → Blended midpoint #172323 */
+  --sapContent_BusyColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapContent_Placeholderloading_Background: #3D455C; /* → Blended midpoint #3D455C */
+  --sapButton_Background: #172425; /* → Blended midpoint #172425 */
+  --sapButton_BorderColor: #353F55; /* → Blended midpoint #353F55 */
+  --sapButton_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_IconColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Hover_Background: #24293B; /* → Blended midpoint #24293B */
+  --sapButton_Hover_BorderColor: #353F55; /* → Blended midpoint #353F55 */
+  --sapButton_Hover_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Active_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Active_BorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Active_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Selected_Background: #192642; /* → Blended midpoint #192642 */
+  --sapButton_Selected_BorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Selected_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Selected_Hover_Background: #202E4F; /* → Blended midpoint #202E4F */
+  --sapButton_Selected_Hover_BorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Emphasized_Hover_BorderColor: #4563ED; /* → Blended midpoint #4563ED */
+  --sapButton_Emphasized_Hover_TextColor: #F5F5FA; /* → RDS Auto · Pure · White ↔ Grayscale · 50 */
+  --sapButton_Emphasized_Active_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Emphasized_Active_BorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Lite_Background: #000000; /* → RDS Auto · Pure · Black */
+  --sapButton_Emphasized_TextShadow: #000000; /* → RDS Auto · Pure · Black */
+  --sapButton_Lite_BorderColor: #000000; /* → RDS Auto · Pure · Black */
+  --sapButton_Lite_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Lite_Hover_Background: #24293B; /* → Blended midpoint #24293B */
+  --sapButton_Lite_Hover_BorderColor: #353F55; /* → Blended midpoint #353F55 */
+  --sapButton_Lite_Hover_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Lite_Active_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Lite_Active_BorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Accept_Background: #1A432D; /* → Blended midpoint #1A432D */
+  --sapButton_Accept_BorderColor: #265F42; /* → Blended midpoint #265F42 */
+  --sapButton_Accept_TextColor: #93D52C; /* → Blended midpoint #93D52C */
+  --sapButton_Accept_Hover_Background: #265F42; /* → Blended midpoint #265F42 */
+  --sapButton_Accept_Hover_BorderColor: #265F42; /* → Blended midpoint #265F42 */
+  --sapButton_Accept_Hover_TextColor: #93D52C; /* → Blended midpoint #93D52C */
+  --sapButton_Accept_Active_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Accept_Active_BorderColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapButton_Accept_Active_TextColor: #93D52C; /* → Blended midpoint #93D52C */
+  --sapButton_Accept_Selected_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Accept_Selected_BorderColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapButton_Accept_Selected_TextColor: #93D52C; /* → Blended midpoint #93D52C */
+  --sapButton_Accept_Selected_Hover_Background: #265F42; /* → Blended midpoint #265F42 */
+  --sapButton_Accept_Selected_Hover_BorderColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapButton_Reject_Background: #540404; /* → Blended midpoint #540404 */
+  --sapButton_Reject_BorderColor: #5E0808; /* → RDS Auto · Pink · 100 ↔ Brand / Red · 800 */
+  --sapButton_Reject_TextColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Reject_Hover_Background: #5E0808; /* → RDS Auto · Pink · 100 ↔ Brand / Red · 800 */
+  --sapButton_Reject_Hover_BorderColor: #5E0808; /* → RDS Auto · Pink · 100 ↔ Brand / Red · 800 */
+  --sapButton_Reject_Hover_TextColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Reject_Active_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Reject_Active_BorderColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Reject_Active_TextColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Reject_Selected_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Reject_Selected_BorderColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Reject_Selected_TextColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Reject_Selected_Hover_Background: #5E0808; /* → RDS Auto · Pink · 100 ↔ Brand / Red · 800 */
+  --sapButton_Reject_Selected_Hover_BorderColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Attention_BorderColor: #593204; /* → Blended midpoint #593204 */
+  --sapButton_Attention_Hover_Background: #593204; /* → Blended midpoint #593204 */
+  --sapButton_Attention_Hover_BorderColor: #593204; /* → Blended midpoint #593204 */
+  --sapButton_Attention_Hover_TextColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapButton_Attention_Active_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Attention_Active_BorderColor: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapButton_Attention_Active_TextColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapButton_Attention_Selected_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Attention_Selected_BorderColor: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapButton_Attention_Selected_TextColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapButton_Attention_Selected_Hover_Background: #593204; /* → Blended midpoint #593204 */
+  --sapButton_Attention_Selected_Hover_BorderColor: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapButton_Negative_BorderColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Negative_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Negative_Hover_BorderColor: #F47171; /* → RDS Auto · Brand / Red · 500 ↔ Brand / Red · 300 */
+  --sapButton_Negative_Hover_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Negative_Active_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Negative_Active_BorderColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Negative_Active_TextColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Critical_BorderColor: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapButton_Critical_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Critical_Hover_BorderColor: #FFD733; /* → RDS Auto · Orange · 500 ↔ Brand / Gold · 400 */
+  --sapButton_Critical_Hover_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Critical_Active_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Critical_Active_BorderColor: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapButton_Critical_Active_TextColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapButton_Success_Background: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapButton_Success_BorderColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapButton_Success_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Success_Hover_Background: #85C717; /* → Blended midpoint #85C717 */
+  --sapButton_Success_Hover_BorderColor: #85C717; /* → Blended midpoint #85C717 */
+  --sapButton_Success_Hover_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Success_Active_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Success_Active_BorderColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapButton_Success_Active_TextColor: #93D52C; /* → Blended midpoint #93D52C */
+  --sapButton_Neutral_Background: #202E4F; /* → Blended midpoint #202E4F */
+  --sapButton_Neutral_BorderColor: #2F4476; /* → Blended midpoint #2F4476 */
+  --sapButton_Neutral_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Neutral_Hover_Background: #2F3E6C; /* → Blended midpoint #2F3E6C */
+  --sapButton_Neutral_Hover_BorderColor: #2F4476; /* → Blended midpoint #2F4476 */
+  --sapButton_Neutral_Hover_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Neutral_Active_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Neutral_Active_BorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Neutral_Active_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Information_Background: #202E4F; /* → Blended midpoint #202E4F */
+  --sapButton_Information_BorderColor: #2F4476; /* → Blended midpoint #2F4476 */
+  --sapButton_Information_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Information_Hover_Background: #2F3E6C; /* → Blended midpoint #2F3E6C */
+  --sapButton_Information_Hover_BorderColor: #2F4476; /* → Blended midpoint #2F4476 */
+  --sapButton_Information_Hover_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Information_Active_Background: #153232; /* → Blended midpoint #153232 */
+  --sapButton_Information_Active_BorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Information_Active_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_TokenBackground: #172425; /* → Blended midpoint #172425 */
+  --sapButton_ReadOnly_TokenBackground: #172425; /* → Blended midpoint #172425 */
+  --sapButton_TokenBorderColor: #353F55; /* → Blended midpoint #353F55 */
+  --sapButton_Track_Background: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapButton_Track_BorderColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapButton_Track_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Track_Hover_Background: #CFD3DF; /* → Blended midpoint #CFD3DF */
+  --sapButton_Track_Hover_BorderColor: #CFD3DF; /* → Blended midpoint #CFD3DF */
+  --sapButton_Track_Selected_Background: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Track_Selected_BorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Track_Selected_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Track_Selected_Hover_Background: #93B7FF; /* → Blended midpoint #93B7FF */
+  --sapButton_Track_Selected_Hover_BorderColor: #93B7FF; /* → Blended midpoint #93B7FF */
+  --sapButton_Handle_Background: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Handle_BorderColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Handle_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapButton_Handle_Hover_Background: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Handle_Hover_BorderColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Handle_Selected_Background: #192642; /* → Blended midpoint #192642 */
+  --sapButton_Handle_Selected_BorderColor: #192642; /* → Blended midpoint #192642 */
+  --sapButton_Handle_Selected_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapButton_Handle_Selected_Hover_Background: #192642; /* → Blended midpoint #192642 */
+  --sapButton_Handle_Selected_Hover_BorderColor: #192642; /* → Blended midpoint #192642 */
+  --sapButton_Track_Negative_Background: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Track_Negative_BorderColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Track_Negative_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Track_Negative_Hover_Background: #F47171; /* → RDS Auto · Brand / Red · 500 ↔ Brand / Red · 300 */
+  --sapButton_Track_Negative_Hover_BorderColor: #F47171; /* → RDS Auto · Brand / Red · 500 ↔ Brand / Red · 300 */
+  --sapButton_Handle_Negative_Background: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Handle_Negative_BorderColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Handle_Negative_TextColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapButton_Handle_Negative_Hover_Background: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Handle_Negative_Hover_BorderColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Track_Positive_Background: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapButton_Track_Positive_BorderColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapButton_Track_Positive_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Track_Positive_Hover_Background: #85C717; /* → Blended midpoint #85C717 */
+  --sapButton_Track_Positive_Hover_BorderColor: #85C717; /* → Blended midpoint #85C717 */
+  --sapButton_Handle_Positive_Background: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Handle_Positive_BorderColor: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Handle_Positive_TextColor: #93D52C; /* → Blended midpoint #93D52C */
+  --sapButton_Handle_Positive_Hover_Background: #172323; /* → Blended midpoint #172323 */
+  --sapButton_Handle_Positive_Hover_BorderColor: #172323; /* → Blended midpoint #172323 */
+  --sapChart_OrderedColor_1: #5874B4; /* → Blended midpoint #5874B4 */
+  --sapChart_OrderedColor_2: #F9A823; /* → Blended midpoint #F9A823 */
+  --sapChart_OrderedColor_3: #A3CD24; /* → Blended midpoint #A3CD24 */
+  --sapChart_Bad: #F33232; /* → Blended midpoint #F33232 */
+  --sapChart_Critical: #E66409; /* → Blended midpoint #E66409 */
+  --sapChart_OrderedColor_4: #FD4AA0; /* → Blended midpoint #FD4AA0 */
+  --sapChart_Good: #3B9564; /* → Blended midpoint #3B9564 */
+  --sapChart_OrderedColor_5: #8E45E3; /* → Blended midpoint #8E45E3 */
+  --sapChart_OrderedColor_6: #009999; /* → RDS Auto · Brand / Aqua · 700 */
+  --sapChart_OrderedColor_7: #4569F9; /* → Blended midpoint #4569F9 */
+  --sapChart_OrderedColor_8: #CA34EE; /* → Blended midpoint #CA34EE */
+  --sapChart_OrderedColor_9: #92BAA4; /* → Blended midpoint #92BAA4 */
+  --sapChart_OrderedColor_10: #F37C7C; /* → Blended midpoint #F37C7C */
+  --sapChart_Neutral: #7F8BB6; /* → Blended midpoint #7F8BB6 */
+  --sapChart_OrderedColor_11: #6D5DFF; /* → Blended midpoint #6D5DFF */
+  --sapChart_OrderedColor_12: #D4A983; /* → Blended midpoint #D4A983 */
+  --sapHC_HighlightBackground: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_NeutralColor: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_InformativeColor: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_StandardForeground: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_StandardBackground: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_ReducedBackground: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_HighlightAltBackground: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_ReducedAltForeground: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_PositiveColor: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_CriticalColor: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_NegativeColor: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_ReducedForeground: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_EnhancedForeground: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapHC_ReducedAltBackground: #D22FF7; /* → Blended midpoint #D22FF7 */
+  --sapContent_IconColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapContent_ContrastIconColor: #172323; /* → Blended midpoint #172323 */
+  --sapContent_MarkerIconColor: #C3B4FF; /* → Blended midpoint #C3B4FF */
+  --sapContent_NonInteractiveIconColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapContent_ImagePlaceholderBackground: #445476; /* → Blended midpoint #445476 */
+  --sapContent_ImagePlaceholderForegroundColor: #DCDFE8; /* → Blended midpoint #DCDFE8 */
+  --sapContent_RatedColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapContent_UnratedColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapContent_Illustrative_Color1: #950658; /* → Blended midpoint #950658 */
+  --sapContent_Illustrative_Color2: #6079B1; /* → Blended midpoint #6079B1 */
+  --sapContent_Illustrative_Color3: #F88247; /* → Blended midpoint #F88247 */
+  --sapContent_Illustrative_Color4: #7C8EC0; /* → Blended midpoint #7C8EC0 */
+  --sapContent_Illustrative_Color5: #FFFFFF; /* → RDS Auto · Grayscale · 200 ↔ Pure · White */
+  --sapContent_Illustrative_Color6: #A1A6BF; /* → Blended midpoint #A1A6BF */
+  --sapContent_Illustrative_Color7: #090D0F; /* → Blended midpoint #090D0F */
+  --sapContent_Illustrative_Color8: #DCDFE8; /* → Blended midpoint #DCDFE8 */
+  --sapContent_Illustrative_Color9: #0499A0; /* → Blended midpoint #0499A0 */
+  --sapContent_Illustrative_Color10: #F5F5FA; /* → RDS Auto · Grayscale · 100 ↔ Grayscale · 50 */
+  --sapContent_Illustrative_Color11: #FD4AA0; /* → Blended midpoint #FD4AA0 */
+  --sapContent_Illustrative_Color12: #4DA100; /* → Blended midpoint #4DA100 */
+  --sapContent_Illustrative_Color13: #3F5076; /* → Blended midpoint #3F5076 */
+  --sapContent_Illustrative_Color14: #2D3A55; /* → Blended midpoint #2D3A55 */
+  --sapContent_Illustrative_Color15: #BE520E; /* → RDS Auto · Orange · 600 */
+  --sapContent_Illustrative_Color16: #8E3405; /* → Blended midpoint #8E3405 */
+  --sapContent_Illustrative_Color17: #026972; /* → Blended midpoint #026972 */
+  --sapContent_Illustrative_Color18: #2D3A55; /* → Blended midpoint #2D3A55 */
+  --sapContent_Illustrative_Color19: #3B496E; /* → Blended midpoint #3B496E */
+  --sapContent_Illustrative_Color20: #242B3E; /* → Blended midpoint #242B3E */
+  --sapContent_Illustrative_Color21: #090D0F; /* → Blended midpoint #090D0F */
+  --sapContent_Illustrative_Color22: #000B40; /* → Blended midpoint #000B40 */
+  --sapContent_Illustrative_Color23: #C80D0D; /* → Blended midpoint #C80D0D */
+  --sapContent_Illustrative_Color24: #E9B3CE; /* → Blended midpoint #E9B3CE */
+  --sapContent_Illustrative_Color25: #DAD3E0; /* → Blended midpoint #DAD3E0 */
+  --sapContent_Illustrative_Color26: #E9D482; /* → Blended midpoint #E9D482 */
+  --sapContent_Illustrative_Color27: #E7D7C2; /* → Blended midpoint #E7D7C2 */
+  --sapContent_Illustrative_Color28: #B44907; /* → Blended midpoint #B44907 */
+  --sapContent_Illustrative_Color29: #530A04; /* → Blended midpoint #530A04 */
+  --sapContent_Illustrative_Color30: #2F0404; /* → RDS Auto · Brand / Red · 900 */
+  --sapContent_Illustrative_Color31: #FAA782; /* → Blended midpoint #FAA782 */
+  --sapIndicationColor_1: #F63C3C; /* → Blended midpoint #F63C3C */
+  --sapIndicationColor_1_Background: #F63C3C; /* → Blended midpoint #F63C3C */
+  --sapIndicationColor_1_BorderColor: #F63C3C; /* → Blended midpoint #F63C3C */
+  --sapIndicationColor_1_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_1_Hover_Background: #F75656; /* → Blended midpoint #F75656 */
+  --sapIndicationColor_1_Active_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_1_Active_BorderColor: #5E0808; /* → RDS Auto · Brand / Red · 200 ↔ Brand / Red · 800 */
+  --sapIndicationColor_1_Active_TextColor: #F63C3C; /* → Blended midpoint #F63C3C */
+  --sapIndicationColor_1_Selected_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_1_Selected_BorderColor: #5E0808; /* → RDS Auto · Brand / Red · 200 ↔ Brand / Red · 800 */
+  --sapIndicationColor_1_Selected_TextColor: #F63C3C; /* → Blended midpoint #F63C3C */
+  --sapIndicationColor_1b: #5E0808; /* → RDS Auto · Brand / Red · 200 ↔ Brand / Red · 800 */
+  --sapIndicationColor_1b_Background: #5E0808; /* → RDS Auto · Brand / Red · 200 ↔ Brand / Red · 800 */
+  --sapIndicationColor_1b_BorderColor: #5E0808; /* → RDS Auto · Brand / Red · 200 ↔ Brand / Red · 800 */
+  --sapIndicationColor_1b_TextColor: #F63C3C; /* → Blended midpoint #F63C3C */
+  --sapIndicationColor_1b_Hover_Background: #830808; /* → Blended midpoint #830808 */
+  --sapIndicationColor_2: #FA8181; /* → Blended midpoint #FA8181 */
+  --sapIndicationColor_2_Background: #FA8181; /* → Blended midpoint #FA8181 */
+  --sapIndicationColor_2_BorderColor: #FA8181; /* → Blended midpoint #FA8181 */
+  --sapIndicationColor_2_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_2_Hover_Background: #FCB1B1; /* → Blended midpoint #FCB1B1 */
+  --sapIndicationColor_2_Active_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_2_Active_BorderColor: #860606; /* → Blended midpoint #860606 */
+  --sapIndicationColor_2_Active_TextColor: #FA8181; /* → Blended midpoint #FA8181 */
+  --sapIndicationColor_2_Selected_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_2_Selected_BorderColor: #860606; /* → Blended midpoint #860606 */
+  --sapIndicationColor_2_Selected_TextColor: #FA8181; /* → Blended midpoint #FA8181 */
+  --sapIndicationColor_2b: #860606; /* → Blended midpoint #860606 */
+  --sapIndicationColor_2b_Background: #860606; /* → Blended midpoint #860606 */
+  --sapIndicationColor_2b_BorderColor: #860606; /* → Blended midpoint #860606 */
+  --sapIndicationColor_2b_TextColor: #FA7F7F; /* → Blended midpoint #FA7F7F */
+  --sapIndicationColor_2b_Hover_Background: #920606; /* → Blended midpoint #920606 */
+  --sapIndicationColor_3: #FFD033; /* → Blended midpoint #FFD033 */
+  --sapIndicationColor_3_Background: #FFD033; /* → Blended midpoint #FFD033 */
+  --sapIndicationColor_3_BorderColor: #FFD033; /* → Blended midpoint #FFD033 */
+  --sapIndicationColor_3_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_3_Hover_Background: #FFD23B; /* → Blended midpoint #FFD23B */
+  --sapIndicationColor_3_Active_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_3_Active_BorderColor: #632A04; /* → Blended midpoint #632A04 */
+  --sapIndicationColor_3_Active_TextColor: #FFD033; /* → Blended midpoint #FFD033 */
+  --sapIndicationColor_3_Selected_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_3_Selected_BorderColor: #632A04; /* → Blended midpoint #632A04 */
+  --sapIndicationColor_3_Selected_TextColor: #FFD033; /* → Blended midpoint #FFD033 */
+  --sapIndicationColor_3b: #633804; /* → Blended midpoint #633804 */
+  --sapIndicationColor_3b_Background: #633804; /* → Blended midpoint #633804 */
+  --sapIndicationColor_3b_BorderColor: #633804; /* → Blended midpoint #633804 */
+  --sapIndicationColor_3b_TextColor: #FFB323; /* → Blended midpoint #FFB323 */
+  --sapIndicationColor_3b_Hover_Background: #905200; /* → Blended midpoint #905200 */
+  --sapIndicationColor_4: #CFF490; /* → Blended midpoint #CFF490 */
+  --sapIndicationColor_4_Background: #CFF490; /* → Blended midpoint #CFF490 */
+  --sapIndicationColor_4_BorderColor: #CFF490; /* → Blended midpoint #CFF490 */
+  --sapIndicationColor_4_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_4_Hover_Background: #D5F69B; /* → Blended midpoint #D5F69B */
+  --sapIndicationColor_4_Active_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_4_Active_BorderColor: #19400E; /* → Blended midpoint #19400E */
+  --sapIndicationColor_4_Active_TextColor: #CFF490; /* → Blended midpoint #CFF490 */
+  --sapIndicationColor_4_Selected_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_4_Selected_BorderColor: #19400E; /* → Blended midpoint #19400E */
+  --sapIndicationColor_4_Selected_TextColor: #CFF490; /* → Blended midpoint #CFF490 */
+  --sapIndicationColor_4b: #365902; /* → Blended midpoint #365902 */
+  --sapIndicationColor_4b_Background: #365902; /* → Blended midpoint #365902 */
+  --sapIndicationColor_4b_BorderColor: #365902; /* → Blended midpoint #365902 */
+  --sapIndicationColor_4b_TextColor: #C7F491; /* → Blended midpoint #C7F491 */
+  --sapIndicationColor_4b_Hover_Background: #396403; /* → Blended midpoint #396403 */
+  --sapIndicationColor_5: #C9E3FF; /* → Blended midpoint #C9E3FF */
+  --sapIndicationColor_5_Background: #C9E3FF; /* → Blended midpoint #C9E3FF */
+  --sapIndicationColor_5_BorderColor: #C9E3FF; /* → Blended midpoint #C9E3FF */
+  --sapIndicationColor_5_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_5_Hover_Background: #D2E6F9; /* → Blended midpoint #D2E6F9 */
+  --sapIndicationColor_5_Active_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_5_Active_BorderColor: #3D4E92; /* → Blended midpoint #3D4E92 */
+  --sapIndicationColor_5_Active_TextColor: #C9E3FF; /* → Blended midpoint #C9E3FF */
+  --sapIndicationColor_5_Selected_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_5_Selected_BorderColor: #3D4E92; /* → Blended midpoint #3D4E92 */
+  --sapIndicationColor_5_Selected_TextColor: #C9E3FF; /* → Blended midpoint #C9E3FF */
+  --sapIndicationColor_5b: #3D4E92; /* → Blended midpoint #3D4E92 */
+  --sapIndicationColor_5b_Background: #3D4E92; /* → Blended midpoint #3D4E92 */
+  --sapIndicationColor_5b_BorderColor: #3D4E92; /* → Blended midpoint #3D4E92 */
+  --sapIndicationColor_5b_TextColor: #BCCFFF; /* → Blended midpoint #BCCFFF */
+  --sapIndicationColor_5b_Hover_Background: #3D549F; /* → Blended midpoint #3D549F */
+  --sapIndicationColor_6: #65F6EA; /* → Blended midpoint #65F6EA */
+  --sapIndicationColor_6_Background: #65F6EA; /* → Blended midpoint #65F6EA */
+  --sapIndicationColor_6_BorderColor: #65F6EA; /* → Blended midpoint #65F6EA */
+  --sapIndicationColor_6_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_6_Hover_Background: #71F8ED; /* → Blended midpoint #71F8ED */
+  --sapIndicationColor_6_Active_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_6_Active_BorderColor: #003D42; /* → Blended midpoint #003D42 */
+  --sapIndicationColor_6_Active_TextColor: #65F6EA; /* → Blended midpoint #65F6EA */
+  --sapIndicationColor_6_Selected_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_6_Selected_BorderColor: #003D42; /* → Blended midpoint #003D42 */
+  --sapIndicationColor_6_Selected_TextColor: #65F6EA; /* → Blended midpoint #65F6EA */
+  --sapIndicationColor_6b: #003D42; /* → Blended midpoint #003D42 */
+  --sapIndicationColor_6b_Background: #003D42; /* → Blended midpoint #003D42 */
+  --sapIndicationColor_6b_BorderColor: #003D42; /* → Blended midpoint #003D42 */
+  --sapIndicationColor_6b_TextColor: #82EFF6; /* → Blended midpoint #82EFF6 */
+  --sapIndicationColor_6b_Hover_Background: #006167; /* → Blended midpoint #006167 */
+  --sapIndicationColor_7: #C3B4FF; /* → Blended midpoint #C3B4FF */
+  --sapIndicationColor_7_Background: #C3B4FF; /* → Blended midpoint #C3B4FF */
+  --sapIndicationColor_7_BorderColor: #C3B4FF; /* → Blended midpoint #C3B4FF */
+  --sapIndicationColor_7_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_7_Hover_Background: #E4D0FB; /* → RDS Auto · Brand / Blue · 500 ↔ Purple · 50 */
+  --sapIndicationColor_7_Active_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_7_Active_BorderColor: #1A01C7; /* → Blended midpoint #1A01C7 */
+  --sapIndicationColor_7_Active_TextColor: #C3B4FF; /* → Blended midpoint #C3B4FF */
+  --sapIndicationColor_7_Selected_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_7_Selected_BorderColor: #1A01C7; /* → Blended midpoint #1A01C7 */
+  --sapIndicationColor_7_Selected_TextColor: #C3B4FF; /* → Blended midpoint #C3B4FF */
+  --sapIndicationColor_7b: #1A01C7; /* → Blended midpoint #1A01C7 */
+  --sapIndicationColor_7b_Background: #1A01C7; /* → Blended midpoint #1A01C7 */
+  --sapIndicationColor_7b_BorderColor: #1A01C7; /* → Blended midpoint #1A01C7 */
+  --sapIndicationColor_7b_TextColor: #BDB6FF; /* → Blended midpoint #BDB6FF */
+  --sapIndicationColor_7b_Hover_Background: #1D01D4; /* → Blended midpoint #1D01D4 */
+  --sapIndicationColor_8: #FF7AD7; /* → Blended midpoint #FF7AD7 */
+  --sapIndicationColor_8_Background: #FF7AD7; /* → Blended midpoint #FF7AD7 */
+  --sapIndicationColor_8_BorderColor: #FF7AD7; /* → Blended midpoint #FF7AD7 */
+  --sapIndicationColor_8_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_8_Hover_Background: #FF9EE3; /* → Blended midpoint #FF9EE3 */
+  --sapIndicationColor_8_Active_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_8_Active_BorderColor: #3F035E; /* → Blended midpoint #3F035E */
+  --sapIndicationColor_8_Active_TextColor: #FF7AD7; /* → Blended midpoint #FF7AD7 */
+  --sapIndicationColor_8_Selected_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_8_Selected_BorderColor: #3F035E; /* → Blended midpoint #3F035E */
+  --sapIndicationColor_8_Selected_TextColor: #FF7AD7; /* → Blended midpoint #FF7AD7 */
+  --sapIndicationColor_8b: #3F035E; /* → Blended midpoint #3F035E */
+  --sapIndicationColor_8b_Background: #3F035E; /* → Blended midpoint #3F035E */
+  --sapIndicationColor_8b_BorderColor: #3F035E; /* → Blended midpoint #3F035E */
+  --sapIndicationColor_8b_TextColor: #D07EF9; /* → Blended midpoint #D07EF9 */
+  --sapIndicationColor_8b_Hover_Background: #4D036B; /* → Blended midpoint #4D036B */
+  --sapIndicationColor_9: #F5F5FA; /* → RDS Auto · Grayscale · 800 ↔ Grayscale · 50 */
+  --sapIndicationColor_9_Background: #F5F5FA; /* → RDS Auto · Grayscale · 800 ↔ Grayscale · 50 */
+  --sapIndicationColor_9_BorderColor: #F5F5FA; /* → RDS Auto · Grayscale · 800 ↔ Grayscale · 50 */
+  --sapIndicationColor_9_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_9_Hover_Background: #FFFFFF; /* → RDS Auto · Grayscale · 900D ↔ Pure · White */
+  --sapIndicationColor_9_Active_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_9_Active_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 800 ↔ Grayscale · 50 */
+  --sapIndicationColor_9_Active_BorderColor: #373F55; /* → Blended midpoint #373F55 */
+  --sapIndicationColor_9_Selected_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_9_Selected_BorderColor: #373F55; /* → Blended midpoint #373F55 */
+  --sapIndicationColor_9_Selected_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 800 ↔ Grayscale · 50 */
+  --sapIndicationColor_9b: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_9b_Background: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_9b_BorderColor: #373F55; /* → Blended midpoint #373F55 */
+  --sapIndicationColor_9b_TextColor: #F5F5FA; /* → RDS Auto · Green-Emerald · 900 ↔ Grayscale · 50 */
+  --sapIndicationColor_9b_Hover_Background: #272B3D; /* → Blended midpoint #272B3D */
+  --sapIndicationColor_10: #DEDEE5; /* → Blended midpoint #DEDEE5 */
+  --sapIndicationColor_10_Background: #B2B2C6; /* → Blended midpoint #B2B2C6 */
+  --sapIndicationColor_10_BorderColor: #B2B2C6; /* → Blended midpoint #B2B2C6 */
+  --sapIndicationColor_10_TextColor: #172323; /* → Blended midpoint #172323 */
+  --sapIndicationColor_10_Hover_Background: #CFCFD7; /* → Blended midpoint #CFCFD7 */
+  --sapIndicationColor_10_Active_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_10_Active_BorderColor: #282E2B; /* → Blended midpoint #282E2B */
+  --sapIndicationColor_10_Active_TextColor: #DEDEE5; /* → Blended midpoint #DEDEE5 */
+  --sapIndicationColor_10_Selected_Background: #232839; /* → Blended midpoint #232839 */
+  --sapIndicationColor_10_Selected_BorderColor: #282E2B; /* → Blended midpoint #282E2B */
+  --sapIndicationColor_10_Selected_TextColor: #DEDEE5; /* → Blended midpoint #DEDEE5 */
+  --sapIndicationColor_10b: #282E2B; /* → Blended midpoint #282E2B */
+  --sapIndicationColor_10b_Background: #282E2B; /* → Blended midpoint #282E2B */
+  --sapIndicationColor_10b_BorderColor: #282E2B; /* → Blended midpoint #282E2B */
+  --sapIndicationColor_10b_TextColor: #DEDEE5; /* → Blended midpoint #DEDEE5 */
+  --sapIndicationColor_10b_Hover_Background: #2F3C3C; /* → Blended midpoint #2F3C3C */
+  --sapField_Background: #0D1116; /* → Blended midpoint #0D1116 */
+  --sapField_BorderColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapField_TextColor: #FFFFFF; /* → RDS Auto · Grayscale · 900D ↔ Pure · White */
+  --sapField_PlaceholderTextColor: #A2A9C5; /* → Blended midpoint #A2A9C5 */
+  --sapField_Hover_Background: #172323; /* → Blended midpoint #172323 */
+  --sapField_Hover_BorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapField_Selector_Hover_Background: #202E4F; /* → Blended midpoint #202E4F */
+  --sapField_Active_BorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapField_Focus_Background: #172323; /* → Blended midpoint #172323 */
+  --sapField_Focus_BorderColor: #B5D0FF; /* → Blended midpoint #B5D0FF */
+  --sapField_RequiredColor: #FF8ABC; /* → Blended midpoint #FF8ABC */
+  --sapField_HelpBackground: #0D1116; /* → Blended midpoint #0D1116 */
+  --sapField_Hover_HelpBackground: #172323; /* → Blended midpoint #172323 */
+  --sapField_Focus_HelpBackground: #172323; /* → Blended midpoint #172323 */
+  --sapField_InformationColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapField_InformationBackground: #000B40; /* → Blended midpoint #000B40 */
+  --sapField_Selector_Hover_InformationBackground: #172323; /* → Blended midpoint #172323 */
+  --sapField_SuccessColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapField_SuccessBackground: #193E2B; /* → Blended midpoint #193E2B */
+  --sapField_Selector_Hover_SuccessBackground: #172323; /* → Blended midpoint #172323 */
+  --sapField_WarningColor: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapField_WarningBackground: #3B2300; /* → Blended midpoint #3B2300 */
+  --sapField_Selector_Hover_WarningBackground: #172323; /* → Blended midpoint #172323 */
+  --sapField_InvalidColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapField_InvalidBackground: #320202; /* → Blended midpoint #320202 */
+  --sapField_Selector_Hover_InvalidBackground: #172323; /* → Blended midpoint #172323 */
+  --sapField_ReadOnly_Background: #252A3C; /* → Blended midpoint #252A3C */
+  --sapField_ReadOnly_HelpBackground: #252A3C; /* → Blended midpoint #252A3C */
+  --sapField_ReadOnly_BorderColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapField_Picker_BorderColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --FieldShadow_Color_1: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --FieldInvalidShadow_Color_1: #F32D2D; /* → Blended midpoint #F32D2D */
+  --FieldWarningShadow_Color_1: #925600; /* → Blended midpoint #925600 */
+  --FieldSuccessShadow_Color_1: #6CA314; /* → Blended midpoint #6CA314 */
+  --FieldInformationShadow_Color_1: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --FieldHoverShadow_Color_1: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapPrimary1: #222A3F; /* → Blended midpoint #222A3F */
+  --sapPrimary2: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapPrimary3: #172323; /* → Blended midpoint #172323 */
+  --sapPrimary4: #0A0E11; /* → Blended midpoint #0A0E11 */
+  --sapPrimary5: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapPrimary6: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapPrimary7: #A2A9C5; /* → Blended midpoint #A2A9C5 */
+  --sapList_Background: #172323; /* → Blended midpoint #172323 */
+  --sapList_BorderColor: #2A2F41; /* → Blended midpoint #2A2F41 */
+  --sapList_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapList_Active_Background: #000000; /* → RDS Auto · Grayscale · 100 ↔ Pure · Black */
+  --sapList_Active_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapList_SelectionBackgroundColor: #222A3F; /* → Blended midpoint #222A3F */
+  --sapList_SelectionBorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapList_Hover_SelectionBackground: #242E44; /* → Blended midpoint #242E44 */
+  --sapList_Hover_Background: #24293B; /* → Blended midpoint #24293B */
+  --sapList_GroupHeaderBackground: #172323; /* → Blended midpoint #172323 */
+  --sapList_GroupHeaderBorderColor: #9CA6C4; /* → Blended midpoint #9CA6C4 */
+  --sapList_GroupHeaderTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapList_FooterBackground: #172323; /* → Blended midpoint #172323 */
+  --sapList_FooterTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapList_TableGroupHeaderBackground: #000000; /* → RDS Auto · Grayscale · 50 ↔ Pure · Black */
+  --sapList_TableGroupHeaderBorderColor: #9CA6C4; /* → Blended midpoint #9CA6C4 */
+  --sapList_TableGroupHeaderTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapList_TableFooterBorder: #9CA6C4; /* → Blended midpoint #9CA6C4 */
+  --sapList_TableFixedBorderColor: #7079A2; /* → Blended midpoint #7079A2 */
+  --sapList_HeaderBackground: #172323; /* → Blended midpoint #172323 */
+  --sapList_HeaderBorderColor: #9CA6C4; /* → Blended midpoint #9CA6C4 */
+  --sapList_HeaderTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapList_AlternatingBackground: #0A0E11; /* → Blended midpoint #0A0E11 */
+  --sapList_HighlightColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapObjectHeader_Background: #172323; /* → Blended midpoint #172323 */
+  --sapObjectHeader_Hover_Background: #24293B; /* → Blended midpoint #24293B */
+  --sapObjectHeader_BorderColor: #2A2F41; /* → Blended midpoint #2A2F41 */
+  --sapObjectHeader_Title_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapObjectHeader_Subtitle_TextColor: #A2A9C5; /* → Blended midpoint #A2A9C5 */
+  --sapProgress_InformationBackground: #201263; /* → Blended midpoint #201263 */
+  --sapProgress_InformationBorderColor: #201263; /* → Blended midpoint #201263 */
+  --sapProgress_InformationTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapProgress_PositiveBackground: #1B472F; /* → Blended midpoint #1B472F */
+  --sapProgress_PositiveBorderColor: #1B472F; /* → Blended midpoint #1B472F */
+  --sapProgress_CriticalBackground: #653D04; /* → Blended midpoint #653D04 */
+  --sapProgress_PositiveTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapProgress_CriticalBorderColor: #653D04; /* → Blended midpoint #653D04 */
+  --sapProgress_CriticalTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapProgress_NegativeBackground: #630404; /* → Blended midpoint #630404 */
+  --sapProgress_NegativeBorderColor: #630404; /* → Blended midpoint #630404 */
+  --sapProgress_Background: #2A3244; /* → Blended midpoint #2A3244 */
+  --sapProgress_Value_InformationBackground: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapProgress_NegativeTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapProgress_BorderColor: #2A3244; /* → Blended midpoint #2A3244 */
+  --sapProgress_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapProgress_Value_InformationBorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapProgress_Value_InformationTextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapProgress_Value_NegativeBackground: #F65858; /* → Blended midpoint #F65858 */
+  --sapProgress_Value_NegativeBorderColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapProgress_Value_NegativeTextColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapProgress_Value_Background: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapProgress_Value_BorderColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapProgress_Value_TextColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapProgress_Value_CriticalBackground: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapProgress_Value_PositiveBackground: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapProgress_Value_PositiveBorderColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapProgress_Value_PositiveTextColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapProgress_Value_CriticalBorderColor: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapProgress_Value_CriticalTextColor: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapHighlightTextColor: #172323; /* → Blended midpoint #172323 */
+  --sapBackgroundColorDefault: #0E1115; /* → Blended midpoint #0E1115 */
+  --sapGroup_FooterBackground: #000000; /* → RDS Auto · Pure · Black */
+  --sapShell_BackgroundPatternColor: #000000; /* → RDS Auto · Pure · Black */
+  --sapScrollBar_FaceColor: #6A749E; /* → Blended midpoint #6A749E */
+  --sapScrollBar_TrackColor: #172323; /* → Blended midpoint #172323 */
+  --sapScrollBar_BorderColor: #6A749E; /* → Blended midpoint #6A749E */
+  --sapScrollBar_SymbolColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapScrollBar_Hover_FaceColor: #A3AAC7; /* → Blended midpoint #A3AAC7 */
+  --sapSlider_Background: #2A3244; /* → Blended midpoint #2A3244 */
+  --sapSlider_BorderColor: #2A3244; /* → Blended midpoint #2A3244 */
+  --sapSlider_Selected_Background: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapSlider_Selected_BorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapSlider_HandleBackground: #172323; /* → Blended midpoint #172323 */
+  --sapSlider_HandleBorderColor: #3D5592; /* → Blended midpoint #3D5592 */
+  --sapSlider_Hover_HandleBackground: #202E4F; /* → Blended midpoint #202E4F */
+  --sapSlider_Hover_HandleBorderColor: #3D5592; /* → Blended midpoint #3D5592 */
+  --sapSlider_Active_HandleBackground: #153232; /* → Blended midpoint #153232 */
+  --sapSlider_Active_HandleBorderColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapSlider_RangeHandleBackground: #172323; /* → Blended midpoint #172323 */
+  --sapSlider_Hover_RangeHandleBackground: #202E4F; /* → Blended midpoint #202E4F */
+  --sapSlider_Active_RangeHandleBackground: #000000; /* → RDS Auto · Pure · Black */
+  --sapContent_MeasureIndicatorColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapContent_Selected_MeasureIndicatorColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapTab_Background: #172323; /* → Blended midpoint #172323 */
+  --sapTab_Selected_Background: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapTab_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapTab_Selected_TextColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapTab_ForegroundColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapTab_IconColor: #8BB2FF; /* → Blended midpoint #8BB2FF */
+  --sapTab_Selected_IconColor: #172323; /* → Blended midpoint #172323 */
+  --sapTab_Negative_TextColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapTab_Negative_Selected_TextColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapTab_Negative_ForegroundColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapTab_Negative_IconColor: #F65858; /* → Blended midpoint #F65858 */
+  --sapTab_Negative_Selected_Background: #F65858; /* → Blended midpoint #F65858 */
+  --sapTab_Negative_Selected_IconColor: #172323; /* → Blended midpoint #172323 */
+  --sapTab_Critical_TextColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapTab_Critical_Selected_TextColor: #FFE06C; /* → Blended midpoint #FFE06C */
+  --sapTab_Critical_ForegroundColor: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapTab_Critical_IconColor: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapTab_Critical_Selected_Background: #FBC600; /* → Blended midpoint #FBC600 */
+  --sapTab_Critical_Selected_IconColor: #172323; /* → Blended midpoint #172323 */
+  --sapTab_Positive_TextColor: #93D52C; /* → Blended midpoint #93D52C */
+  --sapTab_Positive_Selected_TextColor: #93D52C; /* → Blended midpoint #93D52C */
+  --sapTab_Positive_ForegroundColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapTab_Positive_IconColor: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapTab_Positive_Selected_Background: #6CA314; /* → Blended midpoint #6CA314 */
+  --sapTab_Positive_Selected_IconColor: #172323; /* → Blended midpoint #172323 */
+  --sapTab_Neutral_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 800 ↔ Grayscale · 50 */
+  --sapTab_Neutral_Selected_TextColor: #F5F5FA; /* → RDS Auto · Grayscale · 800 ↔ Grayscale · 50 */
+  --sapTab_Neutral_ForegroundColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapTab_Neutral_IconColor: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapTab_Neutral_Selected_Background: #B2B7CF; /* → Blended midpoint #B2B7CF */
+  --sapTab_Neutral_Selected_IconColor: #172323; /* → Blended midpoint #172323 */
+  --sapTile_Background: #172323; /* → Blended midpoint #172323 */
+  --sapTile_Hover_Background: #24293B; /* → Blended midpoint #24293B */
+  --sapTile_Hover_ContentBackground: #172323; /* → Blended midpoint #172323 */
+  --sapTile_Active_Background: #000000; /* → RDS Auto · Grayscale · 100 ↔ Pure · Black */
+  --sapTile_Active_ContentBackground: #172323; /* → Blended midpoint #172323 */
+  --sapTile_BorderColor: #000000; /* → RDS Auto · Pure · Black */
+  --sapTile_TitleTextColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapTile_TextColor: #A2A9C5; /* → Blended midpoint #A2A9C5 */
+  --sapTile_IconColor: #A2A9C5; /* → Blended midpoint #A2A9C5 */
+  --sapTile_SeparatorColor: #3D455C; /* → Blended midpoint #3D455C */
+  --sapTile_Interactive_BorderColor: #666F98; /* → Blended midpoint #666F98 */
+  --sapTile_OverlayBackground: #172323; /* → Blended midpoint #172323 */
+  --sapTile_OverlayForegroundColor: #F5F5FA; /* → RDS Auto · Grayscale · 900D ↔ Grayscale · 50 */
+  --sapToolbar_Background: #172323; /* → Blended midpoint #172323 */
+  --sapToolbar_SeparatorColor: #363E54; /* → Blended midpoint #363E54 */
+  --sapInfobar_Background: #02666D; /* → Blended midpoint #02666D */
+  --sapInfobar_Hover_Background: #172323; /* → Blended midpoint #172323 */
+  --sapInfobar_Active_Background: #172323; /* → Blended midpoint #172323 */
+  --sapInfobar_NonInteractive_Background: #0A0E11; /* → Blended midpoint #0A0E11 */
+  --sapInfobar_TextColor: #65F6EA; /* → Blended midpoint #65F6EA */
+}
