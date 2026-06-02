@@ -1,0 +1,5406 @@
+{
+  "generatedAt": "2026-05-22T10:01:07.598Z",
+  "source": "data/hot-swap-overrides-2026-05-22.css",
+  "mode": "Morning Horizon",
+  "totals": {
+    "total": 899,
+    "override": 881,
+    "keep": 18
+  },
+  "entries": [
+    {
+      "leafName": "sapBrandColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand/Blue/600 (Reltio Cobalt)"
+    },
+    {
+      "leafName": "sapHighlightColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand/Blue/600 / Blue/300"
+    },
+    {
+      "leafName": "sapBaseColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS White / Grayscale/900D"
+    },
+    {
+      "leafName": "sapSelectedColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Primary/Base"
+    },
+    {
+      "leafName": "sapActiveColor",
+      "hex": "#DEE2E5",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapHoverColor",
+      "hex": "#EAECEE",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapContent_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapContent_Selected_TextColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Primary/Base"
+    },
+    {
+      "leafName": "sapContent_Selected_Hover_Background",
+      "hex": "#E3F0FF",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapContent_Selected_ForegroundColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Primary/Base"
+    },
+    {
+      "leafName": "sapContent_HelpColor",
+      "hex": "#339158",
+      "action": "override",
+      "note": "→ Blended midpoint #339158"
+    },
+    {
+      "leafName": "sapContent_DragAndDropActiveColor",
+      "hex": "#0064D9",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapContent_SearchHighlightColor",
+      "hex": "#DAFDF5",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapTitleColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapContent_ForegroundTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapContent_LabelColor",
+      "hex": "#566189",
+      "action": "override",
+      "note": "→ Blended midpoint #566189"
+    },
+    {
+      "leafName": "sapContent_MarkerTextColor",
+      "hex": "#02858B",
+      "action": "override",
+      "note": "→ Blended midpoint #02858B"
+    },
+    {
+      "leafName": "sapContent_ContrastTextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS White / Grayscale/900D"
+    },
+    {
+      "leafName": "sapContent_DisabledTextColor",
+      "hex": "#9EA1BA",
+      "action": "override",
+      "note": "→ Blended midpoint #9EA1BA"
+    },
+    {
+      "leafName": "sapContent_TextShadowColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapContent_TextShadowColor_2-4",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapContent_ContrastTextShadowColor",
+      "hex": "#000000",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · Black ↔ Pure · White"
+    },
+    {
+      "leafName": "sapGroup_ContentBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Background/Surface 1"
+    },
+    {
+      "leafName": "sapGroup_ContentBorderColor",
+      "hex": "#E3E3F2",
+      "action": "override",
+      "note": "→ RDS Outline-Border/Surface Border 2"
+    },
+    {
+      "leafName": "sapGroup_TitleBorderColor",
+      "hex": "#BABADE",
+      "action": "override",
+      "note": "→ RDS Outline-Border/Surface Border 3"
+    },
+    {
+      "leafName": "sapGroup_TitleTextColor",
+      "hex": "#172133",
+      "action": "override",
+      "note": "→ Blended midpoint #172133"
+    },
+    {
+      "leafName": "sapBlockLayer_Background",
+      "hex": "#000000",
+      "action": "override",
+      "note": "→ RDS Black"
+    },
+    {
+      "leafName": "sapGroup_TitleBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapBlockLayer_Opacity",
+      "hex": "#000000",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · Black"
+    },
+    {
+      "leafName": "sapNegativeColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapErrorColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapErrorBorderColor",
+      "hex": "#E90B0B",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapErrorBackground",
+      "hex": "#FDE7E7",
+      "action": "override",
+      "note": "→ RDS Brand/Red/100 (Error/Soft fill)"
+    },
+    {
+      "leafName": "sapWarningColor",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Other/Orange/500"
+    },
+    {
+      "leafName": "sapCriticalColor",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Other/Orange/500"
+    },
+    {
+      "leafName": "sapWarningBorderColor",
+      "hex": "#CE5A07",
+      "action": "override",
+      "note": "→ Blended midpoint #CE5A07"
+    },
+    {
+      "leafName": "sapWarningBackground",
+      "hex": "#FFF5CC",
+      "action": "override",
+      "note": "→ RDS Brand/Gold/100 (Warning/Soft fill)"
+    },
+    {
+      "leafName": "sapPositiveColor",
+      "hex": "#256F3A",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapSuccessColor",
+      "hex": "#256F3A",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapSuccessBorderColor",
+      "hex": "#30914C",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapSuccessBackground",
+      "hex": "#DCEFE7",
+      "action": "override",
+      "note": "→ RDS Green-Emerald/100 (Success/Soft fill)"
+    },
+    {
+      "leafName": "sapInformativeColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand/Blue/600 (Reltio Cobalt)"
+    },
+    {
+      "leafName": "sapInformationColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand/Blue/600 (Reltio Cobalt)"
+    },
+    {
+      "leafName": "sapInformationBorderColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand/Blue/600 (Reltio Cobalt)"
+    },
+    {
+      "leafName": "sapInformationBackground",
+      "hex": "#E5E5FF",
+      "action": "override",
+      "note": "→ RDS Brand/Blue/50 ↔ Brand/Blue/900"
+    },
+    {
+      "leafName": "sapNeutralColor",
+      "hex": "#7481A8",
+      "action": "override",
+      "note": "→ Blended midpoint #7481A8"
+    },
+    {
+      "leafName": "sapNeutralBackground",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Grayscale/50 ↔ 800"
+    },
+    {
+      "leafName": "sapNeutralBorderColor",
+      "hex": "#9DA6C5",
+      "action": "override",
+      "note": "→ Blended midpoint #9DA6C5"
+    },
+    {
+      "leafName": "sapMessage_Button_Hover_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapMessage_ErrorBorderColor",
+      "hex": "#FF94CB",
+      "action": "override",
+      "note": "→ Blended midpoint #FF94CB"
+    },
+    {
+      "leafName": "sapMessage_WarningBorderColor",
+      "hex": "#FFE066",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Gold · 300 ↔ Brand / Gold · 800"
+    },
+    {
+      "leafName": "sapMessage_SuccessBorderColor",
+      "hex": "#D7F38C",
+      "action": "override",
+      "note": "→ Blended midpoint #D7F38C"
+    },
+    {
+      "leafName": "sapMessage_InformationBorderColor",
+      "hex": "#AACEFF",
+      "action": "override",
+      "note": "→ Blended midpoint #AACEFF"
+    },
+    {
+      "leafName": "sapNegativeTextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapCriticalTextColor",
+      "hex": "#BE520E",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 600 ↔ Brand / Gold · 300"
+    },
+    {
+      "leafName": "sapPositiveTextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapInformativeTextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapNeutralTextColor",
+      "hex": "#222A3F",
+      "action": "override",
+      "note": "→ Blended midpoint #222A3F"
+    },
+    {
+      "leafName": "sapNegativeElementColor",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapCriticalElementColor",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 500"
+    },
+    {
+      "leafName": "sapPositiveElementColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapInformativeElementColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand / Blue · 600 (custom)"
+    },
+    {
+      "leafName": "sapNeutralElementColor",
+      "hex": "#9DA6C5",
+      "action": "override",
+      "note": "→ Blended midpoint #9DA6C5"
+    },
+    {
+      "leafName": "sapLinkColor",
+      "hex": "#2350ED",
+      "action": "override",
+      "note": "→ Blended midpoint #2350ED"
+    },
+    {
+      "leafName": "sapLink_Hover_Color",
+      "hex": "#2350ED",
+      "action": "override",
+      "note": "→ Blended midpoint #2350ED"
+    },
+    {
+      "leafName": "sapLink_Active_Color",
+      "hex": "#2350ED",
+      "action": "override",
+      "note": "→ Blended midpoint #2350ED"
+    },
+    {
+      "leafName": "sapLink_Visited_Color",
+      "hex": "#2350ED",
+      "action": "override",
+      "note": "→ Blended midpoint #2350ED"
+    },
+    {
+      "leafName": "sapLink_InvertedColor",
+      "hex": "#ACC1FF",
+      "action": "override",
+      "note": "→ Blended midpoint #ACC1FF"
+    },
+    {
+      "leafName": "sapLink_SubtleColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapButton_Emphasized_Background",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Primary/Base"
+    },
+    {
+      "leafName": "sapButton_Emphasized_BorderColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Primary/Base"
+    },
+    {
+      "leafName": "sapButton_Emphasized_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS White"
+    },
+    {
+      "leafName": "sapButton_Emphasized_Hover_Background",
+      "hex": "#0047AC",
+      "action": "override",
+      "note": "→ Blended midpoint #0047AC"
+    },
+    {
+      "leafName": "sapButton_Emphasized_Active_TextColor",
+      "hex": "#0047D3",
+      "action": "override",
+      "note": "→ Blended midpoint #0047D3"
+    },
+    {
+      "leafName": "sapButton_Negative_Background",
+      "hex": "#F53232",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapButton_Negative_Hover_Background",
+      "hex": "#E90B0B",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapButton_Critical_Background",
+      "hex": "#E76500",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapButton_Critical_Hover_Background",
+      "hex": "#DD6100",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapButton_Attention_Background",
+      "hex": "#FFF3B7",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapButton_Attention_TextColor",
+      "hex": "#8F3D0A",
+      "action": "override",
+      "note": "→ RDS Orange/700 / Gold/300"
+    },
+    {
+      "leafName": "sapContent_FocusColor",
+      "hex": "#00228A",
+      "action": "override",
+      "note": "→ Blended midpoint #00228A"
+    },
+    {
+      "leafName": "sapContent_ContrastFocusColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS White ↔ Black"
+    },
+    {
+      "leafName": "sapContent_ShadowColor",
+      "hex": "#2A334C",
+      "action": "override",
+      "note": "→ Blended midpoint #2A334C"
+    },
+    {
+      "leafName": "sapContent_ContrastShadowColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS White"
+    },
+    {
+      "leafName": "sapContent_ForegroundBorderColor",
+      "hex": "#828DB7",
+      "action": "override",
+      "note": "→ Blended midpoint #828DB7"
+    },
+    {
+      "leafName": "sapContent_ForegroundColor",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Grayscale/50 ↔ 900D"
+    },
+    {
+      "leafName": "sapShellColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Background/Surface 1"
+    },
+    {
+      "leafName": "sapShell_BorderColor",
+      "hex": "#E3E3F2",
+      "action": "override",
+      "note": "→ RDS Outline-Border/Surface Border 2"
+    },
+    {
+      "leafName": "sapShell_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapShell_SubBrand_TextColor",
+      "hex": "#002B78",
+      "action": "override",
+      "note": "→ Blended midpoint #002B78"
+    },
+    {
+      "leafName": "sapShell_InteractiveBackground",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Grayscale/50 ↔ 900D"
+    },
+    {
+      "leafName": "sapShell_Active_TextColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Primary/Base"
+    },
+    {
+      "leafName": "sapShell_Selected_TextColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Primary/Base"
+    },
+    {
+      "leafName": "sapShell_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Grayscale/50 ↔ 900D"
+    },
+    {
+      "leafName": "sapShell_NegativeColor",
+      "hex": "#AA0808",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapShell_CriticalColor",
+      "hex": "#B44F00",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapShell_PositiveColor",
+      "hex": "#256F3A",
+      "action": "keep",
+      "note": "kept from Fiori"
+    },
+    {
+      "leafName": "sapShell_InformativeColor",
+      "hex": "#0047D3",
+      "action": "override",
+      "note": "→ Blended midpoint #0047D3"
+    },
+    {
+      "leafName": "sapShell_NeutralColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapShell_InteractiveTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapShell_InteractiveBorderColor",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "sapShell_Hover_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Selected_Hover_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_GroupTitleTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapShell_Navigation_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Navigation_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapShell_Navigation_Hover_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Navigation_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Navigation_Active_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapShell_Navigation_SelectedColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapShell_Navigation_Selected_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapShell_Category_1_Background",
+      "hex": "#455CEA",
+      "action": "override",
+      "note": "→ Blended midpoint #455CEA"
+    },
+    {
+      "leafName": "sapShell_Category_1_BorderColor",
+      "hex": "#455CEA",
+      "action": "override",
+      "note": "→ Blended midpoint #455CEA"
+    },
+    {
+      "leafName": "sapShell_Category_1_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_2_Background",
+      "hex": "#E61381",
+      "action": "override",
+      "note": "→ Blended midpoint #E61381"
+    },
+    {
+      "leafName": "sapShell_Category_2_BorderColor",
+      "hex": "#E61381",
+      "action": "override",
+      "note": "→ Blended midpoint #E61381"
+    },
+    {
+      "leafName": "sapShell_Category_2_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_3_Background",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 600"
+    },
+    {
+      "leafName": "sapShell_Category_3_BorderColor",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 600"
+    },
+    {
+      "leafName": "sapShell_Category_3_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_4_Background",
+      "hex": "#63049B",
+      "action": "override",
+      "note": "→ Blended midpoint #63049B"
+    },
+    {
+      "leafName": "sapShell_Category_4_BorderColor",
+      "hex": "#63049B",
+      "action": "override",
+      "note": "→ Blended midpoint #63049B"
+    },
+    {
+      "leafName": "sapShell_Category_4_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_5_Background",
+      "hex": "#B41D0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B41D0C"
+    },
+    {
+      "leafName": "sapShell_Category_5_BorderColor",
+      "hex": "#B41D0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B41D0C"
+    },
+    {
+      "leafName": "sapShell_Category_5_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_6_Background",
+      "hex": "#048F94",
+      "action": "override",
+      "note": "→ Blended midpoint #048F94"
+    },
+    {
+      "leafName": "sapShell_Category_6_BorderColor",
+      "hex": "#048F94",
+      "action": "override",
+      "note": "→ Blended midpoint #048F94"
+    },
+    {
+      "leafName": "sapShell_Category_6_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_7_Background",
+      "hex": "#CA34EE",
+      "action": "override",
+      "note": "→ Blended midpoint #CA34EE"
+    },
+    {
+      "leafName": "sapShell_Category_7_BorderColor",
+      "hex": "#CA34EE",
+      "action": "override",
+      "note": "→ Blended midpoint #CA34EE"
+    },
+    {
+      "leafName": "sapShell_Category_7_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_8_Background",
+      "hex": "#4F910E",
+      "action": "override",
+      "note": "→ Blended midpoint #4F910E"
+    },
+    {
+      "leafName": "sapShell_Category_8_BorderColor",
+      "hex": "#4F910E",
+      "action": "override",
+      "note": "→ Blended midpoint #4F910E"
+    },
+    {
+      "leafName": "sapShell_Category_8_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_9_Background",
+      "hex": "#201D75",
+      "action": "override",
+      "note": "→ Blended midpoint #201D75"
+    },
+    {
+      "leafName": "sapShell_Category_9_BorderColor",
+      "hex": "#201D75",
+      "action": "override",
+      "note": "→ Blended midpoint #201D75"
+    },
+    {
+      "leafName": "sapShell_Category_9_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_10_Background",
+      "hex": "#66729B",
+      "action": "override",
+      "note": "→ Blended midpoint #66729B"
+    },
+    {
+      "leafName": "sapShell_Category_10_BorderColor",
+      "hex": "#66729B",
+      "action": "override",
+      "note": "→ Blended midpoint #66729B"
+    },
+    {
+      "leafName": "sapShell_Category_10_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_11_Background",
+      "hex": "#C80D0D",
+      "action": "override",
+      "note": "→ Blended midpoint #C80D0D"
+    },
+    {
+      "leafName": "sapShell_Category_11_BorderColor",
+      "hex": "#C80D0D",
+      "action": "override",
+      "note": "→ Blended midpoint #C80D0D"
+    },
+    {
+      "leafName": "sapShell_Category_11_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_12_Background",
+      "hex": "#6D5DFF",
+      "action": "override",
+      "note": "→ Blended midpoint #6D5DFF"
+    },
+    {
+      "leafName": "sapShell_Category_12_BorderColor",
+      "hex": "#6D5DFF",
+      "action": "override",
+      "note": "→ Blended midpoint #6D5DFF"
+    },
+    {
+      "leafName": "sapShell_Category_12_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_13_Background",
+      "hex": "#AF0C72",
+      "action": "override",
+      "note": "→ Blended midpoint #AF0C72"
+    },
+    {
+      "leafName": "sapShell_Category_13_BorderColor",
+      "hex": "#AF0C72",
+      "action": "override",
+      "note": "→ Blended midpoint #AF0C72"
+    },
+    {
+      "leafName": "sapShell_Category_13_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_14_Background",
+      "hex": "#0B5E61",
+      "action": "override",
+      "note": "→ Blended midpoint #0B5E61"
+    },
+    {
+      "leafName": "sapShell_Category_14_BorderColor",
+      "hex": "#0B5E61",
+      "action": "override",
+      "note": "→ Blended midpoint #0B5E61"
+    },
+    {
+      "leafName": "sapShell_Category_14_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_15_Background",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "sapShell_Category_15_BorderColor",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "sapShell_Category_15_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapShell_Category_16_Background",
+      "hex": "#276243",
+      "action": "override",
+      "note": "→ Blended midpoint #276243"
+    },
+    {
+      "leafName": "sapShell_Category_16_BorderColor",
+      "hex": "#276243",
+      "action": "override",
+      "note": "→ Blended midpoint #276243"
+    },
+    {
+      "leafName": "sapShell_Category_16_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "Shell_ShadowColor_1",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Shell_ShadowColor_2",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "sapLegendColor1",
+      "hex": "#C86800",
+      "action": "override",
+      "note": "→ Blended midpoint #C86800"
+    },
+    {
+      "leafName": "sapLegendColor2",
+      "hex": "#C8470C",
+      "action": "override",
+      "note": "→ Blended midpoint #C8470C"
+    },
+    {
+      "leafName": "sapLegendColor3",
+      "hex": "#CF1173",
+      "action": "override",
+      "note": "→ Blended midpoint #CF1173"
+    },
+    {
+      "leafName": "sapLegendColor4",
+      "hex": "#8E0B0B",
+      "action": "override",
+      "note": "→ RDS Brand/Red/700 ↔ Red/300"
+    },
+    {
+      "leafName": "sapLegendColor5",
+      "hex": "#A80BE4",
+      "action": "override",
+      "note": "→ Blended midpoint #A80BE4"
+    },
+    {
+      "leafName": "sapLegendColor6",
+      "hex": "#003EB8",
+      "action": "override",
+      "note": "→ Blended midpoint #003EB8"
+    },
+    {
+      "leafName": "sapLegendColor7",
+      "hex": "#048F94",
+      "action": "override",
+      "note": "→ Blended midpoint #048F94"
+    },
+    {
+      "leafName": "sapLegendColor8",
+      "hex": "#257B3D",
+      "action": "override",
+      "note": "→ Blended midpoint #257B3D"
+    },
+    {
+      "leafName": "sapLegendColor9",
+      "hex": "#59668D",
+      "action": "override",
+      "note": "→ Blended midpoint #59668D"
+    },
+    {
+      "leafName": "sapLegendColor10",
+      "hex": "#63049B",
+      "action": "override",
+      "note": "→ Blended midpoint #63049B"
+    },
+    {
+      "leafName": "sapLegendColor11",
+      "hex": "#9D3E05",
+      "action": "override",
+      "note": "→ Blended midpoint #9D3E05"
+    },
+    {
+      "leafName": "sapLegendColor12",
+      "hex": "#9D1C0A",
+      "action": "override",
+      "note": "→ Blended midpoint #9D1C0A"
+    },
+    {
+      "leafName": "sapLegendColor13",
+      "hex": "#BD0F6E",
+      "action": "override",
+      "note": "→ RDS Other/Pink/600 ↔ Red/300"
+    },
+    {
+      "leafName": "sapLegendColor14",
+      "hex": "#792A04",
+      "action": "override",
+      "note": "→ Blended midpoint #792A04"
+    },
+    {
+      "leafName": "sapLegendColor15",
+      "hex": "#41196E",
+      "action": "override",
+      "note": "→ Blended midpoint #41196E"
+    },
+    {
+      "leafName": "sapLegendColor16",
+      "hex": "#001C77",
+      "action": "override",
+      "note": "→ Blended midpoint #001C77"
+    },
+    {
+      "leafName": "sapLegendColor17",
+      "hex": "#025E65",
+      "action": "override",
+      "note": "→ Blended midpoint #025E65"
+    },
+    {
+      "leafName": "sapLegendColor18",
+      "hex": "#1F5133",
+      "action": "override",
+      "note": "→ Blended midpoint #1F5133"
+    },
+    {
+      "leafName": "sapLegendColor19",
+      "hex": "#103298",
+      "action": "override",
+      "note": "→ Blended midpoint #103298"
+    },
+    {
+      "leafName": "sapLegendColor20",
+      "hex": "#330BF6",
+      "action": "override",
+      "note": "→ Blended midpoint #330BF6"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor1",
+      "hex": "#FFEB99",
+      "action": "override",
+      "note": "→ RDS Brand/Gold/200 ↔ Gold/900"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor2",
+      "hex": "#FDE5D8",
+      "action": "override",
+      "note": "→ Blended midpoint #FDE5D8"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor3",
+      "hex": "#FDEEF6",
+      "action": "override",
+      "note": "→ Blended midpoint #FDEEF6"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor4",
+      "hex": "#FDE7E7",
+      "action": "override",
+      "note": "→ RDS Brand/Red/100 ↔ Red/800"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor5",
+      "hex": "#FFE5F9",
+      "action": "override",
+      "note": "→ Blended midpoint #FFE5F9"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor6",
+      "hex": "#D5DAFF",
+      "action": "override",
+      "note": "→ Blended midpoint #D5DAFF"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor7",
+      "hex": "#C7FEF7",
+      "action": "override",
+      "note": "→ Blended midpoint #C7FEF7"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor8",
+      "hex": "#F3FDD9",
+      "action": "override",
+      "note": "→ Blended midpoint #F3FDD9"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor9",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Grayscale/50 ↔ Grayscale/800"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor10",
+      "hex": "#F2E1FB",
+      "action": "override",
+      "note": "→ Blended midpoint #F2E1FB"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor11",
+      "hex": "#FFF5CC",
+      "action": "override",
+      "note": "→ RDS Brand/Gold/100 ↔ Orange/800"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor12",
+      "hex": "#FEF6F6",
+      "action": "override",
+      "note": "→ RDS Brand/Red/50 ↔ Red/900"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor13",
+      "hex": "#FBE8F1",
+      "action": "override",
+      "note": "→ Blended midpoint #FBE8F1"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor14",
+      "hex": "#F8F1D1",
+      "action": "override",
+      "note": "→ Blended midpoint #F8F1D1"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor15",
+      "hex": "#EADCFA",
+      "action": "override",
+      "note": "→ Blended midpoint #EADCFA"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor16",
+      "hex": "#E8EFFF",
+      "action": "override",
+      "note": "→ Blended midpoint #E8EFFF"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor17",
+      "hex": "#E0FEFA",
+      "action": "override",
+      "note": "→ Blended midpoint #E0FEFA"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor18",
+      "hex": "#EEFACC",
+      "action": "override",
+      "note": "→ Blended midpoint #EEFACC"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor19",
+      "hex": "#F0F1FF",
+      "action": "override",
+      "note": "→ Blended midpoint #F0F1FF"
+    },
+    {
+      "leafName": "sapLegendBackgroundColor20",
+      "hex": "#E9EAFF",
+      "action": "override",
+      "note": "→ Blended midpoint #E9EAFF"
+    },
+    {
+      "leafName": "sapLegend_WorkingBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Background/Surface 1"
+    },
+    {
+      "leafName": "sapLegend_NonWorkingBackground",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Grayscale/50 ↔ Grayscale/900D"
+    },
+    {
+      "leafName": "sapLegend_CurrentDateTime",
+      "hex": "#8809C7",
+      "action": "override",
+      "note": "→ Blended midpoint #8809C7"
+    },
+    {
+      "leafName": "sapAccentColor1",
+      "hex": "#CC7700",
+      "action": "override",
+      "note": "→ RDS Brand/Gold/700 ↔ Gold/300"
+    },
+    {
+      "leafName": "sapAccentColor2",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapAccentColor3",
+      "hex": "#BD0F6E",
+      "action": "override",
+      "note": "→ RDS Pink/600 ↔ Pink/100"
+    },
+    {
+      "leafName": "sapAccentColor4",
+      "hex": "#8809C7",
+      "action": "override",
+      "note": "→ Blended midpoint #8809C7"
+    },
+    {
+      "leafName": "sapAccentColor5",
+      "hex": "#6A29F5",
+      "action": "override",
+      "note": "→ Blended midpoint #6A29F5"
+    },
+    {
+      "leafName": "sapAccentColor6",
+      "hex": "#000099",
+      "action": "override",
+      "note": "→ RDS Brand/Blue/700 ↔ Blue/200"
+    },
+    {
+      "leafName": "sapAccentColor7",
+      "hex": "#02858B",
+      "action": "override",
+      "note": "→ Blended midpoint #02858B"
+    },
+    {
+      "leafName": "sapAccentColor8",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapAccentColor9",
+      "hex": "#5B239E",
+      "action": "override",
+      "note": "→ Blended midpoint #5B239E"
+    },
+    {
+      "leafName": "sapAccentColor10",
+      "hex": "#59668D",
+      "action": "override",
+      "note": "→ Blended midpoint #59668D"
+    },
+    {
+      "leafName": "sapAccentBackgroundColor1",
+      "hex": "#FFF4C2",
+      "action": "override",
+      "note": "→ Blended midpoint #FFF4C2"
+    },
+    {
+      "leafName": "sapAccentBackgroundColor2",
+      "hex": "#FFCCE8",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 100 ↔ Brand / Red · 700"
+    },
+    {
+      "leafName": "sapAccentBackgroundColor3",
+      "hex": "#FFE5F3",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 50 ↔ Pink · 600"
+    },
+    {
+      "leafName": "sapAccentBackgroundColor4",
+      "hex": "#FFE1F3",
+      "action": "override",
+      "note": "→ Blended midpoint #FFE1F3"
+    },
+    {
+      "leafName": "sapAccentBackgroundColor5",
+      "hex": "#E4D0FB",
+      "action": "override",
+      "note": "→ RDS Auto · Purple · 50 ↔ Brand / Blue · 500"
+    },
+    {
+      "leafName": "sapAccentBackgroundColor6",
+      "hex": "#DBF7FF",
+      "action": "override",
+      "note": "→ Blended midpoint #DBF7FF"
+    },
+    {
+      "leafName": "sapAccentBackgroundColor7",
+      "hex": "#C7FEF7",
+      "action": "override",
+      "note": "→ Blended midpoint #C7FEF7"
+    },
+    {
+      "leafName": "sapAccentBackgroundColor8",
+      "hex": "#EEFACC",
+      "action": "override",
+      "note": "→ Blended midpoint #EEFACC"
+    },
+    {
+      "leafName": "sapAccentBackgroundColor9",
+      "hex": "#E4D0FB",
+      "action": "override",
+      "note": "→ RDS Auto · Purple · 50 ↔ Purple · 800"
+    },
+    {
+      "leafName": "sapAccentBackgroundColor10",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 600"
+    },
+    {
+      "leafName": "Shadow0_Color_1",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Shadow0_Color_2",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Shadow1_Color_1",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Shadow1_Color_2",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Lite_Shadow_Color_1",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Lite_Shadow_Color_2",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Shadow2_Color_1",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Shadow2_Color",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "Shadow2_Color_2",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Shadow3_Color",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "Shadow3_Color_1",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Shadow3_Color_2",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "HeaderShadow_Color_1",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "HeaderShadow_Color_2",
+      "hex": "#DEDEE6",
+      "action": "override",
+      "note": "→ Blended midpoint #DEDEE6"
+    },
+    {
+      "leafName": "Success_HeaderShadow_Color_1",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Success_HeaderShadow_Color_2",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "Warning_HeaderShadow_Color_1",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Warning_HeaderShadow_Color_2",
+      "hex": "#E66409",
+      "action": "override",
+      "note": "→ Blended midpoint #E66409"
+    },
+    {
+      "leafName": "Error_HeaderShadow_Color_1",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Error_HeaderShadow_Color_2",
+      "hex": "#EC2525",
+      "action": "override",
+      "note": "→ Blended midpoint #EC2525"
+    },
+    {
+      "leafName": "Information_HeaderShadow_Color_1",
+      "hex": "#242E44",
+      "action": "override",
+      "note": "→ Blended midpoint #242E44"
+    },
+    {
+      "leafName": "Information_HeaderShadow_Color_2",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand / Blue · 600 (custom)"
+    },
+    {
+      "leafName": "HeaderShadow_Color",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "TextShadow_Color",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "InteractionShadow_Color_1",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "ContrastTextShadow_Color",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "SelectedShadow_Color_1",
+      "hex": "#8CA9FF",
+      "action": "override",
+      "note": "→ Blended midpoint #8CA9FF"
+    },
+    {
+      "leafName": "NegativeShadow_Color_1",
+      "hex": "#FF94BE",
+      "action": "override",
+      "note": "→ Blended midpoint #FF94BE"
+    },
+    {
+      "leafName": "CriticalShadow_Color_1",
+      "hex": "#FFD105",
+      "action": "override",
+      "note": "→ Blended midpoint #FFD105"
+    },
+    {
+      "leafName": "PositiveShadow_Color_1",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "InformativeShadow_Color_1",
+      "hex": "#93B0FF",
+      "action": "override",
+      "note": "→ Blended midpoint #93B0FF"
+    },
+    {
+      "leafName": "NeutralShadow_Color_1",
+      "hex": "#9DA6C5",
+      "action": "override",
+      "note": "→ Blended midpoint #9DA6C5"
+    },
+    {
+      "leafName": "Interaction_Shadow_Color",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "Selected_Shadow_Color",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "Negative_Shadow_Color",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "Critical_Shadow_Color",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "Popover Border",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "Avatar Shadow",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "Placeholder Middle Color",
+      "hex": "#ABABC0",
+      "action": "override",
+      "note": "→ Blended midpoint #ABABC0"
+    },
+    {
+      "leafName": "colorPalette_FillColor_Swatch",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "Tooltip_Stroke_Color",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "sapBackgroundColor",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapPageHeader_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapPageHeader_BorderColor",
+      "hex": "#DEDEE6",
+      "action": "override",
+      "note": "→ Blended midpoint #DEDEE6"
+    },
+    {
+      "leafName": "sapPageHeader_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapPageFooter_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapPageFooter_BorderColor",
+      "hex": "#DEDEE6",
+      "action": "override",
+      "note": "→ Blended midpoint #DEDEE6"
+    },
+    {
+      "leafName": "sapPageFooter_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapAssistant_Color1",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapAssistant_Color2",
+      "hex": "#992FDA",
+      "action": "override",
+      "note": "→ Blended midpoint #992FDA"
+    },
+    {
+      "leafName": "sapAssistant_Background",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapAssistant_BorderColor",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapAssistant_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "sapAssistant_Hover_Background",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Blue · 600"
+    },
+    {
+      "leafName": "sapAssistant_Hover_BorderColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Blue · 600"
+    },
+    {
+      "leafName": "sapAssistant_Hover_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "sapAssistant_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Blue · 800"
+    },
+    {
+      "leafName": "sapAssistant_Active_BorderColor",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapAssistant_Active_TextColor",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapAssistant_Question_Background",
+      "hex": "#E5E5FF",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Blue · 50 ↔ Brand / Blue · 800"
+    },
+    {
+      "leafName": "sapAssistant_Question_BorderColor",
+      "hex": "#E5E5FF",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Blue · 50 ↔ Brand / Blue · 800"
+    },
+    {
+      "leafName": "sapAssistant_Question_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapAssistant_Answer_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapAssistant_Answer_BorderColor",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapAssistant_Answer_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapShell_Assistant_ForegroundColor",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapAvatar_1_Background",
+      "hex": "#FFF4C2",
+      "action": "override",
+      "note": "→ Blended midpoint #FFF4C2"
+    },
+    {
+      "leafName": "sapAvatar_2_Background",
+      "hex": "#FFCCE8",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 100 ↔ Brand / Red · 700"
+    },
+    {
+      "leafName": "sapAvatar_3_Background",
+      "hex": "#FFE5F3",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 50 ↔ Pink · 600"
+    },
+    {
+      "leafName": "sapAvatar_4_Background",
+      "hex": "#FFE1F3",
+      "action": "override",
+      "note": "→ Blended midpoint #FFE1F3"
+    },
+    {
+      "leafName": "sapAvatar_5_Background",
+      "hex": "#E4D0FB",
+      "action": "override",
+      "note": "→ RDS Auto · Purple · 50 ↔ Brand / Blue · 500"
+    },
+    {
+      "leafName": "sapAvatar_6_Background",
+      "hex": "#DBF7FF",
+      "action": "override",
+      "note": "→ Blended midpoint #DBF7FF"
+    },
+    {
+      "leafName": "sapAvatar_7_Background",
+      "hex": "#C7FEF7",
+      "action": "override",
+      "note": "→ Blended midpoint #C7FEF7"
+    },
+    {
+      "leafName": "sapAvatar_8_Background",
+      "hex": "#EEFACC",
+      "action": "override",
+      "note": "→ Blended midpoint #EEFACC"
+    },
+    {
+      "leafName": "sapAvatar_9_Background",
+      "hex": "#E4D0FB",
+      "action": "override",
+      "note": "→ RDS Auto · Purple · 50 ↔ Purple · 800"
+    },
+    {
+      "leafName": "sapAvatar_10_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 600"
+    },
+    {
+      "leafName": "sapAvatar_1_Hover_Background",
+      "hex": "#FFF4C2",
+      "action": "override",
+      "note": "→ Blended midpoint #FFF4C2"
+    },
+    {
+      "leafName": "sapAvatar_2_Hover_Background",
+      "hex": "#FFCCE8",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 100 ↔ Brand / Red · 700"
+    },
+    {
+      "leafName": "sapAvatar_3_Hover_Background",
+      "hex": "#FFE5F3",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 50 ↔ Pink · 600"
+    },
+    {
+      "leafName": "sapAvatar_4_Hover_Background",
+      "hex": "#FFE1F3",
+      "action": "override",
+      "note": "→ Blended midpoint #FFE1F3"
+    },
+    {
+      "leafName": "sapAvatar_5_Hover_Background",
+      "hex": "#E4D0FB",
+      "action": "override",
+      "note": "→ RDS Auto · Purple · 50 ↔ Brand / Blue · 500"
+    },
+    {
+      "leafName": "sapAvatar_6_Hover_Background",
+      "hex": "#DBF7FF",
+      "action": "override",
+      "note": "→ Blended midpoint #DBF7FF"
+    },
+    {
+      "leafName": "sapAvatar_7_Hover_Background",
+      "hex": "#C7FEF7",
+      "action": "override",
+      "note": "→ Blended midpoint #C7FEF7"
+    },
+    {
+      "leafName": "sapAvatar_8_Hover_Background",
+      "hex": "#EEFACC",
+      "action": "override",
+      "note": "→ Blended midpoint #EEFACC"
+    },
+    {
+      "leafName": "sapAvatar_9_Hover_Background",
+      "hex": "#E4D0FB",
+      "action": "override",
+      "note": "→ RDS Auto · Purple · 50 ↔ Purple · 800"
+    },
+    {
+      "leafName": "sapAvatar_10_Hover_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 600"
+    },
+    {
+      "leafName": "sapAvatar_1_BorderColor",
+      "hex": "#FFF4C2",
+      "action": "override",
+      "note": "→ Blended midpoint #FFF4C2"
+    },
+    {
+      "leafName": "sapAvatar_2_BorderColor",
+      "hex": "#FFCCE8",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 100 ↔ Brand / Red · 700"
+    },
+    {
+      "leafName": "sapAvatar_3_BorderColor",
+      "hex": "#FFE5F3",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 50 ↔ Pink · 600"
+    },
+    {
+      "leafName": "sapAvatar_4_BorderColor",
+      "hex": "#FFE1F3",
+      "action": "override",
+      "note": "→ Blended midpoint #FFE1F3"
+    },
+    {
+      "leafName": "sapAvatar_5_BorderColor",
+      "hex": "#E4D0FB",
+      "action": "override",
+      "note": "→ RDS Auto · Purple · 50 ↔ Brand / Blue · 500"
+    },
+    {
+      "leafName": "sapAvatar_6_BorderColor",
+      "hex": "#DBF7FF",
+      "action": "override",
+      "note": "→ Blended midpoint #DBF7FF"
+    },
+    {
+      "leafName": "sapAvatar_7_BorderColor",
+      "hex": "#C7FEF7",
+      "action": "override",
+      "note": "→ Blended midpoint #C7FEF7"
+    },
+    {
+      "leafName": "sapAvatar_8_BorderColor",
+      "hex": "#EEFACC",
+      "action": "override",
+      "note": "→ Blended midpoint #EEFACC"
+    },
+    {
+      "leafName": "sapAvatar_9_BorderColor",
+      "hex": "#E4D0FB",
+      "action": "override",
+      "note": "→ RDS Auto · Purple · 50 ↔ Purple · 800"
+    },
+    {
+      "leafName": "sapAvatar_10_BorderColor",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 600"
+    },
+    {
+      "leafName": "sapAvatar_Hover_BorderColor",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "sapAvatar_1_TextColor",
+      "hex": "#A15600",
+      "action": "override",
+      "note": "→ Blended midpoint #A15600"
+    },
+    {
+      "leafName": "sapAvatar_2_TextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapAvatar_3_TextColor",
+      "hex": "#BD0F6E",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 600 ↔ Pink · 100"
+    },
+    {
+      "leafName": "sapAvatar_4_TextColor",
+      "hex": "#992FDA",
+      "action": "override",
+      "note": "→ Blended midpoint #992FDA"
+    },
+    {
+      "leafName": "sapAvatar_5_TextColor",
+      "hex": "#4630FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4630FF"
+    },
+    {
+      "leafName": "sapAvatar_6_TextColor",
+      "hex": "#455CEA",
+      "action": "override",
+      "note": "→ Blended midpoint #455CEA"
+    },
+    {
+      "leafName": "sapAvatar_7_TextColor",
+      "hex": "#026971",
+      "action": "override",
+      "note": "→ Blended midpoint #026971"
+    },
+    {
+      "leafName": "sapAvatar_8_TextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapAvatar_9_TextColor",
+      "hex": "#5B239E",
+      "action": "override",
+      "note": "→ Blended midpoint #5B239E"
+    },
+    {
+      "leafName": "sapAvatar_10_TextColor",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "sapAvatar_Lite_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "sapAvatar_Lite_BorderColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White"
+    },
+    {
+      "leafName": "sapContent_BadgeBackground",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapContent_BadgeTextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapContent_BadgeBorderColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapContent_BusyColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapContent_Placeholderloading_Background",
+      "hex": "#D8D8E0",
+      "action": "override",
+      "note": "→ Blended midpoint #D8D8E0"
+    },
+    {
+      "leafName": "sapButton_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_BorderColor",
+      "hex": "#D1D4DF",
+      "action": "override",
+      "note": "→ Blended midpoint #D1D4DF"
+    },
+    {
+      "leafName": "sapButton_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_IconColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Hover_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapButton_Hover_BorderColor",
+      "hex": "#D1D4DF",
+      "action": "override",
+      "note": "→ Blended midpoint #D1D4DF"
+    },
+    {
+      "leafName": "sapButton_Hover_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Active_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Active_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Selected_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapButton_Selected_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Selected_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Selected_Hover_Background",
+      "hex": "#DEE8F9",
+      "action": "override",
+      "note": "→ Blended midpoint #DEE8F9"
+    },
+    {
+      "leafName": "sapButton_Selected_Hover_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Emphasized_Hover_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Emphasized_Hover_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 50"
+    },
+    {
+      "leafName": "sapButton_Emphasized_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Emphasized_Active_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Lite_Background",
+      "hex": "#000000",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · Black"
+    },
+    {
+      "leafName": "sapButton_Emphasized_TextShadow",
+      "hex": "#000000",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · Black"
+    },
+    {
+      "leafName": "sapButton_Lite_BorderColor",
+      "hex": "#000000",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · Black"
+    },
+    {
+      "leafName": "sapButton_Lite_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Lite_Hover_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapButton_Lite_Hover_BorderColor",
+      "hex": "#D1D4DF",
+      "action": "override",
+      "note": "→ Blended midpoint #D1D4DF"
+    },
+    {
+      "leafName": "sapButton_Lite_Hover_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Lite_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Lite_Active_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Accept_Background",
+      "hex": "#EEFACC",
+      "action": "override",
+      "note": "→ Blended midpoint #EEFACC"
+    },
+    {
+      "leafName": "sapButton_Accept_BorderColor",
+      "hex": "#DEF69D",
+      "action": "override",
+      "note": "→ Blended midpoint #DEF69D"
+    },
+    {
+      "leafName": "sapButton_Accept_TextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapButton_Accept_Hover_Background",
+      "hex": "#EAF8C1",
+      "action": "override",
+      "note": "→ Blended midpoint #EAF8C1"
+    },
+    {
+      "leafName": "sapButton_Accept_Hover_BorderColor",
+      "hex": "#EAF8C1",
+      "action": "override",
+      "note": "→ Blended midpoint #EAF8C1"
+    },
+    {
+      "leafName": "sapButton_Accept_Hover_TextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapButton_Accept_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Accept_Active_BorderColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapButton_Accept_Active_TextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapButton_Accept_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Accept_Selected_BorderColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapButton_Accept_Selected_TextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapButton_Accept_Selected_Hover_Background",
+      "hex": "#EAF8C1",
+      "action": "override",
+      "note": "→ Blended midpoint #EAF8C1"
+    },
+    {
+      "leafName": "sapButton_Accept_Selected_Hover_BorderColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapButton_Reject_Background",
+      "hex": "#FFD1E9",
+      "action": "override",
+      "note": "→ Blended midpoint #FFD1E9"
+    },
+    {
+      "leafName": "sapButton_Reject_BorderColor",
+      "hex": "#FFCCE8",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 100 ↔ Brand / Red · 800"
+    },
+    {
+      "leafName": "sapButton_Reject_TextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapButton_Reject_Hover_Background",
+      "hex": "#FFC5E2",
+      "action": "override",
+      "note": "→ Blended midpoint #FFC5E2"
+    },
+    {
+      "leafName": "sapButton_Reject_Hover_BorderColor",
+      "hex": "#FFC5E2",
+      "action": "override",
+      "note": "→ Blended midpoint #FFC5E2"
+    },
+    {
+      "leafName": "sapButton_Reject_Hover_TextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapButton_Reject_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Reject_Active_BorderColor",
+      "hex": "#EC2525",
+      "action": "override",
+      "note": "→ Blended midpoint #EC2525"
+    },
+    {
+      "leafName": "sapButton_Reject_Active_TextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapButton_Reject_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Reject_Selected_BorderColor",
+      "hex": "#EC2525",
+      "action": "override",
+      "note": "→ Blended midpoint #EC2525"
+    },
+    {
+      "leafName": "sapButton_Reject_Selected_TextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapButton_Reject_Selected_Hover_Background",
+      "hex": "#FFC5E2",
+      "action": "override",
+      "note": "→ Blended midpoint #FFC5E2"
+    },
+    {
+      "leafName": "sapButton_Reject_Selected_Hover_BorderColor",
+      "hex": "#EC2525",
+      "action": "override",
+      "note": "→ Blended midpoint #EC2525"
+    },
+    {
+      "leafName": "sapButton_Attention_BorderColor",
+      "hex": "#FFEB8F",
+      "action": "override",
+      "note": "→ Blended midpoint #FFEB8F"
+    },
+    {
+      "leafName": "sapButton_Attention_Hover_Background",
+      "hex": "#FFEB99",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Gold · 200 ↔ Orange · 800"
+    },
+    {
+      "leafName": "sapButton_Attention_Hover_BorderColor",
+      "hex": "#FFEB99",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Gold · 200 ↔ Orange · 800"
+    },
+    {
+      "leafName": "sapButton_Attention_Hover_TextColor",
+      "hex": "#BE520E",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 600 ↔ Brand / Gold · 300"
+    },
+    {
+      "leafName": "sapButton_Attention_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Attention_Active_BorderColor",
+      "hex": "#E66409",
+      "action": "override",
+      "note": "→ Blended midpoint #E66409"
+    },
+    {
+      "leafName": "sapButton_Attention_Active_TextColor",
+      "hex": "#BE520E",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 600 ↔ Brand / Gold · 300"
+    },
+    {
+      "leafName": "sapButton_Attention_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Attention_Selected_BorderColor",
+      "hex": "#E66409",
+      "action": "override",
+      "note": "→ Blended midpoint #E66409"
+    },
+    {
+      "leafName": "sapButton_Attention_Selected_TextColor",
+      "hex": "#BE520E",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 600 ↔ Brand / Gold · 300"
+    },
+    {
+      "leafName": "sapButton_Attention_Selected_Hover_Background",
+      "hex": "#FFEB99",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Gold · 200 ↔ Orange · 800"
+    },
+    {
+      "leafName": "sapButton_Attention_Selected_Hover_BorderColor",
+      "hex": "#E66409",
+      "action": "override",
+      "note": "→ Blended midpoint #E66409"
+    },
+    {
+      "leafName": "sapButton_Negative_BorderColor",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapButton_Negative_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Negative_Hover_BorderColor",
+      "hex": "#EC2525",
+      "action": "override",
+      "note": "→ Blended midpoint #EC2525"
+    },
+    {
+      "leafName": "sapButton_Negative_Hover_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Negative_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Negative_Active_BorderColor",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapButton_Negative_Active_TextColor",
+      "hex": "#BD0F0F",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 600 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapButton_Critical_BorderColor",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 500"
+    },
+    {
+      "leafName": "sapButton_Critical_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Critical_Hover_BorderColor",
+      "hex": "#E66409",
+      "action": "override",
+      "note": "→ Blended midpoint #E66409"
+    },
+    {
+      "leafName": "sapButton_Critical_Hover_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Critical_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Critical_Active_BorderColor",
+      "hex": "#E66409",
+      "action": "override",
+      "note": "→ Blended midpoint #E66409"
+    },
+    {
+      "leafName": "sapButton_Critical_Active_TextColor",
+      "hex": "#BE520E",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 600 ↔ Brand / Gold · 300"
+    },
+    {
+      "leafName": "sapButton_Success_Background",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapButton_Success_BorderColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapButton_Success_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Success_Hover_Background",
+      "hex": "#3A9062",
+      "action": "override",
+      "note": "→ Blended midpoint #3A9062"
+    },
+    {
+      "leafName": "sapButton_Success_Hover_BorderColor",
+      "hex": "#3A9062",
+      "action": "override",
+      "note": "→ Blended midpoint #3A9062"
+    },
+    {
+      "leafName": "sapButton_Success_Hover_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Success_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Success_Active_BorderColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapButton_Success_Active_TextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapButton_Neutral_Background",
+      "hex": "#EFF4FD",
+      "action": "override",
+      "note": "→ Blended midpoint #EFF4FD"
+    },
+    {
+      "leafName": "sapButton_Neutral_BorderColor",
+      "hex": "#C1D2FF",
+      "action": "override",
+      "note": "→ Blended midpoint #C1D2FF"
+    },
+    {
+      "leafName": "sapButton_Neutral_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Neutral_Hover_Background",
+      "hex": "#DCE7FF",
+      "action": "override",
+      "note": "→ Blended midpoint #DCE7FF"
+    },
+    {
+      "leafName": "sapButton_Neutral_Hover_BorderColor",
+      "hex": "#C1D2FF",
+      "action": "override",
+      "note": "→ Blended midpoint #C1D2FF"
+    },
+    {
+      "leafName": "sapButton_Neutral_Hover_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Neutral_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Neutral_Active_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Neutral_Active_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Information_Background",
+      "hex": "#EFF4FD",
+      "action": "override",
+      "note": "→ Blended midpoint #EFF4FD"
+    },
+    {
+      "leafName": "sapButton_Information_BorderColor",
+      "hex": "#C1D2FF",
+      "action": "override",
+      "note": "→ Blended midpoint #C1D2FF"
+    },
+    {
+      "leafName": "sapButton_Information_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Information_Hover_Background",
+      "hex": "#DCE7FF",
+      "action": "override",
+      "note": "→ Blended midpoint #DCE7FF"
+    },
+    {
+      "leafName": "sapButton_Information_Hover_BorderColor",
+      "hex": "#C1D2FF",
+      "action": "override",
+      "note": "→ Blended midpoint #C1D2FF"
+    },
+    {
+      "leafName": "sapButton_Information_Hover_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Information_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapButton_Information_Active_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Information_Active_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_TokenBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_ReadOnly_TokenBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_TokenBorderColor",
+      "hex": "#D1D4DF",
+      "action": "override",
+      "note": "→ Blended midpoint #D1D4DF"
+    },
+    {
+      "leafName": "sapButton_Track_Background",
+      "hex": "#9DA6C5",
+      "action": "override",
+      "note": "→ Blended midpoint #9DA6C5"
+    },
+    {
+      "leafName": "sapButton_Track_BorderColor",
+      "hex": "#9DA6C5",
+      "action": "override",
+      "note": "→ Blended midpoint #9DA6C5"
+    },
+    {
+      "leafName": "sapButton_Track_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Track_Hover_Background",
+      "hex": "#6A77A0",
+      "action": "override",
+      "note": "→ Blended midpoint #6A77A0"
+    },
+    {
+      "leafName": "sapButton_Track_Hover_BorderColor",
+      "hex": "#6A77A0",
+      "action": "override",
+      "note": "→ Blended midpoint #6A77A0"
+    },
+    {
+      "leafName": "sapButton_Track_Selected_Background",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Track_Selected_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Track_Selected_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Track_Selected_Hover_Background",
+      "hex": "#3D57A9",
+      "action": "override",
+      "note": "→ Blended midpoint #3D57A9"
+    },
+    {
+      "leafName": "sapButton_Track_Selected_Hover_BorderColor",
+      "hex": "#3D57A9",
+      "action": "override",
+      "note": "→ Blended midpoint #3D57A9"
+    },
+    {
+      "leafName": "sapButton_Handle_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Handle_BorderColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Handle_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapButton_Handle_Hover_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Handle_Hover_BorderColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Handle_Selected_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapButton_Handle_Selected_BorderColor",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapButton_Handle_Selected_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapButton_Handle_Selected_Hover_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapButton_Handle_Selected_Hover_BorderColor",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapButton_Track_Negative_Background",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapButton_Track_Negative_BorderColor",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapButton_Track_Negative_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Track_Negative_Hover_Background",
+      "hex": "#EC2525",
+      "action": "override",
+      "note": "→ Blended midpoint #EC2525"
+    },
+    {
+      "leafName": "sapButton_Track_Negative_Hover_BorderColor",
+      "hex": "#EC2525",
+      "action": "override",
+      "note": "→ Blended midpoint #EC2525"
+    },
+    {
+      "leafName": "sapButton_Handle_Negative_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Handle_Negative_BorderColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Handle_Negative_TextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapButton_Handle_Negative_Hover_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Handle_Negative_Hover_BorderColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Track_Positive_Background",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapButton_Track_Positive_BorderColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapButton_Track_Positive_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Track_Positive_Hover_Background",
+      "hex": "#3A9062",
+      "action": "override",
+      "note": "→ Blended midpoint #3A9062"
+    },
+    {
+      "leafName": "sapButton_Track_Positive_Hover_BorderColor",
+      "hex": "#3A9062",
+      "action": "override",
+      "note": "→ Blended midpoint #3A9062"
+    },
+    {
+      "leafName": "sapButton_Handle_Positive_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Handle_Positive_BorderColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Handle_Positive_TextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapButton_Handle_Positive_Hover_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapButton_Handle_Positive_Hover_BorderColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_1",
+      "hex": "#83A1FF",
+      "action": "override",
+      "note": "→ Blended midpoint #83A1FF"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_2",
+      "hex": "#CC7700",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Gold · 700 ↔ Brand / Gold · 600"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_3",
+      "hex": "#6B9900",
+      "action": "override",
+      "note": "→ RDS Auto · Lime · 700 ↔ Lime · 600"
+    },
+    {
+      "leafName": "sapChart_Bad",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500"
+    },
+    {
+      "leafName": "sapChart_Critical",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_4",
+      "hex": "#E61381",
+      "action": "override",
+      "note": "→ Blended midpoint #E61381"
+    },
+    {
+      "leafName": "sapChart_Good",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_5",
+      "hex": "#8E45E3",
+      "action": "override",
+      "note": "→ Blended midpoint #8E45E3"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_6",
+      "hex": "#009999",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Aqua · 700"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_7",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand / Blue · 600 (custom)"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_8",
+      "hex": "#B22FE6",
+      "action": "override",
+      "note": "→ Blended midpoint #B22FE6"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_9",
+      "hex": "#5D7C67",
+      "action": "override",
+      "note": "→ Blended midpoint #5D7C67"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_10",
+      "hex": "#E76F6F",
+      "action": "override",
+      "note": "→ Blended midpoint #E76F6F"
+    },
+    {
+      "leafName": "sapChart_Neutral",
+      "hex": "#9CA5C4",
+      "action": "override",
+      "note": "→ Blended midpoint #9CA5C4"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_11",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapChart_OrderedColor_12",
+      "hex": "#D4A983",
+      "action": "override",
+      "note": "→ Blended midpoint #D4A983"
+    },
+    {
+      "leafName": "sapHC_HighlightBackground",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_NeutralColor",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_InformativeColor",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_StandardForeground",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_StandardBackground",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_ReducedBackground",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_HighlightAltBackground",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_ReducedAltForeground",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_PositiveColor",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_CriticalColor",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_NegativeColor",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_ReducedForeground",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_EnhancedForeground",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapHC_ReducedAltBackground",
+      "hex": "#D22FF7",
+      "action": "override",
+      "note": "→ Blended midpoint #D22FF7"
+    },
+    {
+      "leafName": "sapContent_IconColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapContent_ContrastIconColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapContent_MarkerIconColor",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapContent_NonInteractiveIconColor",
+      "hex": "#9CA5C4",
+      "action": "override",
+      "note": "→ Blended midpoint #9CA5C4"
+    },
+    {
+      "leafName": "sapContent_ImagePlaceholderBackground",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 600"
+    },
+    {
+      "leafName": "sapContent_ImagePlaceholderForegroundColor",
+      "hex": "#66729B",
+      "action": "override",
+      "note": "→ Blended midpoint #66729B"
+    },
+    {
+      "leafName": "sapContent_RatedColor",
+      "hex": "#CC7700",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Gold · 700 ↔ Brand / Gold · 300"
+    },
+    {
+      "leafName": "sapContent_UnratedColor",
+      "hex": "#9CA5C4",
+      "action": "override",
+      "note": "→ Blended midpoint #9CA5C4"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color1",
+      "hex": "#950658",
+      "action": "override",
+      "note": "→ Blended midpoint #950658"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color2",
+      "hex": "#8EB8FF",
+      "action": "override",
+      "note": "→ Blended midpoint #8EB8FF"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color3",
+      "hex": "#F88247",
+      "action": "override",
+      "note": "→ Blended midpoint #F88247"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color4",
+      "hex": "#000B40",
+      "action": "override",
+      "note": "→ Blended midpoint #000B40"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color5",
+      "hex": "#B2B7CF",
+      "action": "override",
+      "note": "→ Blended midpoint #B2B7CF"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color6",
+      "hex": "#DCDFE8",
+      "action": "override",
+      "note": "→ Blended midpoint #DCDFE8"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color7",
+      "hex": "#DFEAF9",
+      "action": "override",
+      "note": "→ Blended midpoint #DFEAF9"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color8",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 100"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color9",
+      "hex": "#0499A0",
+      "action": "override",
+      "note": "→ Blended midpoint #0499A0"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color10",
+      "hex": "#DFEAF9",
+      "action": "override",
+      "note": "→ Blended midpoint #DFEAF9"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color11",
+      "hex": "#E61381",
+      "action": "override",
+      "note": "→ Blended midpoint #E61381"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color12",
+      "hex": "#4DA100",
+      "action": "override",
+      "note": "→ Blended midpoint #4DA100"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color13",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand / Blue · 600 (custom)"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color14",
+      "hex": "#312EA1",
+      "action": "override",
+      "note": "→ Blended midpoint #312EA1"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color15",
+      "hex": "#BE520E",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 600"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color16",
+      "hex": "#8E3405",
+      "action": "override",
+      "note": "→ Blended midpoint #8E3405"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color17",
+      "hex": "#026972",
+      "action": "override",
+      "note": "→ Blended midpoint #026972"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color18",
+      "hex": "#D2E5FF",
+      "action": "override",
+      "note": "→ Blended midpoint #D2E5FF"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color19",
+      "hex": "#C8E0FF",
+      "action": "override",
+      "note": "→ Blended midpoint #C8E0FF"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color20",
+      "hex": "#AFCFFF",
+      "action": "override",
+      "note": "→ Blended midpoint #AFCFFF"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color21",
+      "hex": "#83A2FF",
+      "action": "override",
+      "note": "→ Blended midpoint #83A2FF"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color22",
+      "hex": "#000B40",
+      "action": "override",
+      "note": "→ Blended midpoint #000B40"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color23",
+      "hex": "#C80D0D",
+      "action": "override",
+      "note": "→ Blended midpoint #C80D0D"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color24",
+      "hex": "#FFC0DD",
+      "action": "override",
+      "note": "→ Blended midpoint #FFC0DD"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color25",
+      "hex": "#FFE5F3",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 50 ↔ Grayscale · 100"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color26",
+      "hex": "#FFE06C",
+      "action": "override",
+      "note": "→ Blended midpoint #FFE06C"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color27",
+      "hex": "#FFF5CC",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Gold · 100 ↔ Orange · 100"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color28",
+      "hex": "#B44907",
+      "action": "override",
+      "note": "→ Blended midpoint #B44907"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color29",
+      "hex": "#530A04",
+      "action": "override",
+      "note": "→ Blended midpoint #530A04"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color30",
+      "hex": "#2F0404",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 900"
+    },
+    {
+      "leafName": "sapContent_Illustrative_Color31",
+      "hex": "#FAA782",
+      "action": "override",
+      "note": "→ Blended midpoint #FAA782"
+    },
+    {
+      "leafName": "sapIndicationColor_1",
+      "hex": "#8E0B0B",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 700 ↔ Brand / Red · 500"
+    },
+    {
+      "leafName": "sapIndicationColor_1_Background",
+      "hex": "#8E0B0B",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 700 ↔ Brand / Red · 500"
+    },
+    {
+      "leafName": "sapIndicationColor_1_BorderColor",
+      "hex": "#8E0B0B",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 700 ↔ Brand / Red · 500"
+    },
+    {
+      "leafName": "sapIndicationColor_1_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_1_Hover_Background",
+      "hex": "#650707",
+      "action": "override",
+      "note": "→ Blended midpoint #650707"
+    },
+    {
+      "leafName": "sapIndicationColor_1_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_1_Active_BorderColor",
+      "hex": "#FAABAB",
+      "action": "override",
+      "note": "→ Blended midpoint #FAABAB"
+    },
+    {
+      "leafName": "sapIndicationColor_1_Active_TextColor",
+      "hex": "#8E0B0B",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 700 ↔ Brand / Red · 500"
+    },
+    {
+      "leafName": "sapIndicationColor_1_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_1_Selected_BorderColor",
+      "hex": "#FAABAB",
+      "action": "override",
+      "note": "→ Blended midpoint #FAABAB"
+    },
+    {
+      "leafName": "sapIndicationColor_1_Selected_TextColor",
+      "hex": "#8E0B0B",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 700 ↔ Brand / Red · 500"
+    },
+    {
+      "leafName": "sapIndicationColor_1b",
+      "hex": "#FAABAB",
+      "action": "override",
+      "note": "→ Blended midpoint #FAABAB"
+    },
+    {
+      "leafName": "sapIndicationColor_1b_Background",
+      "hex": "#FAABAB",
+      "action": "override",
+      "note": "→ Blended midpoint #FAABAB"
+    },
+    {
+      "leafName": "sapIndicationColor_1b_BorderColor",
+      "hex": "#FAABAB",
+      "action": "override",
+      "note": "→ Blended midpoint #FAABAB"
+    },
+    {
+      "leafName": "sapIndicationColor_1b_TextColor",
+      "hex": "#8E0B0B",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 700 ↔ Brand / Red · 500"
+    },
+    {
+      "leafName": "sapIndicationColor_1b_Hover_Background",
+      "hex": "#F77C7C",
+      "action": "override",
+      "note": "→ Blended midpoint #F77C7C"
+    },
+    {
+      "leafName": "sapIndicationColor_2",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapIndicationColor_2_Background",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapIndicationColor_2_BorderColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapIndicationColor_2_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_2_Hover_Background",
+      "hex": "#8E0B0B",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 700 ↔ Brand / Red · 200"
+    },
+    {
+      "leafName": "sapIndicationColor_2_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_2_Active_BorderColor",
+      "hex": "#FBBEBE",
+      "action": "override",
+      "note": "→ Blended midpoint #FBBEBE"
+    },
+    {
+      "leafName": "sapIndicationColor_2_Active_TextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapIndicationColor_2_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_2_Selected_BorderColor",
+      "hex": "#FBBEBE",
+      "action": "override",
+      "note": "→ Blended midpoint #FBBEBE"
+    },
+    {
+      "leafName": "sapIndicationColor_2_Selected_TextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapIndicationColor_2b",
+      "hex": "#FBBEBE",
+      "action": "override",
+      "note": "→ Blended midpoint #FBBEBE"
+    },
+    {
+      "leafName": "sapIndicationColor_2b_Background",
+      "hex": "#FBBEBE",
+      "action": "override",
+      "note": "→ Blended midpoint #FBBEBE"
+    },
+    {
+      "leafName": "sapIndicationColor_2b_BorderColor",
+      "hex": "#FBBEBE",
+      "action": "override",
+      "note": "→ Blended midpoint #FBBEBE"
+    },
+    {
+      "leafName": "sapIndicationColor_2b_TextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapIndicationColor_2b_Hover_Background",
+      "hex": "#FAB2B2",
+      "action": "override",
+      "note": "→ Blended midpoint #FAB2B2"
+    },
+    {
+      "leafName": "sapIndicationColor_3",
+      "hex": "#BE520E",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 600 ↔ Brand / Gold · 400"
+    },
+    {
+      "leafName": "sapIndicationColor_3_Background",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 400"
+    },
+    {
+      "leafName": "sapIndicationColor_3_BorderColor",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 400"
+    },
+    {
+      "leafName": "sapIndicationColor_3_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_3_Hover_Background",
+      "hex": "#E36209",
+      "action": "override",
+      "note": "→ Blended midpoint #E36209"
+    },
+    {
+      "leafName": "sapIndicationColor_3_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_3_Active_BorderColor",
+      "hex": "#FFF5CC",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Gold · 100 ↔ Orange · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_3_Active_TextColor",
+      "hex": "#BE520E",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 600 ↔ Brand / Gold · 400"
+    },
+    {
+      "leafName": "sapIndicationColor_3_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_3_Selected_BorderColor",
+      "hex": "#FFF5CC",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Gold · 100 ↔ Orange · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_3_Selected_TextColor",
+      "hex": "#BE520E",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 600 ↔ Brand / Gold · 400"
+    },
+    {
+      "leafName": "sapIndicationColor_3b",
+      "hex": "#FEE0C9",
+      "action": "override",
+      "note": "→ Blended midpoint #FEE0C9"
+    },
+    {
+      "leafName": "sapIndicationColor_3b_Background",
+      "hex": "#FEE0C9",
+      "action": "override",
+      "note": "→ Blended midpoint #FEE0C9"
+    },
+    {
+      "leafName": "sapIndicationColor_3b_BorderColor",
+      "hex": "#FEE0C9",
+      "action": "override",
+      "note": "→ Blended midpoint #FEE0C9"
+    },
+    {
+      "leafName": "sapIndicationColor_3b_TextColor",
+      "hex": "#9E4F00",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Gold · 800 ↔ Brand / Gold · 600"
+    },
+    {
+      "leafName": "sapIndicationColor_3b_Hover_Background",
+      "hex": "#FCCAA5",
+      "action": "override",
+      "note": "→ Blended midpoint #FCCAA5"
+    },
+    {
+      "leafName": "sapIndicationColor_4",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapIndicationColor_4_Background",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapIndicationColor_4_BorderColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapIndicationColor_4_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_4_Hover_Background",
+      "hex": "#286344",
+      "action": "override",
+      "note": "→ Blended midpoint #286344"
+    },
+    {
+      "leafName": "sapIndicationColor_4_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_4_Active_BorderColor",
+      "hex": "#A9DCBA",
+      "action": "override",
+      "note": "→ Blended midpoint #A9DCBA"
+    },
+    {
+      "leafName": "sapIndicationColor_4_Active_TextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapIndicationColor_4_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_4_Selected_BorderColor",
+      "hex": "#A9DCBA",
+      "action": "override",
+      "note": "→ Blended midpoint #A9DCBA"
+    },
+    {
+      "leafName": "sapIndicationColor_4_Selected_TextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapIndicationColor_4b",
+      "hex": "#A9DCBA",
+      "action": "override",
+      "note": "→ Blended midpoint #A9DCBA"
+    },
+    {
+      "leafName": "sapIndicationColor_4b_Background",
+      "hex": "#A9DCBA",
+      "action": "override",
+      "note": "→ Blended midpoint #A9DCBA"
+    },
+    {
+      "leafName": "sapIndicationColor_4b_BorderColor",
+      "hex": "#A9DCBA",
+      "action": "override",
+      "note": "→ Blended midpoint #A9DCBA"
+    },
+    {
+      "leafName": "sapIndicationColor_4b_TextColor",
+      "hex": "#396B1A",
+      "action": "override",
+      "note": "→ Blended midpoint #396B1A"
+    },
+    {
+      "leafName": "sapIndicationColor_4b_Hover_Background",
+      "hex": "#9ED9B1",
+      "action": "override",
+      "note": "→ Blended midpoint #9ED9B1"
+    },
+    {
+      "leafName": "sapIndicationColor_5",
+      "hex": "#4569F9",
+      "action": "override",
+      "note": "→ Blended midpoint #4569F9"
+    },
+    {
+      "leafName": "sapIndicationColor_5_Background",
+      "hex": "#4569F9",
+      "action": "override",
+      "note": "→ Blended midpoint #4569F9"
+    },
+    {
+      "leafName": "sapIndicationColor_5_BorderColor",
+      "hex": "#4569F9",
+      "action": "override",
+      "note": "→ Blended midpoint #4569F9"
+    },
+    {
+      "leafName": "sapIndicationColor_5_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_5_Hover_Background",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapIndicationColor_5_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_5_Active_BorderColor",
+      "hex": "#DCF7FE",
+      "action": "override",
+      "note": "→ Blended midpoint #DCF7FE"
+    },
+    {
+      "leafName": "sapIndicationColor_5_Active_TextColor",
+      "hex": "#4569F9",
+      "action": "override",
+      "note": "→ Blended midpoint #4569F9"
+    },
+    {
+      "leafName": "sapIndicationColor_5_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_5_Selected_BorderColor",
+      "hex": "#DCF7FE",
+      "action": "override",
+      "note": "→ Blended midpoint #DCF7FE"
+    },
+    {
+      "leafName": "sapIndicationColor_5_Selected_TextColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand / Blue · 600 (custom)"
+    },
+    {
+      "leafName": "sapIndicationColor_5b",
+      "hex": "#DEE7F9",
+      "action": "override",
+      "note": "→ Blended midpoint #DEE7F9"
+    },
+    {
+      "leafName": "sapIndicationColor_5b_Background",
+      "hex": "#DEE7F9",
+      "action": "override",
+      "note": "→ Blended midpoint #DEE7F9"
+    },
+    {
+      "leafName": "sapIndicationColor_5b_BorderColor",
+      "hex": "#DEE7F9",
+      "action": "override",
+      "note": "→ Blended midpoint #DEE7F9"
+    },
+    {
+      "leafName": "sapIndicationColor_5b_TextColor",
+      "hex": "#4564ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4564ED"
+    },
+    {
+      "leafName": "sapIndicationColor_5b_Hover_Background",
+      "hex": "#C4F3FE",
+      "action": "override",
+      "note": "→ Blended midpoint #C4F3FE"
+    },
+    {
+      "leafName": "sapIndicationColor_6",
+      "hex": "#026971",
+      "action": "override",
+      "note": "→ Blended midpoint #026971"
+    },
+    {
+      "leafName": "sapIndicationColor_6_Background",
+      "hex": "#026971",
+      "action": "override",
+      "note": "→ Blended midpoint #026971"
+    },
+    {
+      "leafName": "sapIndicationColor_6_BorderColor",
+      "hex": "#026971",
+      "action": "override",
+      "note": "→ Blended midpoint #026971"
+    },
+    {
+      "leafName": "sapIndicationColor_6_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_6_Hover_Background",
+      "hex": "#025E64",
+      "action": "override",
+      "note": "→ Blended midpoint #025E64"
+    },
+    {
+      "leafName": "sapIndicationColor_6_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_6_Active_BorderColor",
+      "hex": "#CDFAF6",
+      "action": "override",
+      "note": "→ Blended midpoint #CDFAF6"
+    },
+    {
+      "leafName": "sapIndicationColor_6_Active_TextColor",
+      "hex": "#026971",
+      "action": "override",
+      "note": "→ Blended midpoint #026971"
+    },
+    {
+      "leafName": "sapIndicationColor_6_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_6_Selected_BorderColor",
+      "hex": "#CDFAF6",
+      "action": "override",
+      "note": "→ Blended midpoint #CDFAF6"
+    },
+    {
+      "leafName": "sapIndicationColor_6_Selected_TextColor",
+      "hex": "#026971",
+      "action": "override",
+      "note": "→ Blended midpoint #026971"
+    },
+    {
+      "leafName": "sapIndicationColor_6b",
+      "hex": "#CDFAF6",
+      "action": "override",
+      "note": "→ Blended midpoint #CDFAF6"
+    },
+    {
+      "leafName": "sapIndicationColor_6b_Background",
+      "hex": "#CDFAF6",
+      "action": "override",
+      "note": "→ Blended midpoint #CDFAF6"
+    },
+    {
+      "leafName": "sapIndicationColor_6b_BorderColor",
+      "hex": "#CDFAF6",
+      "action": "override",
+      "note": "→ Blended midpoint #CDFAF6"
+    },
+    {
+      "leafName": "sapIndicationColor_6b_TextColor",
+      "hex": "#246B55",
+      "action": "override",
+      "note": "→ Blended midpoint #246B55"
+    },
+    {
+      "leafName": "sapIndicationColor_6b_Hover_Background",
+      "hex": "#B8E9DA",
+      "action": "override",
+      "note": "→ Blended midpoint #B8E9DA"
+    },
+    {
+      "leafName": "sapIndicationColor_7",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7_Background",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7_BorderColor",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_7_Hover_Background",
+      "hex": "#3415FF",
+      "action": "override",
+      "note": "→ Blended midpoint #3415FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_7_Active_BorderColor",
+      "hex": "#E4E0FF",
+      "action": "override",
+      "note": "→ Blended midpoint #E4E0FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7_Active_TextColor",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_7_Selected_BorderColor",
+      "hex": "#E4E0FF",
+      "action": "override",
+      "note": "→ Blended midpoint #E4E0FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7_Selected_TextColor",
+      "hex": "#4B35FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4B35FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7b",
+      "hex": "#E4E0FF",
+      "action": "override",
+      "note": "→ Blended midpoint #E4E0FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7b_Background",
+      "hex": "#E4E0FF",
+      "action": "override",
+      "note": "→ Blended midpoint #E4E0FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7b_BorderColor",
+      "hex": "#E4E0FF",
+      "action": "override",
+      "note": "→ Blended midpoint #E4E0FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7b_TextColor",
+      "hex": "#4D36FF",
+      "action": "override",
+      "note": "→ Blended midpoint #4D36FF"
+    },
+    {
+      "leafName": "sapIndicationColor_7b_Hover_Background",
+      "hex": "#CDC7FF",
+      "action": "override",
+      "note": "→ Blended midpoint #CDC7FF"
+    },
+    {
+      "leafName": "sapIndicationColor_8",
+      "hex": "#992FDA",
+      "action": "override",
+      "note": "→ Blended midpoint #992FDA"
+    },
+    {
+      "leafName": "sapIndicationColor_8_Background",
+      "hex": "#992FDA",
+      "action": "override",
+      "note": "→ Blended midpoint #992FDA"
+    },
+    {
+      "leafName": "sapIndicationColor_8_BorderColor",
+      "hex": "#992FDA",
+      "action": "override",
+      "note": "→ Blended midpoint #992FDA"
+    },
+    {
+      "leafName": "sapIndicationColor_8_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_8_Hover_Background",
+      "hex": "#70049E",
+      "action": "override",
+      "note": "→ Blended midpoint #70049E"
+    },
+    {
+      "leafName": "sapIndicationColor_8_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_8_Active_BorderColor",
+      "hex": "#EED3FD",
+      "action": "override",
+      "note": "→ Blended midpoint #EED3FD"
+    },
+    {
+      "leafName": "sapIndicationColor_8_Active_TextColor",
+      "hex": "#992FDA",
+      "action": "override",
+      "note": "→ Blended midpoint #992FDA"
+    },
+    {
+      "leafName": "sapIndicationColor_8_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_8_Selected_BorderColor",
+      "hex": "#EED3FD",
+      "action": "override",
+      "note": "→ Blended midpoint #EED3FD"
+    },
+    {
+      "leafName": "sapIndicationColor_8_Selected_TextColor",
+      "hex": "#992FDA",
+      "action": "override",
+      "note": "→ Blended midpoint #992FDA"
+    },
+    {
+      "leafName": "sapIndicationColor_8b",
+      "hex": "#EED3FD",
+      "action": "override",
+      "note": "→ Blended midpoint #EED3FD"
+    },
+    {
+      "leafName": "sapIndicationColor_8b_Background",
+      "hex": "#EED3FD",
+      "action": "override",
+      "note": "→ Blended midpoint #EED3FD"
+    },
+    {
+      "leafName": "sapIndicationColor_8b_BorderColor",
+      "hex": "#EED3FD",
+      "action": "override",
+      "note": "→ Blended midpoint #EED3FD"
+    },
+    {
+      "leafName": "sapIndicationColor_8b_TextColor",
+      "hex": "#992FDA",
+      "action": "override",
+      "note": "→ Blended midpoint #992FDA"
+    },
+    {
+      "leafName": "sapIndicationColor_8b_Hover_Background",
+      "hex": "#DFAFFB",
+      "action": "override",
+      "note": "→ Blended midpoint #DFAFFB"
+    },
+    {
+      "leafName": "sapIndicationColor_9",
+      "hex": "#222A3F",
+      "action": "override",
+      "note": "→ Blended midpoint #222A3F"
+    },
+    {
+      "leafName": "sapIndicationColor_9_Background",
+      "hex": "#222A3F",
+      "action": "override",
+      "note": "→ Blended midpoint #222A3F"
+    },
+    {
+      "leafName": "sapIndicationColor_9_BorderColor",
+      "hex": "#222A3F",
+      "action": "override",
+      "note": "→ Blended midpoint #222A3F"
+    },
+    {
+      "leafName": "sapIndicationColor_9_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_9_Hover_Background",
+      "hex": "#121829",
+      "action": "override",
+      "note": "→ Blended midpoint #121829"
+    },
+    {
+      "leafName": "sapIndicationColor_9_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_9_Active_TextColor",
+      "hex": "#222A3F",
+      "action": "override",
+      "note": "→ Blended midpoint #222A3F"
+    },
+    {
+      "leafName": "sapIndicationColor_9_Active_BorderColor",
+      "hex": "#DEDEE6",
+      "action": "override",
+      "note": "→ Blended midpoint #DEDEE6"
+    },
+    {
+      "leafName": "sapIndicationColor_9_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_9_Selected_BorderColor",
+      "hex": "#DEDEE6",
+      "action": "override",
+      "note": "→ Blended midpoint #DEDEE6"
+    },
+    {
+      "leafName": "sapIndicationColor_9_Selected_TextColor",
+      "hex": "#222A3F",
+      "action": "override",
+      "note": "→ Blended midpoint #222A3F"
+    },
+    {
+      "leafName": "sapIndicationColor_9b",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_9b_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_9b_BorderColor",
+      "hex": "#DEDEE6",
+      "action": "override",
+      "note": "→ Blended midpoint #DEDEE6"
+    },
+    {
+      "leafName": "sapIndicationColor_9b_TextColor",
+      "hex": "#222926",
+      "action": "override",
+      "note": "→ Blended midpoint #222926"
+    },
+    {
+      "leafName": "sapIndicationColor_9b_Hover_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_10",
+      "hex": "#303F40",
+      "action": "override",
+      "note": "→ Blended midpoint #303F40"
+    },
+    {
+      "leafName": "sapIndicationColor_10_Background",
+      "hex": "#A2A3BB",
+      "action": "override",
+      "note": "→ Blended midpoint #A2A3BB"
+    },
+    {
+      "leafName": "sapIndicationColor_10_BorderColor",
+      "hex": "#A2A3BB",
+      "action": "override",
+      "note": "→ Blended midpoint #A2A3BB"
+    },
+    {
+      "leafName": "sapIndicationColor_10_TextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_10_Hover_Background",
+      "hex": "#557173",
+      "action": "override",
+      "note": "→ Blended midpoint #557173"
+    },
+    {
+      "leafName": "sapIndicationColor_10_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_10_Active_BorderColor",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_10_Active_TextColor",
+      "hex": "#303F40",
+      "action": "override",
+      "note": "→ Blended midpoint #303F40"
+    },
+    {
+      "leafName": "sapIndicationColor_10_Selected_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapIndicationColor_10_Selected_BorderColor",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_10_Selected_TextColor",
+      "hex": "#303F40",
+      "action": "override",
+      "note": "→ Blended midpoint #303F40"
+    },
+    {
+      "leafName": "sapIndicationColor_10b",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_10b_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_10b_BorderColor",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapIndicationColor_10b_TextColor",
+      "hex": "#2F3D3F",
+      "action": "override",
+      "note": "→ Blended midpoint #2F3D3F"
+    },
+    {
+      "leafName": "sapIndicationColor_10b_Hover_Background",
+      "hex": "#E0E1EB",
+      "action": "override",
+      "note": "→ Blended midpoint #E0E1EB"
+    },
+    {
+      "leafName": "sapField_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapField_BorderColor",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "sapField_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapField_PlaceholderTextColor",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "sapField_Hover_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapField_Hover_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapField_Selector_Hover_Background",
+      "hex": "#E3EAF9",
+      "action": "override",
+      "note": "→ Blended midpoint #E3EAF9"
+    },
+    {
+      "leafName": "sapField_Active_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapField_Focus_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapField_Focus_BorderColor",
+      "hex": "#31239B",
+      "action": "override",
+      "note": "→ Blended midpoint #31239B"
+    },
+    {
+      "leafName": "sapField_RequiredColor",
+      "hex": "#BD0F6E",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 600 ↔ Pink · 200"
+    },
+    {
+      "leafName": "sapField_HelpBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapField_Hover_HelpBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapField_Focus_HelpBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapField_InformationColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand / Blue · 600 (custom)"
+    },
+    {
+      "leafName": "sapField_InformationBackground",
+      "hex": "#E3FAFF",
+      "action": "override",
+      "note": "→ Blended midpoint #E3FAFF"
+    },
+    {
+      "leafName": "sapField_Selector_Hover_InformationBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapField_SuccessColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapField_SuccessBackground",
+      "hex": "#F7FFE5",
+      "action": "override",
+      "note": "→ RDS Auto · Lime · 50 ↔ Green-Emerald · 800"
+    },
+    {
+      "leafName": "sapField_Selector_Hover_SuccessBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapField_WarningColor",
+      "hex": "#E66409",
+      "action": "override",
+      "note": "→ Blended midpoint #E66409"
+    },
+    {
+      "leafName": "sapField_WarningBackground",
+      "hex": "#FFF5CC",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Gold · 100 ↔ Brand / Gold · 900"
+    },
+    {
+      "leafName": "sapField_Selector_Hover_WarningBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapField_InvalidColor",
+      "hex": "#EC2525",
+      "action": "override",
+      "note": "→ Blended midpoint #EC2525"
+    },
+    {
+      "leafName": "sapField_InvalidBackground",
+      "hex": "#FFE5F3",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 50 ↔ Brand / Red · 900"
+    },
+    {
+      "leafName": "sapField_Selector_Hover_InvalidBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapField_ReadOnly_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapField_ReadOnly_HelpBackground",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapField_ReadOnly_BorderColor",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "sapField_Picker_BorderColor",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "FieldShadow_Color_1",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "FieldInvalidShadow_Color_1",
+      "hex": "#FF94CB",
+      "action": "override",
+      "note": "→ Blended midpoint #FF94CB"
+    },
+    {
+      "leafName": "FieldWarningShadow_Color_1",
+      "hex": "#FFD105",
+      "action": "override",
+      "note": "→ Blended midpoint #FFD105"
+    },
+    {
+      "leafName": "FieldSuccessShadow_Color_1",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "FieldInformationShadow_Color_1",
+      "hex": "#93B0FF",
+      "action": "override",
+      "note": "→ Blended midpoint #93B0FF"
+    },
+    {
+      "leafName": "FieldHoverShadow_Color_1",
+      "hex": "#8CA9FF",
+      "action": "override",
+      "note": "→ Blended midpoint #8CA9FF"
+    },
+    {
+      "leafName": "sapPrimary1",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapPrimary2",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand / Blue · 600 (custom)"
+    },
+    {
+      "leafName": "sapPrimary3",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapPrimary4",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapPrimary5",
+      "hex": "#9CA5C4",
+      "action": "override",
+      "note": "→ Blended midpoint #9CA5C4"
+    },
+    {
+      "leafName": "sapPrimary6",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapPrimary7",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "sapList_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapList_BorderColor",
+      "hex": "#EDEDF0",
+      "action": "override",
+      "note": "→ Blended midpoint #EDEDF0"
+    },
+    {
+      "leafName": "sapList_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapList_Active_Background",
+      "hex": "#E1E3EC",
+      "action": "override",
+      "note": "→ Blended midpoint #E1E3EC"
+    },
+    {
+      "leafName": "sapList_Active_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapList_SelectionBackgroundColor",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapList_SelectionBorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapList_Hover_SelectionBackground",
+      "hex": "#E1F9FF",
+      "action": "override",
+      "note": "→ Blended midpoint #E1F9FF"
+    },
+    {
+      "leafName": "sapList_Hover_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapList_GroupHeaderBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapList_GroupHeaderBorderColor",
+      "hex": "#B1B7CE",
+      "action": "override",
+      "note": "→ Blended midpoint #B1B7CE"
+    },
+    {
+      "leafName": "sapList_GroupHeaderTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapList_FooterBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapList_FooterTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapList_TableGroupHeaderBackground",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapList_TableGroupHeaderBorderColor",
+      "hex": "#B1B7CE",
+      "action": "override",
+      "note": "→ Blended midpoint #B1B7CE"
+    },
+    {
+      "leafName": "sapList_TableGroupHeaderTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapList_TableFooterBorder",
+      "hex": "#B1B7CE",
+      "action": "override",
+      "note": "→ Blended midpoint #B1B7CE"
+    },
+    {
+      "leafName": "sapList_TableFixedBorderColor",
+      "hex": "#A5A5BB",
+      "action": "override",
+      "note": "→ Blended midpoint #A5A5BB"
+    },
+    {
+      "leafName": "sapList_HeaderBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapList_HeaderBorderColor",
+      "hex": "#B1B7CE",
+      "action": "override",
+      "note": "→ Blended midpoint #B1B7CE"
+    },
+    {
+      "leafName": "sapList_HeaderTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapList_AlternatingBackground",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapList_HighlightColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapObjectHeader_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapObjectHeader_Hover_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapObjectHeader_BorderColor",
+      "hex": "#DEDEE6",
+      "action": "override",
+      "note": "→ Blended midpoint #DEDEE6"
+    },
+    {
+      "leafName": "sapObjectHeader_Title_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapObjectHeader_Subtitle_TextColor",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "sapProgress_InformationBackground",
+      "hex": "#D8E8F9",
+      "action": "override",
+      "note": "→ Blended midpoint #D8E8F9"
+    },
+    {
+      "leafName": "sapProgress_InformationBorderColor",
+      "hex": "#D8E8F9",
+      "action": "override",
+      "note": "→ Blended midpoint #D8E8F9"
+    },
+    {
+      "leafName": "sapProgress_InformationTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapProgress_PositiveBackground",
+      "hex": "#EBF9C3",
+      "action": "override",
+      "note": "→ Blended midpoint #EBF9C3"
+    },
+    {
+      "leafName": "sapProgress_PositiveBorderColor",
+      "hex": "#EBF9C3",
+      "action": "override",
+      "note": "→ Blended midpoint #EBF9C3"
+    },
+    {
+      "leafName": "sapProgress_CriticalBackground",
+      "hex": "#FFF5C5",
+      "action": "override",
+      "note": "→ Blended midpoint #FFF5C5"
+    },
+    {
+      "leafName": "sapProgress_PositiveTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapProgress_CriticalBorderColor",
+      "hex": "#FFF5C5",
+      "action": "override",
+      "note": "→ Blended midpoint #FFF5C5"
+    },
+    {
+      "leafName": "sapProgress_CriticalTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapProgress_NegativeBackground",
+      "hex": "#FFE5F3",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 50 ↔ Brand / Red · 800"
+    },
+    {
+      "leafName": "sapProgress_NegativeBorderColor",
+      "hex": "#FFE5F3",
+      "action": "override",
+      "note": "→ RDS Auto · Pink · 50 ↔ Brand / Red · 800"
+    },
+    {
+      "leafName": "sapProgress_Background",
+      "hex": "#DCDFE8",
+      "action": "override",
+      "note": "→ Blended midpoint #DCDFE8"
+    },
+    {
+      "leafName": "sapProgress_Value_InformationBackground",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand / Blue · 600 (custom)"
+    },
+    {
+      "leafName": "sapProgress_NegativeTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapProgress_BorderColor",
+      "hex": "#DCDFE8",
+      "action": "override",
+      "note": "→ Blended midpoint #DCDFE8"
+    },
+    {
+      "leafName": "sapProgress_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapProgress_Value_InformationBorderColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand / Blue · 600 (custom)"
+    },
+    {
+      "leafName": "sapProgress_Value_InformationTextColor",
+      "hex": "#0000CC",
+      "action": "override",
+      "note": "→ RDS Brand / Blue · 600 (custom)"
+    },
+    {
+      "leafName": "sapProgress_Value_NegativeBackground",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapProgress_Value_NegativeBorderColor",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapProgress_Value_NegativeTextColor",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapProgress_Value_Background",
+      "hex": "#69769F",
+      "action": "override",
+      "note": "→ Blended midpoint #69769F"
+    },
+    {
+      "leafName": "sapProgress_Value_BorderColor",
+      "hex": "#69769F",
+      "action": "override",
+      "note": "→ Blended midpoint #69769F"
+    },
+    {
+      "leafName": "sapProgress_Value_TextColor",
+      "hex": "#9DA6C5",
+      "action": "override",
+      "note": "→ Blended midpoint #9DA6C5"
+    },
+    {
+      "leafName": "sapProgress_Value_CriticalBackground",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 500"
+    },
+    {
+      "leafName": "sapProgress_Value_PositiveBackground",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapProgress_Value_PositiveBorderColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapProgress_Value_PositiveTextColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapProgress_Value_CriticalBorderColor",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 500"
+    },
+    {
+      "leafName": "sapProgress_Value_CriticalTextColor",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 500"
+    },
+    {
+      "leafName": "sapHighlightTextColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapBackgroundColorDefault",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapGroup_FooterBackground",
+      "hex": "#000000",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · Black"
+    },
+    {
+      "leafName": "sapShell_BackgroundPatternColor",
+      "hex": "#000000",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · Black"
+    },
+    {
+      "leafName": "sapScrollBar_FaceColor",
+      "hex": "#9FA7C5",
+      "action": "override",
+      "note": "→ Blended midpoint #9FA7C5"
+    },
+    {
+      "leafName": "sapScrollBar_TrackColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapScrollBar_BorderColor",
+      "hex": "#9FA7C5",
+      "action": "override",
+      "note": "→ Blended midpoint #9FA7C5"
+    },
+    {
+      "leafName": "sapScrollBar_SymbolColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapScrollBar_Hover_FaceColor",
+      "hex": "#66719B",
+      "action": "override",
+      "note": "→ Blended midpoint #66719B"
+    },
+    {
+      "leafName": "sapSlider_Background",
+      "hex": "#E3E3F2",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 100 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapSlider_BorderColor",
+      "hex": "#E3E3F2",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 100 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapSlider_Selected_Background",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapSlider_Selected_BorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapSlider_HandleBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapSlider_HandleBorderColor",
+      "hex": "#BFD1FF",
+      "action": "override",
+      "note": "→ Blended midpoint #BFD1FF"
+    },
+    {
+      "leafName": "sapSlider_Hover_HandleBackground",
+      "hex": "#DEE8F9",
+      "action": "override",
+      "note": "→ Blended midpoint #DEE8F9"
+    },
+    {
+      "leafName": "sapSlider_Hover_HandleBorderColor",
+      "hex": "#BFD1FF",
+      "action": "override",
+      "note": "→ Blended midpoint #BFD1FF"
+    },
+    {
+      "leafName": "sapSlider_Active_HandleBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Brand / Aqua · 900"
+    },
+    {
+      "leafName": "sapSlider_Active_HandleBorderColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapSlider_RangeHandleBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapSlider_Hover_RangeHandleBackground",
+      "hex": "#E3EAF9",
+      "action": "override",
+      "note": "→ Blended midpoint #E3EAF9"
+    },
+    {
+      "leafName": "sapSlider_Active_RangeHandleBackground",
+      "hex": "#000000",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · Black"
+    },
+    {
+      "leafName": "sapContent_MeasureIndicatorColor",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "sapContent_Selected_MeasureIndicatorColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapTab_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapTab_Selected_Background",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapTab_TextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapTab_Selected_TextColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapTab_ForegroundColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapTab_IconColor",
+      "hex": "#4563ED",
+      "action": "override",
+      "note": "→ Blended midpoint #4563ED"
+    },
+    {
+      "leafName": "sapTab_Selected_IconColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapTab_Negative_TextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapTab_Negative_Selected_TextColor",
+      "hex": "#B40C0C",
+      "action": "override",
+      "note": "→ Blended midpoint #B40C0C"
+    },
+    {
+      "leafName": "sapTab_Negative_ForegroundColor",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapTab_Negative_IconColor",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapTab_Negative_Selected_Background",
+      "hex": "#EE3333",
+      "action": "override",
+      "note": "→ RDS Auto · Brand / Red · 500 ↔ Brand / Red · 400"
+    },
+    {
+      "leafName": "sapTab_Negative_Selected_IconColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapTab_Critical_TextColor",
+      "hex": "#BE520E",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 600 ↔ Brand / Gold · 300"
+    },
+    {
+      "leafName": "sapTab_Critical_Selected_TextColor",
+      "hex": "#BE520E",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 600 ↔ Brand / Gold · 300"
+    },
+    {
+      "leafName": "sapTab_Critical_ForegroundColor",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 500"
+    },
+    {
+      "leafName": "sapTab_Critical_IconColor",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 500"
+    },
+    {
+      "leafName": "sapTab_Critical_Selected_Background",
+      "hex": "#EE6611",
+      "action": "override",
+      "note": "→ RDS Auto · Orange · 500 ↔ Brand / Gold · 500"
+    },
+    {
+      "leafName": "sapTab_Critical_Selected_IconColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapTab_Positive_TextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapTab_Positive_Selected_TextColor",
+      "hex": "#2A6D47",
+      "action": "override",
+      "note": "→ Blended midpoint #2A6D47"
+    },
+    {
+      "leafName": "sapTab_Positive_ForegroundColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapTab_Positive_IconColor",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapTab_Positive_Selected_Background",
+      "hex": "#3B9564",
+      "action": "override",
+      "note": "→ Blended midpoint #3B9564"
+    },
+    {
+      "leafName": "sapTab_Positive_Selected_IconColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapTab_Neutral_TextColor",
+      "hex": "#222A3F",
+      "action": "override",
+      "note": "→ Blended midpoint #222A3F"
+    },
+    {
+      "leafName": "sapTab_Neutral_Selected_TextColor",
+      "hex": "#222A3F",
+      "action": "override",
+      "note": "→ Blended midpoint #222A3F"
+    },
+    {
+      "leafName": "sapTab_Neutral_ForegroundColor",
+      "hex": "#9DA6C5",
+      "action": "override",
+      "note": "→ Blended midpoint #9DA6C5"
+    },
+    {
+      "leafName": "sapTab_Neutral_IconColor",
+      "hex": "#9DA6C5",
+      "action": "override",
+      "note": "→ Blended midpoint #9DA6C5"
+    },
+    {
+      "leafName": "sapTab_Neutral_Selected_Background",
+      "hex": "#9DA6C5",
+      "action": "override",
+      "note": "→ Blended midpoint #9DA6C5"
+    },
+    {
+      "leafName": "sapTab_Neutral_Selected_IconColor",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapTile_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapTile_Hover_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Grayscale · 800"
+    },
+    {
+      "leafName": "sapTile_Hover_ContentBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapTile_Active_Background",
+      "hex": "#E1E3EC",
+      "action": "override",
+      "note": "→ Blended midpoint #E1E3EC"
+    },
+    {
+      "leafName": "sapTile_Active_ContentBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapTile_BorderColor",
+      "hex": "#000000",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · Black"
+    },
+    {
+      "leafName": "sapTile_TitleTextColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapTile_TextColor",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "sapTile_IconColor",
+      "hex": "#646E97",
+      "action": "override",
+      "note": "→ Blended midpoint #646E97"
+    },
+    {
+      "leafName": "sapTile_SeparatorColor",
+      "hex": "#D8D8E0",
+      "action": "override",
+      "note": "→ Blended midpoint #D8D8E0"
+    },
+    {
+      "leafName": "sapTile_Interactive_BorderColor",
+      "hex": "#CDCDD6",
+      "action": "override",
+      "note": "→ Blended midpoint #CDCDD6"
+    },
+    {
+      "leafName": "sapTile_OverlayBackground",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapTile_OverlayForegroundColor",
+      "hex": "#111727",
+      "action": "override",
+      "note": "→ Blended midpoint #111727"
+    },
+    {
+      "leafName": "sapToolbar_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapToolbar_SeparatorColor",
+      "hex": "#DEDEE6",
+      "action": "override",
+      "note": "→ Blended midpoint #DEDEE6"
+    },
+    {
+      "leafName": "sapInfobar_Background",
+      "hex": "#C7FEF7",
+      "action": "override",
+      "note": "→ Blended midpoint #C7FEF7"
+    },
+    {
+      "leafName": "sapInfobar_Hover_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapInfobar_Active_Background",
+      "hex": "#FFFFFF",
+      "action": "override",
+      "note": "→ RDS Auto · Pure · White ↔ Green-Emerald · 900"
+    },
+    {
+      "leafName": "sapInfobar_NonInteractive_Background",
+      "hex": "#F5F5FA",
+      "action": "override",
+      "note": "→ RDS Auto · Grayscale · 50 ↔ Pure · Black"
+    },
+    {
+      "leafName": "sapInfobar_TextColor",
+      "hex": "#026971",
+      "action": "override",
+      "note": "→ Blended midpoint #026971"
+    }
+  ]
+}

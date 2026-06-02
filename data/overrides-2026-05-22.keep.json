@@ -1,0 +1,20 @@
+[
+  "--sapActiveColor",
+  "--sapHoverColor",
+  "--sapContent_Selected_Background",
+  "--sapContent_Selected_Hover_Background",
+  "--sapContent_DragAndDropActiveColor",
+  "--sapContent_SearchHighlightColor",
+  "--sapErrorBorderColor",
+  "--sapPositiveColor",
+  "--sapSuccessColor",
+  "--sapSuccessBorderColor",
+  "--sapButton_Negative_Background",
+  "--sapButton_Negative_Hover_Background",
+  "--sapButton_Critical_Background",
+  "--sapButton_Critical_Hover_Background",
+  "--sapButton_Attention_Background",
+  "--sapShell_NegativeColor",
+  "--sapShell_CriticalColor",
+  "--sapShell_PositiveColor"
+]
