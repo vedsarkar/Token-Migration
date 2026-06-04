@@ -1,0 +1,69 @@
+name: Deploy to GitHub Pages
+
+# Build and publish the Vite app in /app to GitHub Pages on every push to
+# main. The deployed site lives at https://vedsarkar.github.io/Token-Migration/.
+#
+# Trigger paths are scoped so doc-only changes (README, etc.) don't burn
+# Actions minutes, but workflow edits still trigger a deploy.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+# Permissions the official deploy-pages action requires.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Cancel any in-flight deploy when a newer one starts — only the latest
+# main should be live.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: app/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
