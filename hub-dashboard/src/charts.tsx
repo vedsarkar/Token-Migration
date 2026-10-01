@@ -61,10 +61,12 @@ export function Chart({
   option,
   className,
   apiRef,
+  onInit,
 }: {
   option: EChartsOption;
   className?: string;
   apiRef?: ApiRef;
+  onInit?: (instance: echarts.ECharts) => void;
 }) {
   const host = useRef<HTMLDivElement>(null);
   const chart = useRef<echarts.ECharts | null>(null);
@@ -75,6 +77,7 @@ export function Chart({
     const instance = echarts.init(el);
     chart.current = instance;
     bindApi(instance, apiRef);
+    onInit?.(instance);
     const observer = new ResizeObserver(() => chart.current?.resize());
     observer.observe(el);
     return () => {
@@ -83,7 +86,7 @@ export function Chart({
       chart.current = null;
       if (apiRef) apiRef.current = null;
     };
-  }, [apiRef]);
+  }, [apiRef, onInit]);
 
   // Merge rather than replace: ECharts diffs against the previous option by
   // data `name` to decide enter/update/leave animations, and `notMerge` throws
@@ -106,6 +109,77 @@ const tooltip = {
   textStyle: { color: TEXT, fontFamily: FONT, fontSize: 12 },
   extraCssText: 'box-shadow: 0 2px 8px rgba(34,53,72,0.16); border-radius: 8px;',
 };
+
+/** Area fill for a highlighted line when no single point is under the cursor. */
+const fadeDown = (color: string) =>
+  new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+    { offset: 0, color: `${color}4d` },
+    { offset: 1, color: `${color}00` },
+  ]);
+
+const GLOW_RADIUS = 170;
+
+/**
+ * Concentrates the highlighted area's fill on the hovered point. Only the line
+ * under the cursor glows: hovering empty plot space highlights every series at
+ * that x, and those keep the uniform fade. Pixel (`global`) coordinates keep the
+ * glow the same size on every series — in bbox-relative mode a low, flat series
+ * would get a much smaller radius.
+ */
+export function focusGradient({ series }: LineChart) {
+  return (instance: echarts.ECharts) => {
+    let index: number | null = null;
+    let hovered: number | null = null;
+    let current = '';
+    const apply = () => {
+      const key = `${hovered}:${index}`;
+      if (key === current) return;
+      current = key;
+      instance.setOption({
+        series: series.map((s, seriesIndex) => {
+          if (index === null || seriesIndex !== hovered) {
+            return { emphasis: { areaStyle: { color: fadeDown(s.color) } } };
+          }
+          const [x, y] = instance.convertToPixel({ seriesIndex }, [index, s.values[index]]);
+          return {
+            emphasis: {
+              areaStyle: {
+                color: new echarts.graphic.RadialGradient(
+                  x,
+                  y,
+                  GLOW_RADIUS,
+                  [
+                    { offset: 0, color: `${s.color}99` },
+                    { offset: 0.5, color: `${s.color}38` },
+                    { offset: 1, color: `${s.color}00` },
+                  ],
+                  true,
+                ),
+              },
+            },
+          };
+        }),
+      });
+    };
+    instance.on('updateAxisPointer', (e) => {
+      const info = (e as { axesInfo: { axisDim: string; value: number }[] }).axesInfo.find((a) => a.axisDim === 'x');
+      index = info ? info.value : null;
+      apply();
+    });
+    instance.on('mouseover', { componentType: 'series' }, (e) => {
+      hovered = (e as { seriesIndex: number }).seriesIndex;
+      apply();
+    });
+    instance.on('mouseout', { componentType: 'series' }, () => {
+      hovered = null;
+      apply();
+    });
+    instance.getZr().on('globalout', () => {
+      index = hovered = null;
+      apply();
+    });
+  };
+}
 
 /**
  * The design ships eight evenly spaced gridlines, so the axis is split into
@@ -162,13 +236,7 @@ export function lineOption({ series, axisMax, days, ticks }: LineChart): ECharts
       emphasis: {
         scale: 1.3,
         focus: 'series',
-        areaStyle: {
-          opacity: 1,
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-            { offset: 0, color: `${s.color}4d` },
-            { offset: 1, color: `${s.color}00` },
-          ]),
-        },
+        areaStyle: { opacity: 1, color: fadeDown(s.color) },
       },
       // Walk the markers in left to right behind the line's own draw-in.
       animationDelay: (idx: number) => idx * 55,

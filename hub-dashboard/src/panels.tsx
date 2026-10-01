@@ -1,6 +1,6 @@
 import { useRef, useState, type ReactNode } from 'react';
 import { createPortal } from 'react-dom';
-import { BubbleChart, Chart, donutOption, lineOption, type ChartApi } from './charts';
+import { BubbleChart, Chart, donutOption, focusGradient, lineOption, type ChartApi } from './charts';
 import {
   activityEvents,
   activityTotal,
@@ -32,6 +32,8 @@ import prev from './assets/t2-prev.svg';
 // reference keeps `setOption` from re-running on every render.
 const profileStatsOption = lineOption(profileStats);
 const matchMergeOption = lineOption(matchMerge);
+const profileStatsGlow = focusGradient(profileStats);
+const matchMergeGlow = focusGradient(matchMerge);
 const tenantCloudOption = donutOption(tenantCloudDonut);
 const entityTypesOption = donutOption(entityTypes);
 
@@ -159,7 +161,7 @@ export function ProfileStatsCard() {
       <div className="chart-controls">
         <MenuButton label="Last 7 days" />
       </div>
-      <Chart className="line-chart" option={profileStatsOption} apiRef={chart} />
+      <Chart className="line-chart" option={profileStatsOption} apiRef={chart} onInit={profileStatsGlow} />
       <StatsLegend chartData={profileStats} chart={chart} />
     </Card>
   );
@@ -258,7 +260,7 @@ export function MatchMergeActivityCard() {
       <div className="chart-controls">
         <MenuButton label="Last 7 days" />
       </div>
-      <Chart className="line-chart" option={matchMergeOption} apiRef={chart} />
+      <Chart className="line-chart" option={matchMergeOption} apiRef={chart} onInit={matchMergeGlow} />
       <StatsLegend chartData={matchMerge} chart={chart} />
     </Card>
   );
