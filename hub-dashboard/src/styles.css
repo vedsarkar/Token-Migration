@@ -1,0 +1,641 @@
+/* ---------- SAP Horizon tokens (from the Figma file's variable set) ---------- */
+
+:root {
+  /* Glass surfaces: translucent white over the canvas artwork. */
+  --glass-bg: rgba(252, 254, 255, 0.5);
+  --glass-blur: blur(55px);
+  --surface-solid: #fcfeff;
+
+  --sapShell_BorderColor: #e3e3f2;
+  --sapShell_InteractiveBackground: #f5f5fa;
+  --sapBaseColor: #dbe7ee;
+  --sapActiveColor: #dee2e5;
+
+  --sapTextColor: #111727;
+  --sapGroup_TitleTextColor: #172133;
+  --sapContent_LabelColor: #566189;
+  --text-primary: #0b0c0f;
+  --text-accent: #0057d2;
+
+  --sapButton_Lite_TextColor: #3254ec;
+  --sapButton_BorderCornerRadius: 32px;
+  --radius-s: 4px;
+  --sapTile_BorderCornerRadius: 16px;
+
+  --sapToolbar_SeparatorColor: #dedee6;
+  --sapList_BorderColor: #ffffff;
+  --sapList_GroupHeaderBackground: #f2f5fc;
+  --sapList_GroupHeaderBorderColor: #b1b7ce;
+  --sapList_TextColor: #111727;
+
+  --sapField_PlaceholderTextColor: #5d6892;
+  --sapField_Shadow: inset 0 0 0 1px rgba(85, 107, 129, 0.25);
+
+  --sapChart_OrderedColor_1: #5291ff;
+  --sapContent_Illustrative_Color20: #afcfff;
+
+  --card-shadow: 0 2px 8px rgba(34, 53, 72, 0.1);
+  --card-border: 1px solid rgba(34, 53, 72, 0.06);
+
+  --sapFontFamily: '72', '72full', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --sapFontSize: 14px;
+  --sapFontSmallSize: 12px;
+
+  --spacing-xs: 12px;
+  --grid-gap: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sapFontFamily);
+  font-size: var(--sapFontSize);
+  color: var(--sapTextColor);
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* ---------- App frame ---------- */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 1200px;
+  /* The canvas artwork is what the glass surfaces blur against. */
+  background: url('./assets/canvas-bg.jpg') center / cover no-repeat fixed, #fdfeff;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.content-pane {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* ---------- Shell bar ---------- */
+
+.shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  flex-shrink: 0;
+  padding: 0 20px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--sapShell_BorderColor);
+}
+
+.shell-side {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shell-separator {
+  width: 1px;
+  height: 32px;
+  background: var(--sapToolbar_SeparatorColor);
+}
+
+.shell-tenant {
+  gap: 6px;
+  min-height: 36px;
+  padding: 10px;
+  font-weight: 600;
+  color: var(--sapButton_Lite_TextColor);
+  white-space: nowrap;
+}
+
+.shell-search {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 400px;
+  height: 36px;
+  padding: 4px 4px 4px 14px;
+  border-radius: 18px;
+  background: var(--sapShell_InteractiveBackground);
+  box-shadow: var(--sapField_Shadow);
+}
+
+.shell-search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font: italic 400 var(--sapFontSize) var(--sapFontFamily);
+  color: var(--sapTextColor);
+}
+
+.shell-search input::placeholder {
+  color: var(--sapField_PlaceholderTextColor);
+  font-style: italic;
+}
+
+.shell-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ---------- Side navigation ---------- */
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 80px;
+  flex-shrink: 0;
+  padding: 8px 20px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border-right: 1px solid var(--sapShell_BorderColor);
+}
+
+.nav-logo,
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: var(--radius-s);
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-item:hover {
+  background: rgba(219, 231, 238, 0.5);
+}
+
+.nav-item[aria-current='page'] {
+  background: var(--sapBaseColor);
+}
+
+/* ---------- Toolbar ---------- */
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 52px;
+  flex-shrink: 0;
+  padding: 4px 8px 4px 16px;
+  background: var(--surface-solid);
+  border-bottom: 1px solid var(--sapActiveColor);
+}
+
+.toolbar h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--sapGroup_TitleTextColor);
+}
+
+/* ---------- Buttons ---------- */
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: var(--sapButton_BorderCornerRadius);
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background: rgba(219, 231, 238, 0.45);
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 26px;
+  padding: 5px 8px;
+  border: 1px solid transparent;
+  border-radius: var(--sapButton_BorderCornerRadius);
+  background: transparent;
+  font: 600 var(--sapFontSize) / normal var(--sapFontFamily);
+  color: var(--sapButton_Lite_TextColor);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  background: rgba(219, 231, 238, 0.45);
+}
+
+/* ---------- Card grid ---------- */
+
+.card-grid {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /* Only the first row (the two wide cards) is fixed; any row after that —
+     including the overflow row a wide card further down pushes into — gets
+     the same 310px so heights stay consistent regardless of card count. */
+  grid-template-rows: 450px;
+  grid-auto-rows: 310px;
+  gap: 16px var(--grid-gap);
+  align-content: start;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+/* One grid cell spanning the full row, holding a flex row of cards instead
+   of more grid columns. Grid's equal-fr tracks can't give one card less
+   width and hand the rest to its neighbour — flex can, so a hugged card
+   sits flush against the next one instead of leaving a gap. */
+.card-row {
+  display: flex;
+  grid-column: 1 / -1;
+  gap: 16px var(--grid-gap);
+  min-width: 0;
+}
+
+.card-row > .card {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* Sized to its content instead of sharing the row equally with its
+   flex-growing siblings. */
+.card-row > .card--hug {
+  flex: 0 0 auto;
+}
+
+/* `wide` means "double width" in a flex row too, matching the design's
+   666px-vs-327px panels. */
+.card-row > .span-2 {
+  flex: 2 1 0;
+}
+
+/* ---------- Card ---------- */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: var(--card-border);
+  border-radius: var(--sapTile_BorderCornerRadius);
+  box-shadow: var(--card-shadow);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 52px;
+  flex-shrink: 0;
+  padding: 0 8px 0 16px;
+}
+
+.card-header h2 {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--sapGroup_TitleTextColor);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  padding: 0 16px 16px;
+  overflow: hidden;
+}
+
+/* ---------- Chart cards ---------- */
+
+.chart-controls {
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.line-chart {
+  flex: 1;
+  min-height: 0;
+}
+
+.stats-legend {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 12px 16px;
+  flex-shrink: 0;
+  padding-top: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--sapFontSmallSize);
+  white-space: nowrap;
+}
+
+.legend-swatch {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+
+.donut-chart {
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.bubble-chart {
+  height: 156px;
+  flex-shrink: 0;
+}
+
+/* Legend lists overflow their card, exactly as the design clips them. */
+.legend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 8px;
+  overflow: hidden;
+}
+
+/* Tenant Deployment Cloud: chart fixed on the left, legend on the right. Now
+   that the card itself hugs this content (see `.card--hug`), the pair only
+   needs to centre vertically — there's no leftover width left to distribute. */
+.donut-layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Sized to the card's body height — the widest the donut can go before the
+   card would need a taller row. */
+.donut-layout .donut-chart {
+  flex: 0 0 230px;
+  height: 230px;
+}
+
+.donut-layout .legend-list {
+  gap: 10px;
+  padding-top: 0;
+}
+
+/* ---------- Bar list ---------- */
+
+.bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.bar-list-head {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+  font-size: 11px;
+  color: var(--sapContent_LabelColor);
+}
+
+.bar-list-head span:first-child,
+.bar-row-line span:first-child {
+  flex: 1;
+  min-width: 0;
+}
+
+.bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.bar-row-line {
+  display: flex;
+  gap: 8px;
+  font-size: var(--sapFontSmallSize);
+  color: var(--sapTextColor);
+}
+
+.bar-track {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--sapList_BorderColor);
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--sapChart_OrderedColor_1);
+  transition: opacity 0.2s ease;
+}
+
+.bar-list--focus .bar-row:not(.is-active) .bar-fill {
+  opacity: 0.25;
+}
+
+/* Mirrors the shared ECharts tooltip in charts.tsx. */
+.bar-tip {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  transform: translate(-50%, calc(-100% - 8px));
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #e6e7ea;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(34, 53, 72, 0.16);
+  font-family: var(--sapFontFamily);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--sapTextColor);
+  white-space: nowrap;
+}
+
+/* ---------- Activity log ---------- */
+
+.activity-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.activity-filter p {
+  flex: 1;
+  font-size: var(--sapFontSmallSize);
+  color: var(--sapContent_LabelColor);
+}
+
+.activity-group {
+  flex-shrink: 0;
+  padding: 20px 16px 8px;
+  margin-top: 4px;
+  background: var(--sapList_GroupHeaderBackground);
+  border-bottom: 1px solid var(--sapList_GroupHeaderBorderColor);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--sapList_TextColor);
+}
+
+.activity-feed {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 76px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--sapList_BorderColor);
+}
+
+.activity-avatar {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.activity-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.activity-user {
+  overflow: hidden;
+  font-size: var(--sapFontSize);
+  color: var(--sapList_TextColor);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.activity-byline {
+  font-size: var(--sapFontSize);
+  color: var(--sapContent_LabelColor);
+  white-space: pre;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  padding-top: 4px;
+}
+
+.pagination p {
+  font-size: var(--sapFontSmallSize);
+  color: var(--sapContent_LabelColor);
+  white-space: nowrap;
+}
+
+/* ---------- Empty state ---------- */
+
+.empty-state {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.empty-illustration {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  margin-bottom: 8px;
+}
+
+.empty-illustration .backdrop {
+  position: absolute;
+  top: calc(50% - 0.5px);
+  left: 0;
+  width: 128px;
+  height: 55px;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  background: var(--sapContent_Illustrative_Color20);
+}
+
+/* Globe and magnifier sit inside a 62x60 group centred on the backdrop. */
+.empty-illustration .globe {
+  position: absolute;
+  top: calc(50% + 0.14px - 30.14px);
+  left: calc(50% - 1.9px - 31.1px);
+}
+
+.empty-illustration .magnifier {
+  position: absolute;
+  top: calc(50% + 0.14px - 30.14px + 12.26px);
+  left: calc(50% - 1.9px - 31.1px + 32.21px);
+}
+
+.empty-title {
+  padding-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--sapGroup_TitleTextColor);
+  text-align: center;
+}
+
+.empty-body {
+  font-size: var(--sapFontSize);
+  color: var(--sapTextColor);
+  text-align: center;
+}
